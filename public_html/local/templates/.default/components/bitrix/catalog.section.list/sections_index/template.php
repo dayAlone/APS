@@ -5,7 +5,7 @@ if(count($arResult['SECTIONS'])>0):
 <div class="sections">
 	<div class="container">
 		<?foreach ($arResult['SECTIONS'] as $key => &$item):?>
-		<a href="#" class="sections__item">
+		<a href="/catalog/<?=$item['CODE']?>/" class="sections__item">
     		<div class="sections__image">
     			<?=file_get_contents($_SERVER['DOCUMENT_ROOT'].CFile::GetPath($item['UF_SVG']))?>
     		</div>
