@@ -1,0 +1,124 @@
+#Feedback .form
+	display block
+	margin-bottom 0
+	padding-bottom 0
+
+.modal
+	.lang-trigger
+		margin 17px 20px 15px
+	.phone
+		full-width()
+		text-align: center
+		font-size 37px
+		color white
+		padding 20px 0
+		font-weight bold
+	.form-trigger
+		font-size 25px
+		font-weight bold
+		color white
+		height 25px
+		display inline-block
+		border-bottom 1px dotted white
+		text-align center
+		text-transform: uppercase
+	.success
+		display none
+	.form
+		full-width()
+		padding-bottom 40px
+		padding 0 20px
+		display none
+		label
+			full-width()
+			margin-top 20px
+			text-align center
+			font-size 10px
+			text-transform: uppercase
+		.captcha_refresh
+			float: left
+			margin-top 39px
+			svg
+				width 29px
+				height 30px
+		input[type="text"], input[type="email"], textarea
+			border 0
+			appearance none
+			full-width()
+			border-radius 0
+			color black
+			text-align center
+			padding-top 12px
+			line-height 27px
+			height 30px
+			@media (min-width: scr_sm)
+				padding-top 8px
+			&.parsley-error
+				box-shadow 0 0 0 2px red
+		.parsley-errors-list
+			display none !important
+		textarea
+			height 180px
+			text-align left
+		.captcha
+			full-width()
+			background-color #737a82
+			height 30px
+		input[type="submit"]
+			appearance none
+			middle()
+			background transparent
+			margin-top 20px
+			margin-bottom 20px
+			border-radius 30px
+			height 30px
+			font-size 14px
+			border 2px solid blue
+			padding 5px 25px 0
+			font-weight bold
+			text-transform: uppercase
+			t(background, color)
+			&:hover
+				background blue
+				color black
+	&-title
+		full-width()
+		color white
+		padding 0 20px
+		line-height 55px
+		height 55px
+		font-size 11px
+		text-transform uppercase		
+		font-weight bold
+	.search
+		padding 20px
+		&__input
+			height 40px
+			font-size 15px
+			padding 0 25px 0 15px
+			border-radius 50px
+			border-weight 2px
+		&__submit
+			right 30px
+			top 30px
+			svg
+				width 20px
+				height 20px
+.nav-popup
+	border-top 1px solid #404040
+	full-width()
+	&__item
+		border-bottom 1px solid #404040
+		full-width()
+		color white
+		padding 0 20px
+		line-height 62px
+		height 55px
+		font-weight: bold
+		text-transform: uppercase
+		font-size: 26px
+		#Sites &
+			font-size 16px
+		&:hover, &--active
+			background blue2
+			color white

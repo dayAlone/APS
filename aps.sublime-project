@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "public_html/local/templates/acc"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "."
+		},
+		
+	]
+}

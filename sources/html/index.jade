@@ -1,0 +1,71 @@
+include includes/header
+
+<body class="index">
+.wrap
+	include includes/toolbar
+
+	main.page
+		.slider
+			.slider__item(style="background-image: url(./layout/images/bg-index.jpg)")
+				.container
+					h1.slider__title десятилетия опыта работы
+					.slider__content
+						p Вот уже более 30 лет мы поставляем оборудование и материалы для строительства нефте- и газопроводов. За это время с нашей помощью были построены сотни тысяч километров энергетических артерий. Мы по праву гордимся тем, что являемся одной из крупнейших компаний, способной решать задачи заказчика максимально эффективно.
+						a.slider__link(href="#") Наши предложения
+		.news
+			.container
+				.news__frame
+					.news__item
+						.news__date 12.07.2014
+						a.news__title(href="#") Представляем новые высокопроизводительные системы автоматической сварки трубопроводов Р-700 и М-400
+					a.news__more(href="#") к другим новостям
+
+		.sections
+			.container
+				a.sections__item(href="#")
+					.sections__image
+						include ../../public_html/layout/images/svg/i-1.svg
+					.sections__text Технологии автоматической сварки труб
+				a.sections__item(href="#")
+					.sections__image
+						include ../../public_html/layout/images/svg/i-2.svg
+					.sections__text сварочные технологии
+				a.sections__item(href="#")
+					.sections__image
+						include ../../public_html/layout/images/svg/i-3.svg
+					.sections__text Неразрушающий контроль
+				a.sections__item(href="#")
+					.sections__image
+						include ../../public_html/layout/images/svg/i-4.svg
+					.sections__text Антикоррозионная защита
+				a.sections__item(href="#")
+					.sections__image
+						include ../../public_html/layout/images/svg/i-5.svg
+					.sections__text Строительная техника
+				a.sections__item(href="#")
+					.sections__image
+						include ../../public_html/layout/images/svg/i-6.svg
+					.sections__text Специальное оборудование для работы с трубами
+				a.sections__item(href="#")
+					.sections__image
+						include ../../public_html/layout/images/svg/i-7.svg
+					.sections__text Вспомогательное оборудование
+		.partners
+			.container
+				a.partners__item(href="#")
+					img(src="./layout/images/l-1.jpg")
+				a.partners__item(href="#")
+					img(src="./layout/images/l-2.jpg")
+				a.partners__item(href="#")
+					img(src="./layout/images/l-3.jpg")
+				a.partners__item(href="#")
+					img(src="./layout/images/l-4.jpg")
+				a.partners__item(href="#")
+					img(src="./layout/images/l-5.jpg")
+				a.partners__item(href="#")
+					img(src="./layout/images/l-6.jpg")
+				a.partners__item(href="#")
+					img(src="./layout/images/l-7.jpg")
+
+
+include includes/footer

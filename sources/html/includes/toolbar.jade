@@ -1,0 +1,70 @@
+header.toolbar
+	.container
+		.row.no-gutter-md
+			.col-xs-3.visible-md.visible-lg
+				a(href="/").logo
+					include ../../../public_html/layout/images/svg/logo.svg
+				.shield.shield--big-left
+					.shield__right
+						include ../../../public_html/layout/images/svg/shield-r.svg
+			.col-xs-12.col-md-9.no-padding-right-md
+				.row
+					.col-xs-3.col-md-2
+						.site-select
+							a.site-select__trigger(href="#")
+								span Все 
+								| сайты холдинга
+								include ../../../public_html/layout/images/svg/arrow.svg
+							.site-select__dropdown
+								a(href="#").site-select__link ТКС-холдинг
+								a(href="#").site-select__link аргус пайплайн сервис
+								a(href="#").site-select__link трубопровод контроль сервис
+								a(href="#").site-select__link спецнефтегаз-т
+								a(href="#").site-select__link уиц ронктд “спектр”
+								a(href="#").site-select__link интера
+								a(href="#").site-select__link мнпо “спектр”
+								a(href="#").site-select__link асц сварка стройтэк
+								a(href="#").site-select__link зто
+					.col-xs-2.col-lg-3
+						a.popup-trigger(data-toggle="modal", data-target="#Contacts", href="#Contacts")
+							include ../../../public_html/layout/images/svg/phone.svg
+						a.popup-trigger(data-toggle="modal", data-target="#Search", href="#Search")
+							include ../../../public_html/layout/images/svg/seach.svg
+						.lang-trigger.lang-trigger--lang_russian(data-variant="russian,english")
+							span.lang-trigger__label RU
+							span.lang-trigger__carriage
+							span.lang-trigger__label EN
+					.col-xs-3.md-right.lg-left
+						a.phone(href="tel:88002005001")
+							include ../../../public_html/layout/images/svg/phone.svg
+							| 8 800 200 500 1
+
+					.col-xs-4.col-md-5.col-lg-4.right
+						a.filials(href="#").visible-md-inline.visible-lg-inline
+							include ../../../public_html/layout/images/svg/pin.svg
+							| Филиальная сеть
+						a.feedback(href="#").visible-md-inline.visible-lg-inline Обратная связь
+						form(action="/search/", class="search-form")
+							input(type="text", name="q", class="search-form__text", placeholder="")
+							button(type="submit", class="search-form__button")
+								include ../../../public_html/layout/images/svg/seach.svg
+						a.search-trigger(href="#")
+							include ../../../public_html/layout/images/svg/seach.svg
+						a(data-toggle="modal", data-target="#Nav", href="#Nav").nav-trigger
+							span Меню
+							include ../../../public_html/layout/images/svg/nav.svg
+				.divider.visible-md.visible-lg
+				.row.visible-md.visible-lg
+					.col-xs-12
+						nav.nav
+							a(href="about.html").nav__item О компании
+							a(href="catalog-category.html").nav__item каталог оборудования
+							a(href="services.html").nav__item пресс-центр
+							a(href="career.html").nav__item карьера
+							a(href="contacts.html").nav__item Контакты
+				//
+					.col-xs-1
+						form.search
+							input.search__input(type="text", name="q")
+							button.search__submit(type="submit", value="")
+								include ../../../public_html/layout/images/svg/seach.svg

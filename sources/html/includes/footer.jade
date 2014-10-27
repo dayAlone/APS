@@ -1,0 +1,106 @@
+.modal.fade(id="Nav", tabindex="-1", role="dialog" aria-hidden="true")
+	.modal-dialog
+		.modal-content
+			a.close(data-dismiss="modal", href="#")
+				include ../../../public_html/layout/images/svg/close.svg
+			.lang-trigger.lang-trigger--lang_russian(data-variant="russian,english")
+				span.lang-trigger__label RU
+				span.lang-trigger__carriage
+				span.lang-trigger__label EN
+			.nav-popup
+				a(href="about.html").nav-popup__item О компании
+				a(href="news.html").nav-popup__item Новости
+				a(href="services.html").nav-popup__item Услуги
+				a(href="tech.html").nav-popup__item Технологии
+				a(href="projects.html").nav-popup__item Наши проекты
+				a(href="partners.html").nav-popup__item Партнеры
+				a(href="contacts.html").nav-popup__item Контакты
+
+.modal.fade(id="Sites", tabindex="-1", role="dialog" aria-hidden="true")
+	.modal-dialog
+		.modal-content
+			a.close(data-dismiss="modal", href="#")
+				include ../../../public_html/layout/images/svg/close.svg
+			.modal-title Сайты холдинга
+			.nav-popup
+				a(href="#").nav-popup__item ТКС-холдинг
+				a(href="#").nav-popup__item аргус пайплайн сервис
+				a(href="#").nav-popup__item трубопровод контроль сервис
+				a(href="#").nav-popup__item спецнефтегаз-т
+				a(href="#").nav-popup__item уиц ронктд “спектр”
+				a(href="#").nav-popup__item интера
+				a(href="#").nav-popup__item мнпо “спектр”
+				a(href="#").nav-popup__item асц сварка стройтэк
+				a(href="#").nav-popup__item зто
+
+.modal.fade(id="Search", tabindex="-1", role="dialog" aria-hidden="true")
+	.modal-dialog
+		.modal-content
+			a.close(data-dismiss="modal", href="#")
+				include ../../../public_html/layout/images/svg/close.svg
+			.modal-title Поиск
+			form.search
+				input.search__input(type="text", name="q")
+				button.search__submit(type="submit", value="")
+					include ../../../public_html/layout/images/svg/seach.svg
+
+.modal.fade(id="Contacts", tabindex="-1", role="dialog" aria-hidden="true")
+	.modal-dialog
+		.modal-content
+			a.close(data-dismiss="modal", href="#")
+				include ../../../public_html/layout/images/svg/close.svg
+			.modal-title связаться с нами
+			a.phone(href="tel:+78002005001") 8 800 200 500 1
+			.full-width.center
+				a.form-trigger(href="#") напишите нам
+			form.form
+				label представьтесь, пожалуйста
+				input(name="name", type="text")
+				label какую компанию вы представляете
+				input(name="company", type="text")
+				label Ваш e-mail
+				input(name="email", type="email")
+				label телефон для связи с вами
+				input(name="phone", type="text")
+				label ваше сообщение
+				textarea
+				.row
+					.col-xs-6
+						label.left введите данный код
+						.captcha
+					.col-xs-6
+						label.right в это поле
+						input(name="captcha_word", type="text")
+				.center
+					input(type="submit", value="Отправить")
+footer.footer
+	.container
+		.row
+			.col-xs-8.col-sm-3.col-sm-4.col-md-3
+				.copyright © 2014 ООО «аргус пайплайн сервис» 
+			.col-sm-3.col-md-2
+				.contacts
+					span Москва,  ул. усачева, 35А <br>
+					a.contacts_link(href="mailto:info@argusweld.ru") info@oooaps.ru
+			.col-sm-2
+				.map
+					a(href="#") карта сайта
+			.col-xs-4.col-sm-3.col-md-2.col-lg-2.social
+				a(href="#").social__item
+					include ../../../public_html/layout/images/svg/facebook.svg
+				a(href="#").social__item
+					include ../../../public_html/layout/images/svg/twitter.svg
+				a(href="#").social__item
+					include ../../../public_html/layout/images/svg/google.svg
+				a(href="#").social__item
+					include ../../../public_html/layout/images/svg/pinterest.svg
+			.col-md-3.col-lg-3.visible-md-block.visible-lg-block
+				a.radia(href="http://radia.ru", target="_blank")
+					include ../../../public_html/layout/images/svg/radia.svg
+					.radia__content
+						| разработка сайта <br>radia interactive
+
+
+script(type="text/javascript", src="./layout/js/frontend.js")
+</body>
+</html>

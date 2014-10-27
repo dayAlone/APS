@@ -1,0 +1,109 @@
+include includes/header
+
+<body class="catalog catalog-category">
+.wrap
+	include includes/toolbar
+
+	main.page
+		.container
+			.page__frame
+				.sections
+					.sections__item
+						a.sections__title(href="#", style="background-image: url(./layout/images/s-1.jpg)")
+							.sections__icon
+								include ../../public_html/layout/images/svg/i-1.svg
+							.sections__name Технологии автоматической сварки труб
+					.sections__item
+						a.sections__title(href="#", style="background-image: url(./layout/images/s-2.jpg)")
+							.sections__icon
+								include ../../public_html/layout/images/svg/i-2.svg
+							.sections__name Сварочные технологии
+					.sections__item.sections__item--open
+						a.sections__title(href="#", style="background-image: url(./layout/images/s-3.jpg)")
+							.sections__icon
+								include ../../public_html/layout/images/svg/i-3.svg
+							.sections__name Неразрушающий контроль
+						.sections__content
+							ul.sub-sections
+								li.sub-sections__item
+									a.sub-sections__title(href="#") 
+										include ../../public_html/layout/images/svg/arrow3.svg
+										| Ренгенографический контроль
+								li.sub-sections__item
+									a.sub-sections__title(href="#").sub-sections__title--link
+										include ../../public_html/layout/images/svg/arrow3.svg
+										| Анализаторы металлов и сплавов
+								li.sub-sections__item
+									a.sub-sections__title(href="#") 
+										include ../../public_html/layout/images/svg/arrow3.svg
+										| Акустический контроль
+								li.sub-sections__item
+									a.sub-sections__title(href="#") 
+										include ../../public_html/layout/images/svg/arrow3.svg
+										| Визуальный и измерительный контроль
+								li.sub-sections__item
+									a.sub-sections__title(href="#") 
+										include ../../public_html/layout/images/svg/arrow3.svg
+										| Контроль твердости
+								li.sub-sections__item.sub-sections__item--open
+									a.sub-sections__title(href="#") 
+										include ../../public_html/layout/images/svg/arrow3.svg
+										| Контроль катодной защиты подземных трубопроводов
+									.sub-sections__content
+										ul.sub-sub-sections
+											li.sub-sub-sections__item
+												a.sub-sub-sections__title.sub-sub-sections__title--link(href="#") Ультразвуковые дефектоскопы
+											li.sub-sub-sections__item
+												a.sub-sub-sections__title(href="#") Ультразвуковые дефектоскопы на фазированных решетках
+												.sub-sub-sections__content
+													ul.sub-sub-sub-sections
+														li.sub-sub-sub-sections__item
+															a.sub-sub-sub-sections__title.sub-sub-sections__title--link(href="#") Вложенность уровень 4, если присутствует
+														li.sub-sub-sub-sections__item
+															a.sub-sub-sub-sections__title.sub-sub-sections__title--link(href="#") Вложенность уровень 4, если присутствует
+														li.sub-sub-sub-sections__item
+															a.sub-sub-sub-sections__title.sub-sub-sections__title--link(href="#") Вложенность уровень 4, если присутствует
+											li.sub-sub-sections__item
+												a.sub-sub-sections__title(href="#") Ультразвуковые толщиномеры
+								li.sub-sections__item
+									a.sub-sections__title(href="#") 
+										include ../../public_html/layout/images/svg/arrow3.svg
+										| Контроль физико-химических свойств материалов
+								li.sub-sections__item
+									a.sub-sections__title(href="#") 
+										include ../../public_html/layout/images/svg/arrow3.svg
+										| Контроль качества покрытий
+								li.sub-sections__item
+									a.sub-sections__title(href="#") 
+										include ../../public_html/layout/images/svg/arrow3.svg
+										| Контроль кабельных линий
+								li.sub-sections__item
+									a.sub-sections__title(href="#") 
+										include ../../public_html/layout/images/svg/arrow3.svg
+										| Капиллярный контроль
+								li.sub-sections__item
+									a.sub-sections__title(href="#") 
+										include ../../public_html/layout/images/svg/arrow3.svg
+										| Контроль герметичности
+
+					.sections__item
+						a.sections__title(href="#", style="background-image: url(./layout/images/s-4.jpg)")
+							.sections__icon
+								include ../../public_html/layout/images/svg/i-4.svg
+							.sections__name Антикоррозийная защита
+					.sections__item
+						a.sections__title(href="#", style="background-image: url(./layout/images/s-5.jpg)")
+							.sections__icon
+								include ../../public_html/layout/images/svg/i-5.svg
+							.sections__name Строительная техника
+					.sections__item
+						a.sections__title(href="#", style="background-image: url(./layout/images/s-6.jpg)")
+							.sections__icon
+								include ../../public_html/layout/images/svg/i-6.svg
+							.sections__name Специальное оборудование для работы с трубами
+					.sections__item
+						a.sections__title(href="#", style="background-image: url(./layout/images/s-7.jpg)")
+							.sections__icon
+								include ../../public_html/layout/images/svg/i-7.svg
+							.sections__name Вспомогательное оборудование
+include includes/footer
