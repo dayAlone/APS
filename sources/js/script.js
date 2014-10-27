@@ -10,13 +10,14 @@
   map = void 0;
 
   size = function() {
-    autoHeight($('.page .tech'), '.tech__item', '.tech__title', false, true);
-    if (!newsInit) {
-      newsInit = true;
-      return $('article:not(.index-page) .news').isotope({
-        itemSelector: '.news__item'
-      });
-    }
+    return autoHeight($('.page .tech'), '.tech__item', '.tech__title', false, true);
+
+    /*
+    	if !newsInit
+    		newsInit = true
+    		$('article:not(.index-page) .news').isotope
+    			itemSelector: '.news__item'
+     */
   };
 
   urlInitial = void 0;

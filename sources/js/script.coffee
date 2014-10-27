@@ -6,10 +6,12 @@ map = undefined
 
 size = ->
 	autoHeight($('.page .tech'), '.tech__item', '.tech__title', false, true)
+	###
 	if !newsInit
 		newsInit = true
 		$('article:not(.index-page) .news').isotope
 			itemSelector: '.news__item'
+	###
 
 urlInitial = undefined
 
