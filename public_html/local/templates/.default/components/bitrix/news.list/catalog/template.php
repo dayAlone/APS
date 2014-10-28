@@ -28,3 +28,4 @@ if($ar_res = $res->GetNext()){
 	endforeach;
 ?>
 </div>
+<?=$arResult["NAV_STRING"]?>

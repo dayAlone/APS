@@ -2632,6 +2632,28 @@ article {
   background-repeat: no-repeat;
   background-position: center center;
 }
+.pages {
+  width: 100%;
+  margin-top: 20px;
+}
+.pages__item {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  text-align: center;
+  margin-right: 10px;
+  border: 1px solid #0082dc;
+  line-height: 30px;
+  color: #0082dc;
+  font-size: 13px;
+}
+.pages__item:hover {
+  color: #0082dc;
+}
+.pages__item--active {
+  color: #fff !important;
+  background: #0082dc;
+}
 .sidebar {
   float: left;
   width: 100%;
