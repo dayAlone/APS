@@ -1,22 +1,26 @@
-<?
+<?$this->setFrameMode(true);
 $item = $arResult;
-if(isset($item['ACTIVE_FROM'])):
+$props = &$item["PROPS"];
 ?>
-<div class="date"><?=$item['ACTIVE_FROM']?></div>
-<div class="divider"></div>
-<?endif;?>
-<h1 data-url="<?=$item['DETAIL_PAGE_URL']?>"><?=$item['NAME']?></h1>
-<div class="row">
-	<div class="col-md-<?=(count($item["GALLERY"])>0?"7":"12")?>">
-	  <?=$item["~DETAIL_TEXT"]?>
+<div class="product">
+	<div class="row">
+	  <div class="col-md-6 col-md-push-6">
+	  	
+	  </div>
+	  <div class="col-md-6 col-md-pull-6">
+	  	<h1 class="product__name"><?=$item['NAME']?></h1>
+	  	<div class="product__text">
+	  		<?=$item['DETAIL_TEXT']?>
+	  	</div>
+	  </div>
 	</div>
-	<?if(count($item["GALLERY"])>0):?>
-	<div class="col-md-5">
-		<div class="fotorama" data-width="100%" data-loop="true" data-ratio="800/600">
-			<?foreach ($item["GALLERY"] as $img):?>
-				<img src="<?=$img['value']?>">
-			<?endforeach;?>
-		</div>
+		<!-- Nav tabs -->
+	<div class="tabs" role="tablist">
+		<ul>
+			<li class="active"><a class="tabs__link" href="#description" role="tab" data-toggle="tab">Описание</a></li>
+			<li><a class="tabs__link" href="#tech" role="tab" data-toggle="tab">Характеристики</a></li>
+		</ul>
+		<div class="tabs__content fade in active" id="description">...</div>
+		<div class="tabs__content fade" id="tech">...</div>
 	</div>
-	<?endif;?>
 </div>

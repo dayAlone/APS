@@ -41,27 +41,7 @@ else:
     "IBLOCK_TYPE"   => "content",
     "SET_TITLE"     => "Y",
     "CACHE_TYPE"    => "A",
-    "FIELD_CODE"    => array("PREVIEW_TEXT"),
-    "PROPERTY_CODE" => array(
-          1 => "YEAR",
-          2 => "ENGINE",
-          3 => "CABINE",
-          4 => "COMPLECT",
-          5 => "BODY",
-          6 => "MASS",
-          7 => "PLACE",
-          8 => "AVAILABILITY",
-          9 => "STATUS",
-          10 => "TYPE",
-          11 => "TRANSMISSION",
-          12 => "PRICE",
-          13 => "PRICE_SALE",
-          14 => "CHASSIS",
-          15 => "DEPRECIATION",
-          16 => "PHOTOS",
-          17 => "WORK",
-          18 => "PRICE_ORDER"
-        ),
+    "PROPERTY_CODE" => array("PHOTOS", "ABOUT", "ADDITIONAL"),
   ));
 endif;
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');

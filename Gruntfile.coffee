@@ -12,7 +12,7 @@ module.exports = (grunt)->
 			jquery :
 				js : '/jquery/dist/jquery.js'
 			bootstrap :
-				js  : ['/bootstrap/js/transition.js', '/bootstrap/js/modal.js']
+				js  : ['/bootstrap/js/transition.js', '/bootstrap/js/modal.js', '/bootstrap/js/tab.js']
 				css : '/../sources/css/bootstrap.css'
 			slick :
 				js  : '/slick/slick/slick.js'

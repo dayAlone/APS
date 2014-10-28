@@ -393,6 +393,49 @@
 			color white !important
 			background #0082dc
 			
-
+.product
+	width 100%
+	&__name
+		font-size 35px
+		line-height 40px
+		color black
+		text-transform: uppercase
+		margin 0
+		padding 0
+		font-weight bold
+		margin-bottom 20px
+	&__text
+		font-size 14px
+		color #515050
+		p, li
+			font-size 14px
+			color #515050
+	.tabs
+		width 100%
+		margin-top 30px
+		ul
+			list-style none
+			padding 0
+			.active .tabs__link
+				background #0082dc
+		&__link
+			width 50%
+			background #8796a2
+			color white
+			font-size 19px
+			height 45px
+			line-height 49px
+			padding-left 20px
+			margin-bottom 10px
+			float left
+			font-weight bold
+			border-bottom 1px solid #5e7380
+			t(background)
+			&:first-of-type
+				border-right 1px solid #fff
+		&__content
+			display none
+			&.active
+				display block
 
 

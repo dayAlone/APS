@@ -160,6 +160,10 @@
 
   $(document).ready(function() {
     var closeDropdown, mapInit, openDropdown, timer, x;
+    $('.product__tabs a').click(function(e) {
+      e.preventDefault();
+      return $(this).tab('show');
+    });
     $('.catalog-category .sections a[href=#]').click(function(e) {
       var blockHeight, c, item, items;
       c = $(this).block().attr('class');

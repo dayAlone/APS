@@ -119,6 +119,9 @@ blur = ()->
 
 $(document).ready ->
 
+	$('.product__tabs a').click (e)->
+		e.preventDefault()
+		$(this).tab('show')
 
 	$('.catalog-category .sections a[href=#]').click (e)->
 		c           = $(this).block().attr 'class'
