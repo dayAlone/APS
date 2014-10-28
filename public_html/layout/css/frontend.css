@@ -5280,6 +5280,7 @@ article {
   width: 100%;
   border: 1px solid #697c89;
   padding: 15px 15px 7px 15px;
+  color: #1d2a3a;
   font-size: 13px;
   position: relative;
 }
@@ -5299,7 +5300,8 @@ article {
   margin-top: 20px;
 }
 .product .params .row {
-  padding: 7px 0px;
+  margin: 0;
+  padding: 7px 0px 3px;
 }
 .product .params .row + .row {
   border-top: 1px solid #eef2f5;

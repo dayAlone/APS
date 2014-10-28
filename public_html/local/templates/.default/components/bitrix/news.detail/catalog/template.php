@@ -58,7 +58,7 @@ $props = &$item["PROPS"];
 									else:
 										if(strlen($elm['property_name'])>0):
 										?>
-										<div class="row">
+										<div class="row no-gutter">
 											<div class="col-md-5 col-xs-5"><?=$elm['property_name']?>:</div>
 											<div class="col-md-7 col-xs-7"><?=$elm['property_value']?></div>
 										</div>
