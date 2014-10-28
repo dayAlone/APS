@@ -191,11 +191,7 @@
         $(this).block('content').velocity({
           properties: "transition.slideUpOut",
           options: {
-            duration: 300,
-            progress: function(elements, percentComplete, timeRemaining, timeStart) {
-              console.log((percentComplete * 100) + "%");
-              return console.log(timeRemaining + "ms remaining!");
-            },
+            duration: 200,
             complete: function() {
               return $(this).closest("." + c + "__item").mod('open', false);
             }
@@ -231,10 +227,13 @@
       }
       return e.preventDefault();
     });
-    addTrigger();
-    $('a[onclick*=grain_TableAddRow]').click(function() {
-      return addTrigger();
-    });
+
+    /*
+    	addTrigger()
+    
+    	$('a[onclick*=grain_TableAddRow]').click ()->
+    		addTrigger()
+     */
     $('a.captcha_refresh').click(function(e) {
       getCaptcha();
       return e.preventDefault();

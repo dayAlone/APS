@@ -125,6 +125,11 @@
 			font-weight: bold
 
 .page
+	&__divider
+		height 1px 
+		background #c6cdd2
+		width 100%
+		margin 10px 0
 	&__frame
 		background #ffffff
 		padding 35px 45px
@@ -141,12 +146,9 @@
 		text-transform: uppercase
 		padding 0
 		font-size 35px
-		padding-bottom 20px
-		margin-bottom 30px
 		line-height 35px
 		color #233347
 		font-weight bold
-		border-bottom 1px solid #007bf8
 	&__sub-title
 		font-size 22px
 		margin-bottom 0
@@ -186,6 +188,7 @@
 			min-height 130px
 			&--open
 				transition-delay 0.2s
+				transition-duraion .2s
 				.sections__content
 					display block
 				.sections__icon
@@ -246,6 +249,7 @@
 			t(min-height, .4s)
 			&--open
 				transition-delay 0.2s
+				transition-duraion .2s
 				.sub-sections__content
 					display block
 				.sub-sections__title
@@ -290,6 +294,7 @@
 			t(min-height, .4s)
 			&--open
 				transition-delay 0.2s
+				transition-duraion .2s
 				.sub-sub-sections__content
 					display block
 		&__title

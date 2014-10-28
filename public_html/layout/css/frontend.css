@@ -4661,6 +4661,12 @@ article {
   text-decoration: underline;
   font-weight: bold;
 }
+.page__divider {
+  height: 1px;
+  background: #c6cdd2;
+  width: 100%;
+  margin: 10px 0;
+}
 .page__frame {
   background: #fff;
   padding: 35px 45px;
@@ -4680,12 +4686,9 @@ article {
   text-transform: uppercase;
   padding: 0;
   font-size: 35px;
-  padding-bottom: 20px;
-  margin-bottom: 30px;
   line-height: 35px;
   color: #233347;
   font-weight: bold;
-  border-bottom: 1px solid #007bf8;
 }
 .page__sub-title {
   font-size: 22px;
@@ -4744,6 +4747,7 @@ article {
   -o-transition-delay: 0.2s;
   -ms-transition-delay: 0.2s;
   transition-delay: 0.2s;
+  transition-duraion: 0.2s;
 }
 .catalog-category .sections__item--open .sections__content {
   display: block;
@@ -4857,6 +4861,7 @@ article {
   -o-transition-delay: 0.2s;
   -ms-transition-delay: 0.2s;
   transition-delay: 0.2s;
+  transition-duraion: 0.2s;
 }
 .catalog-category .sub-sections__item--open .sub-sections__content {
   display: block;
@@ -4995,6 +5000,7 @@ article {
   -o-transition-delay: 0.2s;
   -ms-transition-delay: 0.2s;
   transition-delay: 0.2s;
+  transition-duraion: 0.2s;
 }
 .catalog-category .sub-sub-sections__item--open .sub-sub-sections__content {
   display: block;

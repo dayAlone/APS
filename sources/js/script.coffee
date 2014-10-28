@@ -126,7 +126,7 @@ $(document).ready ->
 		
 		blockHeight = $(this).block('content').outerHeight()
 		items       = $(this).parents('*[class*="item"]')
-			
+
 		if !item.hasMod('open')
 			
 			$.each items, (key, el)->
@@ -148,10 +148,7 @@ $(document).ready ->
 			$(this).block('content').velocity
 				properties: "transition.slideUpOut"
 				options:
-					duration: 300
-					progress: (elements, percentComplete, timeRemaining, timeStart)->
-						console.log((percentComplete * 100) + "%");
-						console.log(timeRemaining + "ms remaining!");
+					duration: 200
 					complete: ()->
 						$(this).closest(".#{c}__item").mod('open', false)
 						
@@ -180,11 +177,13 @@ $(document).ready ->
 						
 		e.preventDefault()
 
+	###
 	addTrigger()
 
 	$('a[onclick*=grain_TableAddRow]').click ()->
 		addTrigger()
-
+	###
+	
 	$('a.captcha_refresh').click (e)->
 		getCaptcha()
 		e.preventDefault()
