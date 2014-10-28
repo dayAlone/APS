@@ -11070,7 +11070,7 @@ function makeArray( obj ) {
   $.BEM = new BEM({
     namePattern: '[a-zA-Z0-9-]+',
     elemPrefix: '__',
-    modPrefix: '_',
+    modPrefix: '--',
     modDlmtr: '_'
   });
 
@@ -18477,6 +18477,29 @@ if ('undefined' !== typeof window.ParsleyValidator)
 
   $(document).ready(function() {
     var closeDropdown, mapInit, openDropdown, timer, x;
+    $('.catalog-category .sections a[href=#]').click(function(e) {
+      var c, item;
+      c = $(this).block().attr('class');
+      item = $(this).closest("." + c + "__item");
+      if (!item.hasMod('open')) {
+        $(this).closest("." + c + "__item").mod('open', true);
+        $(this).block('content').velocity({
+          properties: "transition.slideDownIn",
+          options: {
+            duration: 300
+          }
+        });
+      } else {
+        $(this).closest("." + c + "__item").mod('open', false);
+        $(this).block('content').velocity({
+          properties: "transition.slideUpOut",
+          options: {
+            duration: 300
+          }
+        });
+      }
+      return e.preventDefault();
+    });
     $('.search-trigger').click(function(e) {
       if ($('.toolbar .container').width() <= 750) {
         $('#Search').modal();

@@ -594,9 +594,12 @@ body
 	&:after
 		content ""
 		display block
-	for x in about contacts catalog-category
+	b('bg-index.jpg', top center no-repeat, black, cover)
+	for x in about contacts
 		.{x} &
 			b('bg-'+x+'.jpg', top center no-repeat, black, cover)
+	.catalog-category &
+		b('bg-catalog-category.jpg', top center no-repeat, black)
 html
 	height 100%
 
@@ -930,6 +933,8 @@ article
 				vertical-align: center
 				display inline-block
 				margin 0 38px
+				max-height 34px
+				max-width 75px
 	.news
 		full-width()
 		position relative
@@ -1071,6 +1076,7 @@ article
 			position relative
 			z-index 2
 		&__content
+			display none
 			width 100%
 			padding 50px 120px 30px
 	.sub-sections
@@ -1088,6 +1094,7 @@ article
 						path
 							fill #007bf8
 		&__content
+			display none
 			width 100%
 			padding-top 15px
 		&__title
@@ -1139,6 +1146,7 @@ article
 				&:hover
 					border-line(#007bf8, 15px)
 		&__content
+			display none
 			width 100%
 			padding 15px 0 5px
 	.sub-sub-sub-sections

@@ -15,9 +15,12 @@ body
 	&:after
 		content ""
 		display block
-	for x in about contacts catalog-category
+	b('bg-index.jpg', top center no-repeat, black, cover)
+	for x in about contacts
 		.{x} &
 			b('bg-'+x+'.jpg', top center no-repeat, black, cover)
+	.catalog-category &
+		b('bg-catalog-category.jpg', top center no-repeat, black)
 html
 	height 100%
 

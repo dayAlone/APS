@@ -11070,7 +11070,7 @@ function makeArray( obj ) {
   $.BEM = new BEM({
     namePattern: '[a-zA-Z0-9-]+',
     elemPrefix: '__',
-    modPrefix: '_',
+    modPrefix: '--',
     modDlmtr: '_'
   });
 

@@ -3,7 +3,7 @@
 	[
 		{
 			"follow_symlinks": true,
-			"path": "public_html/local/templates/acc"
+			"path": "public_html/local/templates/.default/components"
 		},
 		{
 			"follow_symlinks": true,

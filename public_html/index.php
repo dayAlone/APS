@@ -2,7 +2,6 @@
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle('Аргус Пайплайн Сервис');
 $APPLICATION->SetPageProperty('body_class', "index");
-
 $APPLICATION->IncludeComponent(
   "bitrix:news.list", 
   "slider",
@@ -32,8 +31,6 @@ $APPLICATION->IncludeComponent(
   ),
   false
 );
-?>
-<?
 $APPLICATION->IncludeComponent("bitrix:catalog.section.list", "sections_index", array(
     "IBLOCK_TYPE"  => "news",
     "IBLOCK_ID"    => "1",
@@ -42,10 +39,21 @@ $APPLICATION->IncludeComponent("bitrix:catalog.section.list", "sections_index", 
     "SECTION_USER_FIELDS" => array("UF_SVG")
 ),
 false
-);?>
-  <div class="partners">
-    <div class="container"><a href="#" class="partners__item"><img src="./layout/images/l-1.jpg"></a><a href="#" class="partners__item"><img src="./layout/images/l-2.jpg"></a><a href="#" class="partners__item"><img src="./layout/images/l-3.jpg"></a><a href="#" class="partners__item"><img src="./layout/images/l-4.jpg"></a><a href="#" class="partners__item"><img src="./layout/images/l-5.jpg"></a><a href="#" class="partners__item"><img src="./layout/images/l-6.jpg"></a><a href="#" class="partners__item"><img src="./layout/images/l-7.jpg"></a></div>
-  </div>
-<?
+);
+$APPLICATION->IncludeComponent(
+  "bitrix:news.list", 
+  "partners_index",
+  array(
+    "IBLOCK_ID"   => 4,
+    "NEWS_COUNT"  => "10",
+    "SORT_BY1"    => "SORT",
+    "SORT_ORDER1" => "ASC",
+    "DETAIL_URL"  => "/",
+    "CACHE_TYPE"  => "A",
+    "SET_TITLE"   => "N",
+    "PROPERTY_CODE" => Array("LINK"),
+  ),
+  false
+);
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');
 ?>

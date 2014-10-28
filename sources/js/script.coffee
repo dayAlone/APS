@@ -119,6 +119,26 @@ blur = ()->
 
 $(document).ready ->
 
+
+	$('.catalog-category .sections a[href=#]').click (e)->
+		c = $(this).block().attr 'class'
+		item = $(this).closest(".#{c}__item")
+		if !item.hasMod('open')
+			$(this).closest(".#{c}__item").mod('open', true)
+			$(this).block('content').velocity
+				properties: "transition.slideDownIn"
+				options:
+					duration: 300
+					
+		else
+			$(this).closest(".#{c}__item").mod('open', false)
+			$(this).block('content').velocity
+				properties: "transition.slideUpOut"
+				options:
+					duration: 300
+		e.preventDefault()
+
+
 	$('.search-trigger').click (e)->
 		if $('.toolbar .container').width() <= 750
 			$('#Search').modal()
