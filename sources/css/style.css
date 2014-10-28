@@ -2743,10 +2743,13 @@ article {
 .product__image {
   width: 100%;
 }
-.product__image-big a {
+.product__image .row > div {
+  padding: 0 10px;
+}
+.product__image-big a,
+.product__image-small a {
   display: none;
   width: 100%;
-  display: inline-block;
   height: 300px;
   -webkit-background-size: contain;
   -moz-background-size: contain;
@@ -2754,8 +2757,20 @@ article {
   background-position: top center;
   background-repeat: no-repeat;
 }
-.product__image-big a.active {
+.product__image-big a.active,
+.product__image-small a.active {
   display: block;
+}
+.product__image-small a {
+  height: 75px;
+  display: block;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  margin-bottom: 8px;
+}
+.product__image-small a.active {
+  border: 2px solid #ff282d;
 }
 .product .params {
   width: 100%;

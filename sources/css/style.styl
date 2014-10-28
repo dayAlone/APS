@@ -1295,17 +1295,29 @@ article
 				display block
 	&__image
 		width 100%
-		&-big
+		.row
+			> div
+				padding 0 10px
+		&-big, &-small
 			a
 				display none
 				width 100%
-				display inline-block
 				height 300px
 				background-size contain
 				background-position top center
 				background-repeat no-repeat
 				&.active
 					display block
+		&-small
+			a
+				height 75px
+				display block
+				background-size cover
+				margin-bottom 8px
+				&.active
+					border 2px solid #ff282d
+				
+			
 	.params
 		width 100%
 		border 1px solid #697c89
