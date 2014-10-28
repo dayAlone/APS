@@ -17,7 +17,7 @@
         return ($a['sort'] < $b['sort']) ? -1 : 1;
     }
     $gallery     = array();
-    $prop_names  = array("GALLERY","IMAGES");
+    $prop_names   = array("GALLERY","IMAGES");
     foreach ($prop_names as $prop_name) {
         $description = $item['PROPERTIES'][$prop_name]['DESCRIPTION'];
         if(is_array($item['PROPERTIES'][$prop_name]['VALUE'])):
