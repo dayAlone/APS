@@ -2,6 +2,12 @@
 $this->setFrameMode(true);
 if(count($arResult['SECTIONS'])>0):
     $arSections = $arResult['SECTIONS'];
+    if(isset($arParams['CACHE_NOTES'])) {
+        $rsPath = GetIBlockSectionPath($arResult['IBLOCK_ID'], $arParams['CACHE_NOTES']);
+        $treeSections = array();
+        while($arPath = $rsPath->GetNext())
+          $treeSections[] = $arPath['ID'];
+    }
 ?>
 
 <div class="sections">
@@ -23,7 +29,7 @@ if(count($arResult['SECTIONS'])>0):
         switch ($item['DEPTH_LEVEL']):
             case 1:
                 ?>
-                    <div class="sections__item">
+                    <div class="sections__item <?=(in_array($item['ID'], $treeSections)?"sections__item--open":"")?>" data-id="<?=$item['ID']?>">
                         <a href="<?=(!$hasChild?$item['SECTION_PAGE_URL']:"#")?>" style="background-image: url(<?=$item['PICTURE']['SRC']?>)" class="sections__title">
                           <div class="sections__icon"><?=file_get_contents($_SERVER['DOCUMENT_ROOT'].CFile::GetPath($item['UF_SVG']))?></svg>
                           </div>
@@ -43,7 +49,7 @@ if(count($arResult['SECTIONS'])>0):
                 if($firstChild):
                     ?><div class="<?=$class?>sections"><?
                 endif;?>
-                <div class="<?=$class?>sections__item">
+                <div class="<?=$class?>sections__item <?=(in_array($item['ID'], $treeSections)?$class."sections__item--open":"")?>">
                     <a href="<?=(!$hasChild?$item['SECTION_PAGE_URL']:"#")?>" class="<?=$class?>sections__title <?=(!$hasChild?$class."sections__title--link":"")?>">
                         <?=($item['DEPTH_LEVEL']==2?svg('arrow3'):"")?>
                         <?=$item['NAME']?>
@@ -58,4 +64,11 @@ if(count($arResult['SECTIONS'])>0):
         endswitch;
     endforeach;?>
 </div>
+<?if(intval($treeSections[0])>0):?>
+<script>
+    $(function(){
+        $("html").velocity("scroll", { offset: $('div[data-id="<?=$treeSections[0]?>"]').offset().top});
+    })
+</script>
+<?endif;?>
 <?endif;?>
