@@ -1586,6 +1586,12 @@ body {
   -moz-background-size: cover;
   background-size: cover;
 }
+.catalog-list .wrap {
+  background: #000 url("../images/bg-catalog-list.jpg") top center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
 .catalog-category .wrap {
   background: #000 url("../images/bg-catalog-category.jpg") top center no-repeat;
 }
@@ -2586,6 +2592,9 @@ article {
   width: 100%;
   padding: 30px 0;
   border-bottom: 1px solid #e3e6e9;
+}
+.products__item:last-of-type {
+  border-color: #c6cdd2;
 }
 .products__name {
   display: inline-block;

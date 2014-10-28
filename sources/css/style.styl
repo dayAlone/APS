@@ -594,7 +594,7 @@ body
 		content ""
 		display block
 	b('bg-index.jpg', top center no-repeat, black, cover)
-	for x in about contacts
+	for x in about contacts catalog-list
 		.{x} &
 			b('bg-'+x+'.jpg', top center no-repeat, black, cover)
 	.catalog-category &
@@ -1198,6 +1198,8 @@ article
 		width 100%
 		padding 30px 0
 		border-bottom 1px solid #e3e6e9
+		&:last-of-type
+			border-color #c6cdd2
 	&__name
 		display inline-block
 		font-size 18px

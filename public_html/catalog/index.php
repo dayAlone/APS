@@ -17,12 +17,13 @@ if(!isset($_REQUEST['ELEMENT_CODE'])&&!isset($_GLOBALS['currentCatalogSection'])
   false
   );
 elseif(isset($_GLOBALS['currentCatalogSection'])):
+  $APPLICATION->SetPageProperty('body_class', "catalog catalog-list");
   $APPLICATION->IncludeComponent(
   "bitrix:news.list", 
   "catalog",
   array(
     "IBLOCK_ID"   => 1,
-    "NEWS_COUNT"  => "20",
+    "NEWS_COUNT"  => "10",
     "SORT_BY1"    => "SORT",
     "SORT_ORDER1" => "ASC",
     "DETAIL_URL"  => "/catalog/#ELEMENT_CODE#/",
