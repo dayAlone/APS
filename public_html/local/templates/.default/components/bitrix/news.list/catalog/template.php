@@ -16,7 +16,7 @@ if($ar_res = $res->GetNext()){
 				<div class="col-sm-2">
 					<a href="<?=$item['DETAIL_PAGE_URL']?>" class="products__image" style="background-image: url(<?=$item['PREVIEW_PICTURE']['SRC']?>)"></a>
 				</div>
-				<div class="col-sm-8">
+				<div class="col-sm-9">
 					<a href="<?=$item['DETAIL_PAGE_URL']?>" class="products__name"><?=$item['NAME']?></a>
 					<div class="products__text">
 						<?=$item['PREVIEW_TEXT']?>
