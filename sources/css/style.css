@@ -2740,6 +2740,23 @@ article {
 .product .tabs__content.active {
   display: block;
 }
+.product__image {
+  width: 100%;
+}
+.product__image-big a {
+  display: none;
+  width: 100%;
+  display: inline-block;
+  height: 300px;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.product__image-big a.active {
+  display: block;
+}
 .product .params {
   width: 100%;
   border: 1px solid #697c89;

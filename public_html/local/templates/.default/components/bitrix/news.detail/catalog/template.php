@@ -5,7 +5,18 @@ $props = &$item["PROPS"];
 <div class="product">
 	<div class="row">
 	  <div class="col-md-6 col-md-push-6">
-	  	
+	  	<div class="product__image">
+	  		<div class="row">
+	  			<div class="col-xs-7">
+	  				<div class="product__image-big">
+			  			<?foreach ($props['PHOTOS'] as $key => $value):?>
+		                	<a id="big-<?=$key?>" style="background-image: url(<?=$value['small']?>)" rel="prettyPhoto[]" href="<?=$value['value']?>" <?=($key==0?'class="active"':'')?>></a>
+		                <?endforeach;?>
+			  		</div>
+	  			</div>
+	  		</div>
+	  		
+	  	</div>
 	  </div>
 	  <div class="col-md-6 col-md-pull-6">
 	  	<h1 class="product__name"><?=$item['NAME']?></h1>
