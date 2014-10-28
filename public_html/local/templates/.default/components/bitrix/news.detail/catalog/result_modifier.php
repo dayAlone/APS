@@ -21,7 +21,9 @@ foreach ($arResult["PROPERTIES"] as $key => $prop):
     switch ($prop['CODE']):
         case "ABOUT":
         case "ADDITIONAL":
-            $props[$prop["CODE"]] = html_entity_decode($prop["VALUE"]['TEXT']);
+            if(count($prop["VALUE"])>0)
+                if(strlen($prop["VALUE"][0]['property_name'])>0)
+                    $props[$prop["CODE"]] = $prop["VALUE"];
         break; 
         case "PHOTOS":
             $gallery     = array();

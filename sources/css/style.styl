@@ -594,7 +594,7 @@ body
 		content ""
 		display block
 	b('bg-index.jpg', top center no-repeat, black, cover)
-	for x in about contacts catalog-list
+	for x in about contacts catalog
 		.{x} &
 			b('bg-'+x+'.jpg', top center no-repeat, black, cover)
 	.catalog-category &
@@ -1258,16 +1258,22 @@ article
 		p, li
 			font-size 14px
 			color #515050
+		p
+			margin-bottom 15px
 	.tabs
 		width 100%
 		margin-top 30px
 		ul
 			list-style none
 			padding 0
+			li
+				display inline-block
+				width 50%
 			.active .tabs__link
 				background #0082dc
 		&__link
-			width 50%
+			display inline-block
+			width 100%
 			background #8796a2
 			color white
 			font-size 19px
@@ -1275,7 +1281,6 @@ article
 			line-height 49px
 			padding-left 20px
 			margin-bottom 10px
-			float left
 			font-weight bold
 			border-bottom 1px solid #5e7380
 			t(background)
@@ -1283,8 +1288,33 @@ article
 				border-right 1px solid #fff
 		&__content
 			display none
+			p, li
+				font-size 14px
+				color #515050
 			&.active
 				display block
+	.params
+		width 100%
+		border 1px solid #697c89
+		padding 15px 15px 7px 15px
+		&--list
+			padding 9px 15px 2px 15px
+		font-size 13px
+		position relative
+		&__title
+			font-weight bold
+			position absolute
+			padding 0 4px
+			background white
+			top -7px
+			left 10px
+			text-transform: uppercase
+		& + .params
+			margin-top 20px
+		.row
+			& + .row
+				border-top 1px solid #eef2f5
+			padding 7px 0px
 
 
 

@@ -17,10 +17,63 @@ $props = &$item["PROPS"];
 		<!-- Nav tabs -->
 	<div class="tabs" role="tablist">
 		<ul>
-			<li class="active"><a class="tabs__link" href="#description" role="tab" data-toggle="tab">Описание</a></li>
-			<li><a class="tabs__link" href="#tech" role="tab" data-toggle="tab">Характеристики</a></li>
+			<?
+				$i=0;
+				$tabs = array('ADDITIONAL'=>array('name'=>'Описание', 'id'=>'description'), 'ABOUT'=>array('name'=>'Характеристики', 'id'=>'tech'));
+				foreach ($tabs as $key => $value):
+					if(count($props[$key])>0):
+						$i++;
+					?><li class="<?=($i==1?"active":"")?>"><a class="tabs__link" href="#<?=$value['id']?>" role="tab" data-toggle="tab"><?=$value['name']?></a></li><?
+					endif;
+				endforeach;
+			?>
 		</ul>
-		<div class="tabs__content fade in active" id="description">...</div>
-		<div class="tabs__content fade" id="tech">...</div>
+		<?
+			$i=0;
+			$tabs = array('description'=>'ADDITIONAL', 'tech'=>'ABOUT');
+			foreach ($tabs as $key => $value):
+				$title = false;
+				if(count($props[$value])>0):
+	        		$i++;?>
+	        		<div class="tabs__content fade in <?=($i==1?"active":"")?>" id="<?=$key?>">
+	        		<?
+	        		foreach ($props[$value] as $k => $elm):
+	        			switch ($value):
+	        				case 'ADDITIONAL':
+	        					?>
+								<div class="params">
+									<div class="params__title"><?=$elm['property_name']?></div>
+									<?=$elm['property_value']?>
+								</div>
+	        					<?
+	        					break;
+	        				case 'ABOUT':
+	        						if($elm['property_title']=="Y"):
+									  if(!$title) $title = true;
+									  if($k!=0) echo "</div>";
+									?>
+									  <div class="params params--list">
+									    <div class="params__title"><?=$elm['property_name']?></div>
+									<?
+									else:
+										if(strlen($elm['property_name'])>0):
+										?>
+										<div class="row">
+											<div class="col-md-5 col-xs-5"><?=$elm['property_name']?>:</div>
+											<div class="col-md-7 col-xs-7"><?=$elm['property_value']?></div>
+										</div>
+										<?
+										endif;
+									endif;
+									if(!isset($props[$value][$k+1])) echo "</div>";
+	        					break;
+	        			endswitch;
+	        		endforeach;
+	        		?>
+	        		</div>
+	        		<?
+	        	endif;
+			endforeach;
+		?>
 	</div>
 </div>

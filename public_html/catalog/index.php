@@ -17,7 +17,7 @@ if(!isset($_REQUEST['ELEMENT_CODE'])&&!isset($_GLOBALS['currentCatalogSection'])
   false
   );
 elseif(intval($_GLOBALS['currentCatalogSection'])>0):
-  $APPLICATION->SetPageProperty('body_class', "catalog catalog-list");
+  $APPLICATION->SetPageProperty('body_class', "catalog");
   $APPLICATION->IncludeComponent(
   "bitrix:news.list", 
   "catalog",
@@ -34,6 +34,7 @@ elseif(intval($_GLOBALS['currentCatalogSection'])>0):
   false
 );
 else:
+  $APPLICATION->SetPageProperty('body_class', "catalog");
   $APPLICATION->IncludeComponent("bitrix:news.detail","catalog",Array(
     "IBLOCK_ID"     => 1,
     "ELEMENT_CODE"  => $_REQUEST['ELEMENT_CODE'],
