@@ -22,7 +22,7 @@ elseif(isset($_GLOBALS['currentCatalogSection'])):
   "catalog",
   array(
     "IBLOCK_ID"   => 1,
-    "NEWS_COUNT"  => "1",
+    "NEWS_COUNT"  => "2",
     "SORT_BY1"    => "SORT",
     "SORT_ORDER1" => "ASC",
     "DETAIL_URL"  => "/catalog/#ELEMENT_CODE#/",
