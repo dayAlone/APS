@@ -339,6 +339,6 @@ module.exports = (grunt)->
 	
 	grunt.registerTask 'compile', ['copy', 'imagemin', 'svgmin', 'string-replace', 'less', 'concat:css_stylus', 'stylus', 'coffee', 'concat:js_plugins', 'concat:js_frontend', 'concat:css_frontend', 'csscomb', 'cssmin', 'uglify']#, 'jade']
 
-	grunt.registerTask 'compile_front', ['copy', 'less', 'concat:css_stylus', 'stylus', 'coffee', 'concat:js_plugins', 'concat:js_frontend', 'concat:css_frontend', 'csscomb', 'cssmin', 'uglify', 'jade']
+	grunt.registerTask 'front', ['copy', 'less', 'concat:css_stylus', 'stylus', 'coffee', 'concat:js_plugins', 'concat:js_frontend', 'concat:css_frontend', 'csscomb', 'cssmin', 'uglify', 'jade']
 
 	grunt.task.run 'notify_hooks'

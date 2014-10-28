@@ -599,7 +599,7 @@ body
 		.{x} &
 			b('bg-'+x+'.jpg', top center no-repeat, black, cover)
 	.catalog-category &
-		b('bg-catalog-category.jpg', top center no-repeat, blackXtn)
+		b('bg-catalog-category.jpg', top center no-repeat, black)
 html
 	height 100%
 
@@ -1029,7 +1029,10 @@ article
 		&__item
 			width 100%
 			margin-bottom 1px
+			t(min-height, .4s)
+			min-height 130px
 			&--open
+				transition-delay 0.2s
 				.sections__content
 					display block
 				.sections__icon
@@ -1087,7 +1090,9 @@ article
 		&__item
 			list-style none
 			margin-bottom 25px
+			t(min-height, .4s)
 			&--open
+				transition-delay 0.2s
 				.sub-sections__content
 					display block
 				.sub-sections__title
@@ -1129,7 +1134,9 @@ article
 		&__item
 			list-style none
 			margin-bottom 10px
+			t(min-height, .4s)
 			&--open
+				transition-delay 0.2s
 				.sub-sub-sections__content
 					display block
 		&__title

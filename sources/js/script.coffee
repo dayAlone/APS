@@ -121,25 +121,42 @@ $(document).ready ->
 
 
 	$('.catalog-category .sections a[href=#]').click (e)->
-		c = $(this).block().attr 'class'
-		item = $(this).closest(".#{c}__item")
+		c           = $(this).block().attr 'class'
+		item        = $(this).closest(".#{c}__item")
+		
+		blockHeight = $(this).block('content').outerHeight()
+		items       = $(this).parents('*[class*="item"]')
+			
 		if !item.hasMod('open')
 			
+			$.each items, (key, el)->
+				$(el).css
+					'minHeight': blockHeight + $(el).height()
+
 			$(this).block('content').velocity
 				properties: "transition.slideDownIn"
 				options:
 					duration: 300
-					complete: ()->
+					delay: 200
+					begin: ()->
 						$(this).closest(".#{c}__item").mod('open', true)
 					
 		else
-			
+			$.each items, (key, el)->
+				$(el).css
+					'minHeight': 0
 			$(this).block('content').velocity
 				properties: "transition.slideUpOut"
 				options:
 					duration: 300
+					progress: (elements, percentComplete, timeRemaining, timeStart)->
+						console.log((percentComplete * 100) + "%");
+						console.log(timeRemaining + "ms remaining!");
 					complete: ()->
 						$(this).closest(".#{c}__item").mod('open', false)
+						
+						
+
 		e.preventDefault()
 
 

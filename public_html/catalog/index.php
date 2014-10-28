@@ -1,8 +1,10 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-require($_SERVER['DOCUMENT_ROOT'].'/include/catalog.php');
 $APPLICATION->SetTitle('Каталог оборудования');
 $APPLICATION->SetPageProperty('body_class', "catalog catalog-category");
+
+require($_SERVER['DOCUMENT_ROOT'].'/include/catalog.php');
+
 $APPLICATION->IncludeComponent("bitrix:catalog.section.list", "catalog", array(
     "IBLOCK_TYPE"  => "news",
     "IBLOCK_ID"    => "1",
