@@ -1575,25 +1575,16 @@ body {
   display: block;
 }
 .about .wrap {
-  background: #000 url("../images/bg-about.jpg") top center no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+  background: #021b64 url("../images/bg-about.jpg") top center no-repeat;
 }
 .contacts .wrap {
-  background: #000 url("../images/bg-contacts.jpg") top center no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+  background: #021b64 url("../images/bg-contacts.jpg") top center no-repeat;
 }
 .catalog .wrap {
-  background: #000 url("../images/bg-catalog.jpg") top center no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+  background: #021b64 url("../images/bg-catalog.jpg") top center no-repeat;
 }
 .catalog-category .wrap {
-  background: #000 url("../images/bg-catalog-category.jpg") top center no-repeat;
+  background: #021b64 url("../images/bg-catalog-category.jpg") top center no-repeat;
 }
 .index .wrap {
   background: #fff;

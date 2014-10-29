@@ -16,11 +16,9 @@ body
 		content ""
 		display block
 	b('bg-index.jpg', top center no-repeat, black, cover)
-	for x in about contacts catalog
+	for x in about contacts catalog catalog-category
 		.{x} &
-			b('bg-'+x+'.jpg', top center no-repeat, black, cover)
-	.catalog-category &
-		b('bg-catalog-category.jpg', top center no-repeat, black)
+			b('bg-'+x+'.jpg', top center no-repeat, #021b64)
 	.index &
 		background white
 html

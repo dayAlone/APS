@@ -1,11 +1,7 @@
 <?
-$res = CIBlockSection::GetByID($arParams['PARENT_SECTION']);
-if($ar_res = $res->GetNext()){
-	global $APPLICATION;
-	$APPLICATION->SetTitle($ar_res['NAME']);
-}
+	$section = end($arResult['SECTION']['PATH']);
 ?>
-<h1 class="page__title"><?=$ar_res['NAME']?></h1>
+<h1 class="page__title"><?=$section['NAME']?></h1>
 <div class="page__divider"></div>
 <div class="products">
 <?
