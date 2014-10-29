@@ -2734,6 +2734,7 @@ article {
 }
 .product .tabs__content ul {
   margin-bottom: 0;
+  padding-left: 0;
 }
 .product .tabs__content ul li+li {
   padding-top: 7px;
