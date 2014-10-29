@@ -5268,6 +5268,13 @@ article {
 .product .tabs__content {
   display: none;
 }
+.product .tabs__content ul {
+  padding-left: 25px;
+  margin-bottom: 0;
+}
+.product .tabs__content ul li+li {
+  padding-top: 15px;
+}
 .product .tabs__content p,
 .product .tabs__content li {
   font-size: 14px;
