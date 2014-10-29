@@ -119,6 +119,15 @@ blur = ()->
 
 $(document).ready ->
 
+	$('.product__image-small a').click (e)->
+		elm = $($(this).data('id'))
+		if !elm.hasClass 'active'
+			$('.product__image-big a').removeClass 'active'
+			$('.product__image-small a').removeClass 'active'
+			$(this).addClass 'active'
+			elm.addClass 'active'
+		e.preventDefault()
+
 	$('.product__tabs a').click (e)->
 		e.preventDefault()
 		$(this).tab('show')

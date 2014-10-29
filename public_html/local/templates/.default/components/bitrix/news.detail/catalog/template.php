@@ -20,7 +20,7 @@ $props = &$item["PROPS"];
 	                    <?foreach ($props['PHOTOS'] as $key => $value):
 	                    	if($key>3) continue;
 	                    ?>
-		                    <a style="background-image: url(<?=$value['small']?>)" data-id="big-<?=$key?>" <?=($key==0?'class="active"':'')?> href="#"></a>
+		                    <a style="background-image: url(<?=$value['small']?>)" data-id="#big-<?=$key?>" <?=($key==0?'class="active"':'')?> href="#"></a>
 		                <?endforeach;?>
 	                </div>
 	            </div>

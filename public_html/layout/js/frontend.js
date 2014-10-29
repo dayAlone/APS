@@ -18605,6 +18605,17 @@ if ('undefined' !== typeof window.ParsleyValidator)
 
   $(document).ready(function() {
     var closeDropdown, mapInit, openDropdown, timer, x;
+    $('.product__image-small a').click(function(e) {
+      var elm;
+      elm = $($(this).data('id'));
+      if (!elm.hasClass('active')) {
+        $('.product__image-big a').removeClass('active');
+        $('.product__image-small a').removeClass('active');
+        $(this).addClass('active');
+        elm.addClass('active');
+      }
+      return e.preventDefault();
+    });
     $('.product__tabs a').click(function(e) {
       e.preventDefault();
       return $(this).tab('show');
