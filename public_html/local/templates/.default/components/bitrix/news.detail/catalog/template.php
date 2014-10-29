@@ -25,7 +25,9 @@ $props = &$item["PROPS"];
 	  		</div>
 	  		<?else:?>
 	  			<div class="product__image-big">
-				<?foreach ($props['PHOTOS'] as $key => $value):?>
+				<?foreach ($props['PHOTOS'] as $key => $value):
+					if($key>3) continue;
+				?>
                 	<a id="big-<?=$key?>" style="background-image: url(<?=$value['small']?>)" rel="prettyPhoto[]" href="<?=$value['value']?>" <?=($key==0?'class="active"':'')?>></a>
                 <?endforeach;?>
                 </div>
