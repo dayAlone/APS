@@ -69,7 +69,7 @@ $props = &$item["PROPS"];
 	        					?>
 								<div class="params">
 									<div class="params__title"><?=$elm['property_name']?></div>
-									<?=htmlspecialchars_decode($elm['property_value'])?>
+									<?=html_entity_decode($elm['property_value'])?>
 								</div>
 	        					<?
 	        					break;
