@@ -2692,15 +2692,15 @@ article {
   width: 100%;
   margin-top: 30px;
 }
-.product .tabs ul {
+.product .tabs > ul {
   list-style: none;
   padding: 0;
 }
-.product .tabs ul li {
+.product .tabs > ul > li {
   display: inline-block;
   width: 50%;
 }
-.product .tabs ul .active .tabs__link {
+.product .tabs > ul .active .tabs__link {
   background: #0082dc;
 }
 .product .tabs__link {
