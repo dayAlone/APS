@@ -17,7 +17,9 @@ $props = &$item["PROPS"];
 	            </div>
 	            <div class="col-xs-3">
 	            	<div class="product__image-small">
-	                    <?foreach ($props['PHOTOS'] as $key => $value):?>
+	                    <?foreach ($props['PHOTOS'] as $key => $value):
+	                    	if($key>3) continue;
+	                    ?>
 		                    <a style="background-image: url(<?=$value['small']?>)" data-id="big-<?=$key?>" <?=($key==0?'class="active"':'')?> href="#"></a>
 		                <?endforeach;?>
 	                </div>
@@ -25,9 +27,7 @@ $props = &$item["PROPS"];
 	  		</div>
 	  		<?else:?>
 	  			<div class="product__image-big">
-				<?foreach ($props['PHOTOS'] as $key => $value):
-					if($key>3) continue;
-				?>
+				<?foreach ($props['PHOTOS'] as $key => $value):?>
                 	<a id="big-<?=$key?>" style="background-image: url(<?=$value['small']?>)" rel="prettyPhoto[]" href="<?=$value['value']?>" <?=($key==0?'class="active"':'')?>></a>
                 <?endforeach;?>
                 </div>
