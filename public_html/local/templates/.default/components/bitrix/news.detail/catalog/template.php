@@ -69,7 +69,11 @@ $props = &$item["PROPS"];
 	        					?>
 								<div class="params">
 									<div class="params__title"><?=$elm['property_name']?></div>
-									<?=html_entity_decode($elm['property_value'])?>
+									<div class="row">
+										<div class="col-xs-12">
+										<?=html_entity_decode($elm['property_value'])?>											
+										</div>
+									</div>
 								</div>
 	        					<?
 	        					break;
@@ -78,7 +82,7 @@ $props = &$item["PROPS"];
 									  if(!$title) $title = true;
 									  if($k!=0) echo "</div>";
 									?>
-									  <div class="params params--list">
+									  <div class="params">
 									    <div class="params__title"><?=$elm['property_name']?></div>
 									<?
 									else:

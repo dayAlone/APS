@@ -5269,11 +5269,11 @@ article {
   display: none;
 }
 .product .tabs__content ul {
-  padding-left: 25px;
+  padding-left: 15px;
   margin-bottom: 0;
 }
 .product .tabs__content ul li+li {
-  padding-top: 15px;
+  padding-top: 8px;
 }
 .product .tabs__content p,
 .product .tabs__content li {
