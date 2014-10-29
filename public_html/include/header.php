@@ -29,8 +29,7 @@
       <div class="row no-gutter-md">
         <div class="col-xs-3 visible-md visible-lg">
           <a href="/" class="logo"><?=svg('logo')?></a>
-          <div class="shield">
-            <div class="shield__left"><?=svg('shield-l')?></div>
+          <div class="shield shield--big-left">
             <div class="shield__right"><?=svg('shield-r')?></div>
           </div>
         </div>
