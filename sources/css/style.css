@@ -2733,11 +2733,10 @@ article {
   display: none;
 }
 .product .tabs__content ul {
-  padding-left: 15px;
   margin-bottom: 0;
 }
 .product .tabs__content ul li+li {
-  padding-top: 8px;
+  padding-top: 7px;
 }
 .product .tabs__content p,
 .product .tabs__content li {
@@ -2782,13 +2781,10 @@ article {
 .product .params {
   width: 100%;
   border: 1px solid #697c89;
-  padding: 15px 15px 7px 15px;
+  padding: 18px 15px 10px 15px;
   color: #1d2a3a;
   font-size: 13px;
   position: relative;
-}
-.product .params--list {
-  padding: 9px 15px 2px 15px;
 }
 .product .params__title {
   font-weight: bold;
