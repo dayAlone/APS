@@ -18444,7 +18444,7 @@ if ('undefined' !== typeof window.ParsleyValidator)
     });
 }));
 ;(function() {
-  var addTrigger, autoHeight, blur, delay, getCaptcha, map, newsInit, setCaptcha, size, urlInitial;
+  var addTrigger, autoHeight, blur, delay, getCaptcha, map, newsInit, setCaptcha, setHash, size, urlInitial;
 
   delay = function(ms, func) {
     return setTimeout(func, ms);
@@ -18467,6 +18467,15 @@ if ('undefined' !== typeof window.ParsleyValidator)
 
   urlInitial = void 0;
 
+  setHash = function(hash) {
+    window.location.hash = hash;
+    return window.onhashchange = function() {
+      if (!location.hash) {
+        return $("#" + hash).modal('hide');
+      }
+    };
+  };
+
   $.openModal = function(url, id, open) {
     if (url) {
       if (open) {
@@ -18477,7 +18486,6 @@ if ('undefined' !== typeof window.ParsleyValidator)
         $('.modal .fotorama').fotorama();
         if (History.enabled) {
           info = History.getState();
-          console.log(info);
           urlInitial = {
             url: info.cleanUrl,
             title: document.title
@@ -18485,6 +18493,10 @@ if ('undefined' !== typeof window.ParsleyValidator)
           History.pushState({
             'url': url
           }, $(id).find('.text h1').text(), url);
+          History.Adapter.bind(window, 'statechange.namespace', function() {
+            $("" + id).modal('hide');
+            return $(window).unbind('statechange.namespace');
+          });
           return window.title = $(id).find('.text h1').text();
         }
       });
@@ -18717,7 +18729,11 @@ if ('undefined' !== typeof window.ParsleyValidator)
       var id, url;
       url = $(a.relatedTarget).data('url');
       id = $(a.relatedTarget).attr('href');
-      return $.openModal(url, id);
+      if (url && id) {
+        return $.openModal(url, id);
+      } else {
+        return setHash($(this).attr('id'));
+      }
     });
     $('.modal').on('hide.bs.modal', function(a, b) {
       $(this).find('input[type="email"], input[type="text"], textarea').removeClass('parsley-error').removeAttr("value").val("");
@@ -18936,24 +18952,22 @@ if ('undefined' !== typeof window.ParsleyValidator)
       return size();
     });
     mapInit = false;
-    $('#contactsMap').on('shown.bs.modal', function() {
-      if (!mapInit) {
-        mapInit = true;
-        return ymaps.ready(function() {
-          var myMap, myPlacemark;
-          myMap = new ymaps.Map('map', {
-            center: [55.723171, 37.559856],
-            zoom: 15
-          });
-          myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Аргус СварСервис'
-          }, {
-            preset: "twirl#nightDotIcon"
-          });
-          return myMap.geoObjects.add(myPlacemark);
+    if (!mapInit) {
+      mapInit = true;
+      ymaps.ready(function() {
+        var myMap, myPlacemark;
+        myMap = new ymaps.Map('map', {
+          center: $('#map').data('coords').split(','),
+          zoom: 15
         });
-      }
-    });
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          hintContent: 'Аргус СварСервис'
+        }, {
+          preset: "twirl#nightDotIcon"
+        });
+        return myMap.geoObjects.add(myPlacemark);
+      });
+    }
     x = void 0;
     return $(window).resize(function() {
       clearTimeout(x);

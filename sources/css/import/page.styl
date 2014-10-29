@@ -124,12 +124,24 @@
 			text-decoration: underline
 			font-weight: bold
 
+#map
+	width 100%
+	min-height 570px
+
 .page
+	big
+		font-size 20px
+		line-height 30px
+	.text &
+		a
+			color blue3
 	&__divider
 		height 1px 
 		background #c6cdd2
 		width 100%
 		margin 10px 0
+		&--blue
+			background #0070d5
 		& + .products
 			margin-top -10px
 	&__frame
@@ -155,7 +167,34 @@
 		font-size 22px
 		margin-bottom 0
 		padding-bottom 0
-
+	.button
+		display inline-block
+		padding 0 25px
+		cursor pointer
+		font-size 11px
+		line-height 33px
+		margin 20px 0
+		letter-spacing 3px
+		height 30px
+		border 1px solid blue3
+		color blue3
+		text-transform: uppercase
+		font-weight bold
+		t(background, color)
+		text-align: center
+		&:hover
+			background blue3
+			color white
+			text-decoration: none
+		&--big
+			max-width 110%
+			min-width 216px 
+			@media (min-width: scr_sm)
+				min-width 100px
+				padding 0 15px
+			@media (min-width: scr_md)
+				padding 0 32px
+				min-width 186px 
 .about
 	.partners
 		text-align: center

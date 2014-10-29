@@ -85,9 +85,11 @@ module.exports = (grunt)->
 		files:
 			css:
 				frontend : '<%= path.layout %>/css/frontend.css'
+				tmp      : '<%= path.sources %>/css/plugins.css'
 				develop  : '<%= path.sources %>/css/style.styl'
+				plugins  : '<%= use.css %>'
 				sources : [
-							'<%= use.css %>'
+							'<%= path.sources %>/css/plugins.css'
 							'<%= path.sources %>/css/style.css'
 					]
 			js:
@@ -205,6 +207,11 @@ module.exports = (grunt)->
 			js_frontend:
 				src  : ['<%= files.js.sources %>']
 				dest : '<%= files.js.frontend %>'
+				options:
+					separator: ';'
+			css_plugins:
+				src  : ['<%= files.css.plugins %>']
+				dest : '<%= files.css.tmp %>'
 				options:
 					separator: ';'
 			css_stylus:
@@ -337,8 +344,8 @@ module.exports = (grunt)->
 
 	grunt.registerTask 'svg', ['svgmin', 'string-replace', 'jade']
 	
-	grunt.registerTask 'compile', ['copy', 'imagemin', 'svgmin', 'string-replace', 'less', 'concat:css_stylus', 'stylus', 'coffee', 'concat:js_plugins', 'concat:js_frontend', 'concat:css_frontend', 'csscomb', 'cssmin', 'uglify']#, 'jade']
+	grunt.registerTask 'compile', ['copy', 'imagemin', 'svgmin', 'string-replace', 'less', 'concat:css_stylus', 'stylus', 'coffee', 'concat:js_plugins', 'concat:js_frontend','concat:css_plugins', 'concat:css_frontend', 'csscomb', 'cssmin', 'uglify']#, 'jade']
 
-	grunt.registerTask 'front', ['copy', 'less', 'concat:css_stylus', 'stylus', 'coffee', 'concat:js_plugins', 'concat:js_frontend', 'concat:css_frontend', 'csscomb', 'cssmin', 'uglify', 'jade']
+	grunt.registerTask 'front', ['copy', 'less', 'concat:css_stylus', 'stylus', 'coffee', 'concat:js_plugins', 'concat:js_frontend', 'concat:css_plugins', 'concat:css_frontend', 'csscomb', 'cssmin', 'uglify', 'jade']
 
 	grunt.task.run 'notify_hooks'

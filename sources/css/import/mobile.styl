@@ -4,6 +4,20 @@
 	padding-bottom 0
 
 .modal
+	.modal-content
+		&--white
+			.form
+				input[type="text"], input[type="email"], textarea
+					border 1px solid blue
+				input[type="submit"]
+					color blue2
+					&:hover
+						color white
+				.captcha_refresh
+					svg
+						path
+							fill blue2
+						
 	.lang-trigger
 		margin 17px 20px 15px
 	.phone
@@ -59,10 +73,11 @@
 			display none !important
 		textarea
 			height 180px
+			resize none
 			text-align left
 		.captcha
 			full-width()
-			background-color #737a82
+			background-color white
 			height 30px
 		input[type="submit"]
 			appearance none

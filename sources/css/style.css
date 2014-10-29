@@ -1586,6 +1586,9 @@ body {
 .catalog-category .wrap {
   background: #021b64 url("../images/bg-catalog-category.jpg") top center no-repeat;
 }
+.contacts .wrap {
+  background: #021b64 url("../images/bg-contacts.jpg") top center no-repeat;
+}
 .index .wrap {
   background: #fff;
 }
@@ -1779,6 +1782,20 @@ article {
   margin-bottom: 0;
   padding-bottom: 0;
 }
+.modal .modal-content--white .form input[type="text"],
+.modal .modal-content--white .form input[type="email"],
+.modal .modal-content--white .form textarea {
+  border: 1px solid #60affd;
+}
+.modal .modal-content--white .form input[type="submit"] {
+  color: #00aafa;
+}
+.modal .modal-content--white .form input[type="submit"]:hover {
+  color: #fff;
+}
+.modal .modal-content--white .form .captcha_refresh svg path {
+  fill: #00aafa;
+}
 .modal .lang-trigger {
   margin: 17px 20px 15px;
 }
@@ -1862,12 +1879,13 @@ article {
 }
 .modal .form textarea {
   height: 180px;
+  resize: none;
   text-align: left;
 }
 .modal .form .captcha {
   float: left;
   width: 100%;
-  background-color: #737a82;
+  background-color: #fff;
   height: 30px;
 }
 .modal .form input[type="submit"] {
@@ -2122,11 +2140,25 @@ article {
   text-decoration: underline;
   font-weight: bold;
 }
+#map {
+  width: 100%;
+  min-height: 570px;
+}
+.page big {
+  font-size: 20px;
+  line-height: 30px;
+}
+.text .page a {
+  color: #1273d2;
+}
 .page__divider {
   height: 1px;
   background: #c6cdd2;
   width: 100%;
   margin: 10px 0;
+}
+.page__divider--blue {
+  background: #0070d5;
 }
 .page__divider + .products {
   margin-top: -10px;
@@ -2158,6 +2190,52 @@ article {
   font-size: 22px;
   margin-bottom: 0;
   padding-bottom: 0;
+}
+.page .button {
+  display: inline-block;
+  padding: 0 25px;
+  cursor: pointer;
+  font-size: 11px;
+  line-height: 33px;
+  margin: 20px 0;
+  letter-spacing: 3px;
+  height: 30px;
+  border: 1px solid #1273d2;
+  color: #1273d2;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  -ms-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: color;
+  -moz-transition-duration: color;
+  -o-transition-duration: color;
+  -ms-transition-duration: color;
+  transition-duration: color;
+  text-align: center;
+}
+.page .button:hover {
+  background: #1273d2;
+  color: #fff;
+  text-decoration: none;
+}
+.page .button--big {
+  max-width: 110%;
+  min-width: 216px;
+}
+@media (min-width: 768px) {
+  .page .button--big {
+    min-width: 100px;
+    padding: 0 15px;
+  }
+}
+@media (min-width: 992px) {
+  .page .button--big {
+    padding: 0 32px;
+    min-width: 186px;
+  }
 }
 .about .partners {
   text-align: center;

@@ -1,5 +1,6 @@
 blue           = #60affd
 blue2          = #00aafa
+blue3          = #1273d2
 toolbar_top    = #001766
 toolbar_bottom = rgba(0,25,100,.6)
 /*!
@@ -594,7 +595,7 @@ body
 		content ""
 		display block
 	b('bg-index.jpg', top center no-repeat, black, cover)
-	for x in about contacts catalog catalog-category
+	for x in about contacts catalog catalog-category contacts
 		.{x} &
 			b('bg-'+x+'.jpg', top center no-repeat, #021b64)
 	.index &
@@ -726,6 +727,20 @@ article
 	padding-bottom 0
 
 .modal
+	.modal-content
+		&--white
+			.form
+				input[type="text"], input[type="email"], textarea
+					border 1px solid blue
+				input[type="submit"]
+					color blue2
+					&:hover
+						color white
+				.captcha_refresh
+					svg
+						path
+							fill blue2
+						
 	.lang-trigger
 		margin 17px 20px 15px
 	.phone
@@ -781,10 +796,11 @@ article
 			display none !important
 		textarea
 			height 180px
+			resize none
 			text-align left
 		.captcha
 			full-width()
-			background-color #737a82
+			background-color white
 			height 30px
 		input[type="submit"]
 			appearance none
@@ -970,12 +986,24 @@ article
 			text-decoration: underline
 			font-weight: bold
 
+#map
+	width 100%
+	min-height 570px
+
 .page
+	big
+		font-size 20px
+		line-height 30px
+	.text &
+		a
+			color blue3
 	&__divider
 		height 1px 
 		background #c6cdd2
 		width 100%
 		margin 10px 0
+		&--blue
+			background #0070d5
 		& + .products
 			margin-top -10px
 	&__frame
@@ -1001,7 +1029,34 @@ article
 		font-size 22px
 		margin-bottom 0
 		padding-bottom 0
-
+	.button
+		display inline-block
+		padding 0 25px
+		cursor pointer
+		font-size 11px
+		line-height 33px
+		margin 20px 0
+		letter-spacing 3px
+		height 30px
+		border 1px solid blue3
+		color blue3
+		text-transform: uppercase
+		font-weight bold
+		t(background, color)
+		text-align: center
+		&:hover
+			background blue3
+			color white
+			text-decoration: none
+		&--big
+			max-width 110%
+			min-width 216px 
+			@media (min-width: scr_sm)
+				min-width 100px
+				padding 0 15px
+			@media (min-width: scr_md)
+				padding 0 32px
+				min-width 186px 
 .about
 	.partners
 		text-align: center

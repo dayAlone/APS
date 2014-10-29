@@ -67,7 +67,7 @@ if($APPLICATION->GetPageProperty('popup')):?>
 </div>
 <div id="Feedback" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
   <div class="modal-dialog">
-    <div class="modal-content"><a data-dismiss="modal" href="#" class="close"><?=svg('close')?></a>
+    <div class="modal-content modal-content--white"><a data-dismiss="modal" href="#" class="close"><?=svg('close')?></a>
     <?
       require($_SERVER['DOCUMENT_ROOT'].'/include/form.php');
     ?>

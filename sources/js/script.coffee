@@ -15,6 +15,12 @@ size = ->
 
 urlInitial = undefined
 
+setHash = (hash) ->
+	window.location.hash = hash;
+	window.onhashchange = ()->
+		if (!location.hash)
+			$("##{hash}").modal('hide');
+
 $.openModal = (url, id, open)->
 	if url
 		if(open)
@@ -23,11 +29,15 @@ $.openModal = (url, id, open)->
 			$('.modal .fotorama').fotorama()
 			if History.enabled
 				info = History.getState()
-				console.log info
 				urlInitial =
 					url : info.cleanUrl
 					title : document.title
 				History.pushState {'url':url}, $(id).find('.text h1').text(), url
+				
+				History.Adapter.bind window,'statechange.namespace', ()->
+					$("#{id}").modal 'hide'
+					$(window).unbind 'statechange.namespace'
+				
 				window.title = $(id).find('.text h1').text()
 
 autoHeight = (el, selector='', height_selector = false, use_padding=false, debug=false)->
@@ -216,7 +226,10 @@ $(document).ready ->
 	$('.modal').on 'show.bs.modal', (a,b)->
 		url = $(a.relatedTarget).data 'url'
 		id  = $(a.relatedTarget).attr 'href'
-		$.openModal(url, id)
+		if url && id
+			$.openModal(url, id)
+		else
+			setHash($(this).attr('id'))
 	
 	$('.modal').on 'hide.bs.modal', (a,b)->
 		
@@ -397,22 +410,21 @@ $(document).ready ->
 
 
 	mapInit = false
-	$('#contactsMap').on 'shown.bs.modal', ()->
-		if !mapInit
-			mapInit = true
-			ymaps.ready ()->
-				myMap = new ymaps.Map 'map', {
-					center: [55.723171,37.559856]
-					zoom: 15
-				}
-				myPlacemark = new ymaps.Placemark myMap.getCenter(), {
-					hintContent: 'Аргус СварСервис'
-				},
-				{
-					preset: "twirl#nightDotIcon",
-				}
+	if !mapInit
+		mapInit = true
+		ymaps.ready ()->
+			myMap = new ymaps.Map 'map', {
+				center: $('#map').data('coords').split(',')
+				zoom: 15
+			}
+			myPlacemark = new ymaps.Placemark myMap.getCenter(), {
+				hintContent: 'Аргус СварСервис'
+			},
+			{
+				preset: "twirl#nightDotIcon",
+			}
 
-				myMap.geoObjects.add(myPlacemark);
+			myMap.geoObjects.add(myPlacemark);
 	
 	x = undefined
 	$(window).resize ->
