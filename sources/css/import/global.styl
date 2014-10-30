@@ -17,6 +17,10 @@ body
 		content ""
 		display block
 	b('bg-index.jpg', top center no-repeat, black, cover)
+	
+	background-repeat no-repeat
+	background-position top center
+	
 	for x in about contacts catalog catalog-category contacts
 		.{x} &
 			b('bg-'+x+'.jpg', top center no-repeat, #021b64)

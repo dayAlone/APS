@@ -150,4 +150,63 @@ function OnEndBufferContentHandler(&$content)
 	   endif;
 	endif;
 }
+
+
+# Background image
+
+$obCache       = new CPHPCache();
+$cacheLifetime = 86400; 
+$cacheID       = 'BG_'.md5($APPLICATION->GetCurDir()); 
+$cachePath     = '/';
+
+if( $obCache->InitCache($cacheLifetime, $cacheID, $cachePath) ):
+
+   $vars = $obCache->GetVars();
+   $_GLOBALS['BG_IMAGE'] = $vars['BG_IMAGE'];
+
+elseif( $obCache->StartDataCache() ):
+	
+	CModule::IncludeModule("iblock");
+	
+	$arSelect = Array("ID", "PREVIEW_PICTURE", "PROPERTY_PAGE");
+	$path     = preg_split('/\//', $APPLICATION->GetCurDir());
+	$arFilter = Array("IBLOCK_ID"=>7, "%PROPERTY_PAGE" => $path);
+	$res      = CIBlockElement::GetList(Array("PROPERTY_PAGE"=>"ASC"), $arFilter, false, false, $arSelect);
+	
+	global $CACHE_MANAGER;
+	$CACHE_MANAGER->StartTagCache($cachePath);
+	
+	while($ob = $res->Fetch()) 
+		if(strlen($APPLICATION->GetCurDir())>=strlen($ob["PROPERTY_PAGE_VALUE"]))
+			$_GLOBALS['BG_IMAGE'] = CFile::GetPath($ob['PREVIEW_PICTURE']);
+	
+	$CACHE_MANAGER->RegisterTag($cacheID);
+	$CACHE_MANAGER->EndTagCache();
+
+	$obCache->EndDataCache(array('BG_IMAGE' => $_GLOBALS['BG_IMAGE']));
+
+endif;
+
+AddEventHandler("iblock", "OnBeforeIBlockElementAdd", "OnBeforeIBlockElementAddHandler");
+AddEventHandler("iblock", "OnBeforeIBlockElementUpdate", "OnBeforeIBlockElementAddHandler");
+
+function OnBeforeIBlockElementAddHandler(&$arFields)
+{
+	if($arFields['IBLOCK_ID']==7):
+		
+		global $CACHE_MANAGER;
+		
+		$db_props = CIBlockElement::GetProperty($arFields['IBLOCK_ID'], $arFields['ID'], array("sort" => "asc"), Array("CODE"=>"PAGE"));
+		while($ar_props = $db_props->Fetch())
+			$CACHE_MANAGER->ClearByTag('/BG_'.md5($ar_props['VALUE']));
+		
+		foreach ($arFields['PROPERTY_VALUES'] as $values)
+			foreach ($values as $value)
+				if(strlen($value['VALUE'])>0)
+					$CACHE_MANAGER->ClearByTag('/BG_'.md5($value['VALUE']));
+	
+	endif;
+}
+
+
 ?>
