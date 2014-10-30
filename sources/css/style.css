@@ -1226,6 +1226,7 @@ div.pp_default .pp_loaderIcon {
   min-width: 260px;
   padding: 0 15px;
   font-size: 12px;
+  color: #fff;
 }
 .toolbar .lang-trigger {
   position: relative;
@@ -3055,7 +3056,8 @@ body {
 .news .news-list .news-list__title,
 .news .news-item .news-item__title,
 .career-list__title,
-.career-item__title {
+.career-item__title,
+.search-page__title {
   font-size: 22px;
   color: #2d78d6;
   line-height: 30px;
@@ -3074,7 +3076,8 @@ body {
 .news .news-list .news-list__title:hover,
 .news .news-item .news-item__title:hover,
 .career-list__title:hover,
-.career-item__title:hover {
+.career-item__title:hover,
+.search-page__title:hover {
   color: #00aafa;
   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, #00aafa 50%);
   background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, #00aafa 50%);
@@ -3130,6 +3133,48 @@ body {
 .career-list {
   width: 100%;
   margin-top: 20px;
+}
+.search-page {
+  font-size: 14px;
+}
+.search-page .page__divider {
+  margin: 30px 0;
+}
+.search-page__text {
+  width: 100%;
+  margin-top: 10px;
+}
+.search-page__text,
+.search-page__sort {
+  font-size: 14px;
+}
+.search-page small {
+  width: 100%;
+  display: inline-block;
+}
+.search-page form {
+  margin-bottom: 30px;
+}
+.search-page form input[type=text] {
+  background: transparent;
+  border: 1px solid #60affd;
+  height: 35px;
+  line-height: 38px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  padding: 0 50px 0 20px;
+}
+.search-page form button[type=submit] {
+  background: transparent;
+  border: 0;
+  margin-left: -44px;
+  display: inline-block;
+}
+.search-page form button[type=submit] svg {
+  position: relative;
+  top: 4px;
+  min-height: 20px;
+  min-width: 20px;
 }
 .sidebar {
   float: left;

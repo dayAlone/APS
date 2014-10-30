@@ -682,3 +682,37 @@ body
 			@extends .news .news-item .news-item__text
 		&__back
 			@extends .catalog .product .product__back
+
+.search-page
+	font-size 14px
+	.page__divider
+		margin 30px 0
+	&__text
+		width 100%
+		margin-top 10px
+	&__text, &__sort
+		font-size 14px
+	&__title
+		@extends .news .news-list .news-list__title
+	small
+		width 100%
+		display inline-block
+	form
+		margin-bottom 30px
+		input[type=text]
+			background transparent
+			border 1px solid blue
+			height 35px
+			line-height 38px
+			border-radius 30px
+			padding 0 50px 0 20px
+		button[type=submit]
+			background transparent
+			border 0
+			margin-left -44px
+			display inline-block
+			svg
+				position relative
+				top 4px
+				min-height 20px
+				min-width 20px

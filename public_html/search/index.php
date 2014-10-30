@@ -3,7 +3,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetPageProperty('body_class', "search");
 ?> 
 <h1 class="inline-block page__title">Поиск</h1>
-<div class="page__divider"></div>
+<div class="page__divider page__divider--blue l-margin-top xl-margin-bottom"></div>
 <?
 $APPLICATION->IncludeComponent("bitrix:search.page","",Array(
     "TAGS_SORT" => "NAME",
