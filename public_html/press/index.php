@@ -29,8 +29,8 @@ require($_SERVER['DOCUMENT_ROOT'].'/include/section.php');
     array(
       "IBLOCK_ID"   => 2,
       "NEWS_COUNT"  => "10",
-      "SORT_BY1"    => "SORT",
-      "SORT_ORDER1" => "ASC",
+      "SORT_BY1"    => "ACTIVE_FROM",
+      "SORT_ORDER1" => "DESC",
       "DETAIL_URL"  => "/press/#ELEMENT_CODE#/",
       "CACHE_TYPE"  => "A",
       "SET_TITLE"   => "N",

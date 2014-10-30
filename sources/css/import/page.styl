@@ -548,7 +548,12 @@
 				& + .row
 					border-top 1px solid #eef2f5
 				padding 7px 0px 3px
-			
+	
+.side
+	p
+		max-width 80%
+		font-size 16px
+
 .pages
 	width 100%
 	margin-top 20px
@@ -571,7 +576,6 @@
 			background #0082dc
 			
 
-
 .years
 	&__item
 		display inline-block
@@ -586,6 +590,22 @@
 		&--active
 			background transparent 
 			color blue3
+
+.gallery
+	width 100%
+	margin-top 20px
+	.gallery__item
+		display inline-block
+		width 120px
+		height 90px
+		background-size cover
+		background-repeat no-repeat
+		box-shadow inset 0 0 0 1px white
+		border 1px solid #e3e6e9
+		t(border-color)
+		margin 0 5px 5px 0
+		&:hover
+			border-color #d93431
 
 .news
 	.news-list
@@ -616,7 +636,7 @@
 	.news-item
 		&__date
 			@extends .news .news-list .news-list__date
-		&__text
+		.news-item__text
 			@extends .news .news-list .news-list__text
 			margin-top 20px
 			p, li
@@ -632,18 +652,8 @@
 			width 100%
 			margin-top 20px
 		&__small-image
-			display inline-block
-			width 120px
-			height 90px
-			background-size cover
-			background-repeat no-repeat
-			box-shadow inset 0 0 0 1px white
-			border 1px solid #e3e6e9
-			t(border-color)
-			margin 0 5px 5px 0
-			&:hover
-				border-color #d93431
-		&__title
+			@extends .gallery .gallery__item
+		.news-item__title
 			@extends .news .news-list .news-list__title
 			color black
 			background transparent
@@ -652,9 +662,18 @@
 				background transparent
 			
 
-
-
-
-
-
-
+.career
+	&-list
+		width 100%
+		margin-top 20px
+		&__title
+			@extends .news .news-item .news-item__title
+	&-item
+		&__tooltip
+			@extends .news .news-list .news-list__date
+		&__title
+			@extends .news .news-item .news-item__title
+		&__text
+			@extends .news .news-item .news-item__text
+		&__back
+			@extends .catalog .product .product__back

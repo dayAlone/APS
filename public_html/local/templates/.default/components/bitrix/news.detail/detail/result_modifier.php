@@ -1,6 +1,6 @@
 <?
     $item = &$arResult;
-    function images_sort($a, $b)
+    function detail_images_sort($a, $b)
     {
         if($a['sort']=='' && $b['sort']>0) 
             return 1;
@@ -27,7 +27,7 @@
                   $gallery[] = array('sort'=>$description[$key], 'value'=> $big['src'], 'small'=> $small['src']);
             endforeach;
 
-            usort($gallery, "images_sort");
+            usort($gallery, "detail_images_sort");
 
             $item[$prop_name] = $gallery;
         endif;

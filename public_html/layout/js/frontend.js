@@ -19569,6 +19569,11 @@ var pp_alreadyInitialized = false; // Used for the deep linking to make sure not
 
   $(document).ready(function() {
     var closeDropdown, mapInit, openDropdown, timer, x;
+    if ($('.side').length > 0) {
+      $('.border-left').css({
+        minHeight: $('.side').height()
+      });
+    }
     $('a[rel^="prettyPhoto"]').prettyPhoto({
       social_tools: '',
       overlay_gallery: false,
