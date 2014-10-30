@@ -410,7 +410,7 @@ $(document).ready ->
 
 
 	mapInit = false
-	if !mapInit
+	if !mapInit && $('#map').length > 0
 		mapInit = true
 		ymaps.ready ()->
 			myMap = new ymaps.Map 'map', {

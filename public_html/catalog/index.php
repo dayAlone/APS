@@ -1,6 +1,7 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-require($_SERVER['DOCUMENT_ROOT'].'/include/catalog.php');
+$APPLICATION->SetPageProperty('section', array('IBLOCK'=>1, 'CODE'=>'catalog'));
+require($_SERVER['DOCUMENT_ROOT'].'/include/section.php');
 
 if(!isset($_REQUEST['ELEMENT_CODE'])&&!isset($_GLOBALS['currentCatalogSection'])):
 

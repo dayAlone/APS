@@ -55,7 +55,43 @@ function IBlockElementsMenu($IBLOCK_ID)
 		return $arNav;
 	}
 }
+function r_date($date = '') {
 
+	$date = strtotime($date);
+
+	$treplace = array (
+		"Январь"   => "января",
+		"Февраль"  => "февраля",
+		"Март"     => "марта",
+		"Апрель"   => "апреля",
+		"Май"      => "мая",
+		"Июнь"     => "июня",
+		"Июль"     => "июля",
+		"Август"   => "августа",
+		"Сентябрь" => "сентября",
+		"Октябрь"  => "октября",
+		"Ноябрь"   => "ноября",
+		"Декабрь"  => "декабря",
+		"January"   => "января",
+		"February"  => "февраля",
+		"March"     => "марта",
+		"April"   => "апреля",
+		"May"      => "мая",
+		"June"     => "июня",
+		"July"     => "июля",
+		"August"   => "августа",
+		"September" => "сентября",
+		"October"  => "октября",
+		"November"   => "ноября",
+		"December"  => "декабря",
+		"*"        => "",
+		"th"       => "",
+		"st"       => "",
+		"nd"       => "",
+		"rd"       => ""
+	);
+   	return strtr(date('d F Y', $date), $treplace);
+}
 AddEventHandler("main", "OnAdminTabControlBegin", "MyOnAdminTabControlBegin");
 function MyOnAdminTabControlBegin(&$form)
 {

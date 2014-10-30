@@ -4,10 +4,12 @@
 	if(isset($_POST['SORT_ORDER1']))
 		$_SESSION['SORT_ORDER1'] = $_POST['SORT_ORDER1'];
 
+	$params = $APPLICATION->GetPageProperty('section');
+
 	if(isset($_REQUEST['ELEMENT_CODE'])):
 		$obCache       = new CPHPCache();
 		$cacheLifetime = 86400; 
-		$cacheID       = 'catalog_'.$_REQUEST['ELEMENT_CODE']; 
+		$cacheID       = $params['CODE'].'_'.$_REQUEST['ELEMENT_CODE']; 
 		$cachePath     = '/'.$cacheID;
 
 		if( $obCache->InitCache($cacheLifetime, $cacheID, $cachePath) ):
@@ -25,14 +27,14 @@
 
 			$Sections   = array();
 			$arSort     = array("DEPTH_LEVEL" => "ASC");
-			$arFilter   = array("IBLOCK_ID" => 1);
+			$arFilter   = array("IBLOCK_ID" => $params['IBLOCK']);
 			$rsSections = CIBlockSection::GetList($arSort, $arFilter);
 			
 			while ($s = $rsSections->Fetch()) {
 				if(strlen($_REQUEST['ELEMENT_CODE'])>0):
 					if($s['CODE']==$_REQUEST['ELEMENT_CODE']) {
 						$arFilter = Array(
-							"IBLOCK_ID"  => 1,
+							"IBLOCK_ID"  => $params['IBLOCK'],
 							"SECTION_ID" => $s['ID']
 					    );
 						if(CIBlockSection::GetCount($arFilter) > 0)

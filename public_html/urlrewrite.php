@@ -1,10 +1,10 @@
 <?
 $arUrlRewrite = array(
 	array(
-		"CONDITION" => "#^/news/([\w-_]+)/.*#",
+		"CONDITION" => "#^/press/([\w-_]+)/.*#",
 		"RULE" => "&ELEMENT_CODE=\$1&\$2",
 		"ID" => "",
-		"PATH" => "/news/index.php",
+		"PATH" => "/press/index.php",
 	),
 	array(
 		"CONDITION" => "#^/catalog/([\w-_]+)/.*#",

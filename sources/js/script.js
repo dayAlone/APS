@@ -507,7 +507,7 @@
       return size();
     });
     mapInit = false;
-    if (!mapInit) {
+    if (!mapInit && $('#map').length > 0) {
       mapInit = true;
       ymaps.ready(function() {
         var myMap, myPlacemark;

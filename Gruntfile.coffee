@@ -62,6 +62,7 @@ module.exports = (grunt)->
 			imagesLoaded :
 				js : '/imagesloaded/imagesloaded.pkgd.js'
 
+
 		for i in x
 			elm = plugins[i]
 			for key of elm
