@@ -3,8 +3,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetPageProperty('section', array('IBLOCK'=>1, 'CODE'=>'catalog'));
 require($_SERVER['DOCUMENT_ROOT'].'/include/section.php');
 
-if(!isset($_REQUEST['ELEMENT_CODE'])&&!isset($_GLOBALS['currentCatalogSection'])):
-
+if(!isset($_REQUEST['ELEMENT_CODE'])&&!isset($_GLOBALS['currentCatalogSection']) || isset($_GLOBALS['openCatalogSection'])):
   $APPLICATION->SetTitle('Каталог оборудования');
   $APPLICATION->SetPageProperty('body_class', "catalog catalog-category");
   $APPLICATION->IncludeComponent("bitrix:catalog.section.list", "catalog", array(
