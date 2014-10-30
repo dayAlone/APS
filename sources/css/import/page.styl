@@ -716,3 +716,37 @@ body
 				top 4px
 				min-height 20px
 				min-width 20px
+
+.map-columns
+	td
+		width (100/2)%
+		padding-right 60px
+	ul
+		font-size 13px
+		padding-left 0
+		&.map-level-0
+			> li
+				list-style none
+				margin-bottom 20px
+				> ul
+					padding-left 20px
+					margin-top 10px
+					> li
+						> ul
+							padding-left 20px
+							margin-bottom 10px
+							margin-top 5px
+						a
+							@extends .news .news-list .news-list__title
+							font-size 12px
+							line-height 25px
+							background-position 0 10px		
+						> a
+							font-size 16px
+							font-weight normal
+							background-position 0 16px
+						
+				> a
+					@extends .news .news-list .news-list__title
+					font-size 18px
+					background-position 0 18px

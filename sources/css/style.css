@@ -3057,7 +3057,9 @@ body {
 .news .news-item .news-item__title,
 .career-list__title,
 .career-item__title,
-.search-page__title {
+.search-page__title,
+.map-columns ul.map-level-0 > li > ul > li a,
+.map-columns ul.map-level-0 > li > a {
   font-size: 22px;
   color: #2d78d6;
   line-height: 30px;
@@ -3077,7 +3079,9 @@ body {
 .news .news-item .news-item__title:hover,
 .career-list__title:hover,
 .career-item__title:hover,
-.search-page__title:hover {
+.search-page__title:hover,
+.map-columns ul.map-level-0 > li > ul > li a:hover,
+.map-columns ul.map-level-0 > li > a:hover {
   color: #00aafa;
   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, #00aafa 50%);
   background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, #00aafa 50%);
@@ -3175,6 +3179,41 @@ body {
   top: 4px;
   min-height: 20px;
   min-width: 20px;
+}
+.map-columns td {
+  width: 50%;
+  padding-right: 60px;
+}
+.map-columns ul {
+  font-size: 13px;
+  padding-left: 0;
+}
+.map-columns ul.map-level-0 > li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.map-columns ul.map-level-0 > li > ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.map-columns ul.map-level-0 > li > ul > li > ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.map-columns ul.map-level-0 > li > ul > li a {
+  font-size: 12px;
+  line-height: 25px;
+  background-position: 0 10px;
+}
+.map-columns ul.map-level-0 > li > ul > li > a {
+  font-size: 16px;
+  font-weight: normal;
+  background-position: 0 16px;
+}
+.map-columns ul.map-level-0 > li > a {
+  font-size: 18px;
+  background-position: 0 18px;
 }
 .sidebar {
   float: left;
