@@ -73,7 +73,7 @@ $props = &$item["PROPS"];
 									<div class="params__title"><?=$elm['property_name']?></div>
 									<div class="row">
 										<div class="col-xs-12">
-										<?=html_entity_decode($elm['property_value'])?>											
+										<?=html_entity_decode($elm['property_value'])?>
 										</div>
 									</div>
 								</div>
@@ -92,7 +92,7 @@ $props = &$item["PROPS"];
 										?>
 										<div class="row no-gutter">
 											<div class="col-md-5 col-xs-5"><?=$elm['property_name']?>:</div>
-											<div class="col-md-7 col-xs-7"><?=$elm['property_value']?></div>
+											<div class="col-md-7 col-xs-7"><?=html_entity_decode($elm['property_value'])?></div>
 										</div>
 										<?
 										endif;
@@ -109,6 +109,6 @@ $props = &$item["PROPS"];
 		?>
 	</div>
 	<?$section = end($arResult['SECTION']['PATH']);?>
-	<a href="/news/" class="product__back"><?=svg('back')?> вернуться в раздел «<?=$section['NAME']?>»</a>
+	<a href="/catalog/<?=$section['CODE']?>/" class="product__back"><?=svg('back')?> вернуться в раздел «<?=$section['NAME']?>»</a>
 
 </div>
