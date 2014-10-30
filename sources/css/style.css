@@ -2816,6 +2816,7 @@ article {
 .catalog .product .tabs > ul {
   list-style: none;
   padding: 0;
+  margin-bottom: 10px;
 }
 .catalog .product .tabs > ul > li {
   display: inline-block;
