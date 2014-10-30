@@ -154,9 +154,11 @@ $(document).ready ->
 	$('.catalog-category .sections a[href=#]').click (e)->
 		c           = $(this).block().attr 'class'
 		item        = $(this).closest(".#{c}__item")
-		
+
 		blockHeight = $(this).block('content').outerHeight()
 		items       = $(this).parents('*[class*="item"]')
+
+		console.log($(this).block('content'))
 
 		if !item.hasMod('open')
 			
@@ -164,24 +166,24 @@ $(document).ready ->
 				$(el).css
 					'minHeight': blockHeight + $(el).height()
 
-			$(this).block('content').velocity
+			item.find(".#{c}__content").velocity
 				properties: "transition.slideDownIn"
 				options:
 					duration: 300
 					delay: 200
 					begin: ()->
-						$(this).closest(".#{c}__item").mod('open', true)
+						item.mod('open', true)
 					
 		else
 			$.each items, (key, el)->
 				$(el).css
 					'minHeight': 0
-			$(this).block('content').velocity
+			item.find(".#{c}__content").velocity
 				properties: "transition.slideUpOut"
 				options:
 					duration: 200
 					complete: ()->
-						$(this).closest(".#{c}__item").mod('open', false)
+						item.mod('open', false)
 						
 						
 

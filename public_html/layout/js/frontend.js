@@ -19600,19 +19600,20 @@ var pp_alreadyInitialized = false; // Used for the deep linking to make sure not
       item = $(this).closest("." + c + "__item");
       blockHeight = $(this).block('content').outerHeight();
       items = $(this).parents('*[class*="item"]');
+      console.log($(this).block('content'));
       if (!item.hasMod('open')) {
         $.each(items, function(key, el) {
           return $(el).css({
             'minHeight': blockHeight + $(el).height()
           });
         });
-        $(this).block('content').velocity({
+        item.find("." + c + "__content").velocity({
           properties: "transition.slideDownIn",
           options: {
             duration: 300,
             delay: 200,
             begin: function() {
-              return $(this).closest("." + c + "__item").mod('open', true);
+              return item.mod('open', true);
             }
           }
         });
@@ -19622,12 +19623,12 @@ var pp_alreadyInitialized = false; // Used for the deep linking to make sure not
             'minHeight': 0
           });
         });
-        $(this).block('content').velocity({
+        item.find("." + c + "__content").velocity({
           properties: "transition.slideUpOut",
           options: {
             duration: 200,
             complete: function() {
-              return $(this).closest("." + c + "__item").mod('open', false);
+              return item.mod('open', false);
             }
           }
         });
