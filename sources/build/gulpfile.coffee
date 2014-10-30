@@ -146,7 +146,7 @@ gulp.task 'default', ->
 	gulp.watch "#{sources}/images/svg/**/*.svg", ->
 		sequence 'svg_mini'
 
-	gulp.watch ["./public_html/**/*.php",'!./public_html/bitrix/**', "./public_html/local/templates/.default/**/*.php"], {'dot':true}, ->
+	gulp.watch ["./public_html/**/*.php",'!./public_html/bitrix/**'], {'dot':true}, ->
 		sequence 'reload'
 	
 	gulp.watch ["#{path.css.sources}/bootstrap/bootstrap.less", "./sources/build/plugins.json"], ->

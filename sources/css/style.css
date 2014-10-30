@@ -2940,6 +2940,8 @@ article {
 .news .news-item__title {
   font-size: 22px;
   color: #2d78d6;
+  line-height: 30px;
+  margin-top: 0;
   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, #adc2eb 50%);
   background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, #adc2eb 50%);
   background-image: -o-linear-gradient(top, rgba(0,0,0,0) 50%, #adc2eb 50%);

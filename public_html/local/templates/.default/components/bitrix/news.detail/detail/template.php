@@ -2,7 +2,7 @@
 $item = $arResult;
 ?>
 <div class="news-item">
-	<div class="news-item__date"><?=$item['ACTIVE_FROM']?></div>
+	<div class="news-item__date"><?=r_date($item['ACTIVE_FROM'])?></div>
 	<h1 class="news-item__title"><?=$item['NAME']?></h1>
 	<div class="news-item__text">
 		<?if($item["DETAIL_PICTURE"]):?>
