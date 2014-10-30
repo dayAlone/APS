@@ -6234,13 +6234,11 @@ article {
   margin-top: 20px;
 }
 .news .news-item .news-item__title,
-.career-list__title,
 .career-item__title {
   color: #000;
   background: transparent;
 }
 .news .news-item .news-item__title:hover,
-.career-list__title:hover,
 .career-item__title:hover {
   color: #000;
   background: transparent;
