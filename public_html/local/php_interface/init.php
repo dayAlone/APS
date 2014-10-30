@@ -169,14 +169,19 @@ elseif( $obCache->StartDataCache() ):
 	CModule::IncludeModule("iblock");
 	
 	$arSelect = Array("ID", "PREVIEW_PICTURE", "PROPERTY_PAGE");
-	$path     = preg_split('/\//', $APPLICATION->GetCurDir());
-	$arFilter = Array("IBLOCK_ID"=>7, "%PROPERTY_PAGE" => $path);
+	$path     = preg_split('/\//', $APPLICATION->GetCurDir(), false, PREG_SPLIT_NO_EMPTY);
+	$urls     = array();
+
+	for ($i=0; $i < count($path); $i++)
+		$urls[] = (isset($urls[$i-1])?$urls[$i-1]:"/").$path[$i].'/';
+
+	$arFilter = Array("IBLOCK_ID"=>7, "PROPERTY_PAGE" => $urls);
 	$res      = CIBlockElement::GetList(Array("PROPERTY_PAGE"=>"ASC"), $arFilter, false, false, $arSelect);
 	
 	global $CACHE_MANAGER;
 	$CACHE_MANAGER->StartTagCache($cachePath);
 	
-	while($ob = $res->Fetch()) 
+	while($ob = $res->Fetch())
 		if(strlen($APPLICATION->GetCurDir())>=strlen($ob["PROPERTY_PAGE_VALUE"]))
 			$_GLOBALS['BG_IMAGE'] = CFile::GetPath($ob['PREVIEW_PICTURE']);
 	
