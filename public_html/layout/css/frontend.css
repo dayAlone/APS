@@ -5931,6 +5931,12 @@ body {
   font-size: 14px;
   color: #515050;
 }
+.catalog .product__text ul {
+  padding-left: 20px;
+}
+.catalog .product__text li {
+  margin-bottom: 10px;
+}
 .catalog .product__text p,
 .catalog .product__text li {
   font-size: 14px;
