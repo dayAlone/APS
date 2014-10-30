@@ -14,4 +14,9 @@ if(count($arResult['SECTIONS'])>0):
     	<?endforeach;?>
     </div>
 </div>
+<style type="text/css">
+    .index .sections__item {
+        width: <?=100/count($arResult['SECTIONS'])?>%;
+    }
+</style>
 <?endif;?>

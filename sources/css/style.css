@@ -2017,6 +2017,9 @@ article {
   src: local('☺'), url("../fonts/ProximaNova-XBold.ttf") format('truetype');
   font-weight: 800;
 }
+body {
+  min-width: 960px;
+}
 .index .slider {
   float: left;
   width: 100%;
