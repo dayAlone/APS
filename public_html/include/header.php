@@ -83,3 +83,8 @@
     </div>
   </header>
   <main class="page">
+    <aside class="sidebar">
+      <div class="container">
+        <a href="/" class="logo"><?=svg('logo')?></a>
+      </div>
+    </aside>
