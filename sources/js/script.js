@@ -198,10 +198,11 @@
       return $(this).tab('show');
     });
     $('.catalog-category .sections a[href=#]').click(function(e) {
-      var blockHeight, c, item, items;
+      var block, blockHeight, c, item, items;
       c = $(this).block().attr('class');
       item = $(this).closest("." + c + "__item");
-      blockHeight = $(this).block('content').outerHeight();
+      block = item.find("." + c + "__content");
+      blockHeight = block.outerHeight();
       items = $(this).parents('*[class*="item"]');
       console.log($(this).block('content'));
       if (!item.hasMod('open')) {
@@ -210,7 +211,7 @@
             'minHeight': blockHeight + $(el).height()
           });
         });
-        item.find("." + c + "__content").velocity({
+        block.velocity({
           properties: "transition.slideDownIn",
           options: {
             duration: 300,
@@ -226,7 +227,7 @@
             'minHeight': 0
           });
         });
-        item.find("." + c + "__content").velocity({
+        block.velocity({
           properties: "transition.slideUpOut",
           options: {
             duration: 200,

@@ -154,8 +154,8 @@ $(document).ready ->
 	$('.catalog-category .sections a[href=#]').click (e)->
 		c           = $(this).block().attr 'class'
 		item        = $(this).closest(".#{c}__item")
-
-		blockHeight = $(this).block('content').outerHeight()
+		block       = item.find(".#{c}__content")
+		blockHeight = block.outerHeight()
 		items       = $(this).parents('*[class*="item"]')
 
 		console.log($(this).block('content'))
@@ -166,7 +166,7 @@ $(document).ready ->
 				$(el).css
 					'minHeight': blockHeight + $(el).height()
 
-			item.find(".#{c}__content").velocity
+			block.velocity
 				properties: "transition.slideDownIn"
 				options:
 					duration: 300
@@ -178,7 +178,7 @@ $(document).ready ->
 			$.each items, (key, el)->
 				$(el).css
 					'minHeight': 0
-			item.find(".#{c}__content").velocity
+			block.velocity
 				properties: "transition.slideUpOut"
 				options:
 					duration: 200

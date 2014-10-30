@@ -62,6 +62,10 @@ if(count($arResult['SECTIONS'])>0):
                 endif;
             break;
         endswitch;
+
+        if(!isset($arSections[$key+1]['DEPTH_LEVEL']))
+            for ($i=0; $i < $item['DEPTH_LEVEL']+2; $i++)
+                echo "</div>";
     endforeach;?>
 </div>
 <?if(intval($treeSections[0])>0):?>
