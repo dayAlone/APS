@@ -24,7 +24,8 @@
    },
    "fotorama":{
       "js":"/fotorama/fotorama.js",
-      "css":"/fotorama/fotorama.css"
+      "css":"/fotorama/fotorama.css",
+      "files": "./bower_components/fotorama/*.png"
    },
    "history":{
       "js":"/history.js/scripts/bundled/html4+html5/jquery.history.js"
@@ -58,7 +59,8 @@
    },
    "prettyPhoto":{
       "js":"/prettyPhoto/js/jquery.prettyPhoto.js",
-      "css":"/prettyPhoto/css/prettyPhoto.css"
+      "css":"/prettyPhoto/css/prettyPhoto.css",
+      "files": "/prettyPhoto/images/prettyPhoto/default/*.png"
    },
    "slick":{
       "js":"/slick/slick/slick.js",

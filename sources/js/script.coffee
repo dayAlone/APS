@@ -129,6 +129,12 @@ blur = ()->
 
 $(document).ready ->
 
+
+	$('a[rel^="prettyPhoto"]').prettyPhoto
+		social_tools: ''
+		overlay_gallery: false
+		deeplinking: false
+
 	$('.product__image-small a').click (e)->
 		elm = $($(this).data('id'))
 		if !elm.hasClass 'active'

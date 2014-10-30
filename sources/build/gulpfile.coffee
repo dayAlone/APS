@@ -19,7 +19,7 @@ sequence     = require 'run-sequence'
 replace      = require 'gulp-replace'
 watch        = require 'gulp-watch'
 
-plugins  = [ 'jquery', 'bootstrap', 'browser', 'fotorama', 'imagesLoaded', 'bem', 'hoverIntent', 'spin', 'velocity', 'parsley' ]
+plugins  = [ 'jquery', 'bootstrap', 'browser', 'fotorama', 'imagesLoaded', 'bem', 'hoverIntent', 'spin', 'velocity', 'parsley', 'prettyPhoto' ]
 
 layout   = './public_html/layout'
 sources  = './sources/'
@@ -36,8 +36,9 @@ isArray = Array.isArray || ( value ) -> return {}.toString.call( value ) is '[ob
 
 loadPlugins = (x, y)->
 	data =
-		css : []
-		js  : []
+		css   : []
+		js    : []
+		files : []
 	
 	bower   = './bower_components'
 	plugins = require('./plugins.json')
@@ -49,6 +50,7 @@ loadPlugins = (x, y)->
 					data[key].push bower+z
 			else
 				data[key].push bower+elm[key]
+
 	return data[y]
 
 # JavaScript functions
@@ -109,6 +111,11 @@ gulp.task 'css_mini', ->
 	.pipe cssmin()
 	.pipe gulp.dest path.css.frontend
 
+
+gulp.task 'copy', ->
+	gulp.src loadPlugins plugins, 'files'
+	.pipe gulp.dest "#{layout}/images/plugins/"
+
 # SVG functions
 
 gulp.task 'svg_mini', ->
@@ -150,9 +157,12 @@ gulp.task 'default', ->
 		sequence 'reload'
 	
 	gulp.watch ["#{path.css.sources}/bootstrap/bootstrap.less", "./sources/build/plugins.json"], ->
-		sequence 'css_bootstrap', 'css_plugins', 'css_front', 'reload'
+		sequence 'css_bootstrap', 'css_plugins', 'copy', 'css_front', 'reload'
 	
-	gulp.watch ["./bower_components/**/*.js", "#{sources}/build/gulpfile.coffee"], ->
+	gulp.watch ["./sources/build/gulpfile.coffee"], ->
+		sequence 'js_plugins', 'js_front', 'reload', 'css_bootstrap', 'css_plugins', 'copy', 'css_front', 'reload'
+
+	gulp.watch ["./bower_components/**/*.js"], ->
 		sequence 'js_plugins', 'js_front', 'reload'
 
 

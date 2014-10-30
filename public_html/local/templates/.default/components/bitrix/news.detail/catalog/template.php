@@ -108,4 +108,7 @@ $props = &$item["PROPS"];
 			endforeach;
 		?>
 	</div>
+	<?$section = end($arResult['SECTION']['PATH']);?>
+	<a href="/news/" class="product__back"><?=svg('back')?> вернуться в раздел «<?=$section['NAME']?>»</a>
+
 </div>

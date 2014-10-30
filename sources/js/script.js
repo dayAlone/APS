@@ -172,6 +172,11 @@
 
   $(document).ready(function() {
     var closeDropdown, mapInit, openDropdown, timer, x;
+    $('a[rel^="prettyPhoto"]').prettyPhoto({
+      social_tools: '',
+      overlay_gallery: false,
+      deeplinking: false
+    });
     $('.product__image-small a').click(function(e) {
       var elm;
       elm = $($(this).data('id'));
