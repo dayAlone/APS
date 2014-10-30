@@ -38,7 +38,7 @@ $props = &$item["PROPS"];
 	  <div class="col-md-6 col-md-pull-6">
 	  	<h1 class="product__name"><?=$item['NAME']?></h1>
 	  	<div class="product__text">
-	  		<?=$item['DETAIL_TEXT']?>
+	  		<?=$item['~DETAIL_TEXT']?>
 	  	</div>
 	  </div>
 	</div>
