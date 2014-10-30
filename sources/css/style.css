@@ -2928,14 +2928,16 @@ article {
 .news .news-list__item + .news-list__item {
   margin-top: 50px;
 }
-.news .news-list__date {
+.news .news-list .news-list__date,
+.news .news-item__date {
   text-transform: uppercase;
   font-weight: bold;
   color: #6e6f79;
   font-size: 11px;
   margin-bottom: 10px;
 }
-.news .news-list__title {
+.news .news-list .news-list__title,
+.news .news-item__title {
   font-size: 22px;
   color: #2d78d6;
   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, #adc2eb 50%);
@@ -2949,7 +2951,8 @@ article {
   background-size: 2px 2px;
   background-position: 0 22px;
 }
-.news .news-list__title:hover {
+.news .news-list .news-list__title:hover,
+.news .news-item__title:hover {
   color: #00aafa;
   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, #00aafa 50%);
   background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, #00aafa 50%);
@@ -2962,11 +2965,34 @@ article {
   background-size: 2px 2px;
   background-position: 0 22px;
 }
-.news .news-list__text {
+.news .news-list .news-list__text,
+.news .news-item__text {
   margin-top: 15px;
   width: 100%;
   font-size: 16px;
   color: #233347;
+}
+.news .news-item__text {
+  margin-top: 20px;
+}
+.news .news-item__text p,
+.news .news-item__text li {
+  font-size: 16px;
+}
+.news .news-item__text p {
+  margin-bottom: 15px;
+}
+.news .news-item__image {
+  max-width: 50%;
+  margin: 0 0 20px 20px;
+}
+.news .news-item__title {
+  color: #000;
+  background: transparent;
+}
+.news .news-item__title:hover {
+  color: #000;
+  background: transparent;
 }
 .sidebar {
   float: left;

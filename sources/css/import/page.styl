@@ -580,21 +580,49 @@
 			width 100%
 			& + .news-list__item
 				margin-top 50px
-		&__date
+		.news-list__date
 			text-transform: uppercase
 			font-weight: bold
 			color #6e6f79
 			font-size 11px
 			margin-bottom 10px
-		&__title
+		.news-list__title
 			font-size 22px
 			color #2d78d6
 			border-line(#adc2eb, 22px)
 			&:hover
 				color blue2
 				border-line(blue2, 22px)
-		&__text
+		.news-list__text
 			margin-top 15px
 			width 100%
 			font-size 16px
 			color #233347
+	.news-item
+		&__date
+			@extends .news .news-list .news-list__date
+		&__text
+			@extends .news .news-list .news-list__text
+			margin-top 20px
+			p, li
+				font-size 16px
+			p
+				margin-bottom 15px
+		&__image
+			max-width 50%
+			margin 0 0 20px 20px
+		&__title
+			@extends .news .news-list .news-list__title
+			color black
+			background transparent
+			&:hover
+				color black
+				background transparent
+			
+
+
+
+
+
+
+
