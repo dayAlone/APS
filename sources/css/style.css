@@ -3112,6 +3112,7 @@ body {
 .news .news-item .news-item__text ul,
 .career-item__text ul {
   padding-left: 20px;
+  margin-bottom: 20px;
 }
 .news .news-item .news-item__text p,
 .career-item__text p,
