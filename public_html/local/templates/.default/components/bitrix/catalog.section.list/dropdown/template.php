@@ -2,6 +2,7 @@
 $this->setFrameMode(true);
 if(count($arResult['SECTIONS'])>0):
     $sections = $arResult['SECTIONS'];
+    
     $del = -(1-$sections[0]['DEPTH_LEVEL']);
     if($del>0)
         foreach ($sections as &$item)

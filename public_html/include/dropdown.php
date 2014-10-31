@@ -18,7 +18,7 @@ $this->SetViewTarget('page_top');?>
 					"IBLOCK_ID"   => "1",
 					"TOP_DEPTH"   => "4",
 					"CACHE_TYPE"  => "A",
-					"SECTION_ID"  => $arSections[$key-1]['ID']
+					"SECTION_ID"  => $elm['ID']
 			  ),
 			  false
 			  );
