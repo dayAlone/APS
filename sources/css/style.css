@@ -3313,6 +3313,9 @@ body {
   position: relative;
   z-index: 2;
 }
+.dropdown > li .sub-collapser svg path {
+  fill: #00aafa;
+}
 .dropdown > li.opened,
 .dropdown > li:hover {
   color: #fff;
@@ -3321,9 +3324,9 @@ body {
 .dropdown > li:hover > a {
   color: #fff;
 }
-.dropdown > li.opened .sub-collapser,
-.dropdown > li:hover .sub-collapser {
-  color: #fff;
+.dropdown > li.opened .sub-collapser svg path,
+.dropdown > li:hover .sub-collapser svg path {
+  fill: #fff;
 }
 .dropdown > li.opened:after,
 .dropdown > li:hover:after {

@@ -10784,12 +10784,12 @@ function makeArray( obj ) {
                     }
                     else
                     {
-                        $(this).append('<span class="sub-collapser"><i>&#9660;</i></span>');
+                        $(this).append('<span class="sub-collapser"><i><svg width="7" height="6" viewBox="0 0 7 6" xmlns="http://www.w3.org/2000/svg"><path d="M7.03 0L3.514 6.026 0 0h7.03z" fill="#0045D2" fill-rule="evenodd"/></svg></i></span>');
                     }
                 }
 
                 $(this).children('ul').hide();
-                $(this).find('.sub-collapser').removeClass('expanded').children('i').html('&#9660;');
+                $(this).find('.sub-collapser').removeClass('expanded').children('i').html('<svg width="7" height="6" viewBox="0 0 7 6" xmlns="http://www.w3.org/2000/svg"><path d="M7.03 0L3.514 6.026 0 0h7.03z" fill="#0045D2" fill-rule="evenodd"/></svg>');
             });
 
             if ($options.resizeWidth >= $window.width())

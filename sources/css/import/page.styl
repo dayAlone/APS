@@ -819,12 +819,17 @@ body
 			margin-left 3px
 			position relative
 			z-index 2
+			svg
+				path
+					fill blue2
 		&.opened, &:hover
 			color white
 			> a
 				color white
 			.sub-collapser
-				color white
+				svg
+					path
+						fill white
 			&:after
 				content ""
 				position absolute
