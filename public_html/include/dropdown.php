@@ -13,6 +13,7 @@ $this->SetViewTarget('page_top');?>
 		<style>
 			.catalog .wrap {
 				background-image: url(<?=$BG?>) !important;
+				background-size: cover !important;
 			}
 		</style>
 	<?endif;?>
