@@ -12,19 +12,24 @@ $this->SetViewTarget('page_top');?>
     	?>
 		<li class="divider">&#9654;</li>
 		<?endif;?>
-        <li>
-            <a href="#"><?=$elm['NAME']?></a>
-            <?
-				$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "dropdown", array(
-					"IBLOCK_TYPE" => "news",
-					"IBLOCK_ID"   => "1",
-					"TOP_DEPTH"   => "4",
-					"CACHE_TYPE"  => "A",
-					"SECTION_ID"  => $elm['ID']
-			  ),
-			  false
-			  );
-			?>
+        <?if(($key+1)<count($arSections)):?>
+        	<li>
+	            <a href="#"><?=$elm['NAME']?></a>
+	            <?
+					$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "dropdown", array(
+						"IBLOCK_TYPE" => "news",
+						"IBLOCK_ID"   => "1",
+						"TOP_DEPTH"   => "4",
+						"CACHE_TYPE"  => "A",
+						"SECTION_ID"  => $elm['ID']
+				  ),
+				  false
+				  );
+				?>
+		<?else:?>
+			<li class="text">
+			<?=$elm['NAME']?>
+		<?endif;?>
 		</li>
 	<?
 	endforeach;?>

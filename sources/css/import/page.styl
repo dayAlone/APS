@@ -811,6 +811,8 @@ body
 		line-height 26px
 		margin-right 10px
 		position relative
+		&.text
+			border-color white
 		> a
 			color black
 			position relative
@@ -823,7 +825,7 @@ body
 			svg
 				path
 					fill blue2
-		&.opened, &:hover
+		&.opened:not(.text), &:hover:not(.text)
 			color white
 			> a
 				color white

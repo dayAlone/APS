@@ -3302,6 +3302,9 @@ body {
   margin-right: 10px;
   position: relative;
 }
+.dropdown > li.text {
+  border-color: #fff;
+}
 .dropdown > li > a {
   color: #000;
   position: relative;
@@ -3316,20 +3319,20 @@ body {
 .dropdown > li .sub-collapser svg path {
   fill: #00aafa;
 }
-.dropdown > li.opened,
-.dropdown > li:hover {
+.dropdown > li.opened:not(.text),
+.dropdown > li:hover:not(.text) {
   color: #fff;
 }
-.dropdown > li.opened > a,
-.dropdown > li:hover > a {
+.dropdown > li.opened:not(.text) > a,
+.dropdown > li:hover:not(.text) > a {
   color: #fff;
 }
-.dropdown > li.opened .sub-collapser svg path,
-.dropdown > li:hover .sub-collapser svg path {
+.dropdown > li.opened:not(.text) .sub-collapser svg path,
+.dropdown > li:hover:not(.text) .sub-collapser svg path {
   fill: #fff;
 }
-.dropdown > li.opened:after,
-.dropdown > li:hover:after {
+.dropdown > li.opened:not(.text):after,
+.dropdown > li:hover:not(.text):after {
   content: "";
   position: absolute;
   width: 100%;
