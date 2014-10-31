@@ -25,20 +25,4 @@
 ?>
 </div>
 <?=$arResult["NAV_STRING"]?>
-
-<?
-$arSections = array();
-foreach($arResult['SECTION']['PATH'] as $section):
-	$arSections[] = array('ID'=>$section['ID'], 'DEPTH_LEVEL' => $section['DEPTH_LEVEL']);
-endforeach;
-$this->SetViewTarget('page_top');
-	$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "dropdown", array(
-      "IBLOCK_TYPE"  => "news",
-      "IBLOCK_ID"    => "1",
-      "TOP_DEPTH"    => "4",
-      "CACHE_TYPE"   => "A",
-      "CACHE_NOTES"   => $arSections
-  ),
-  false
-  );
-$this->EndViewTarget();?> 
+<?require_once($_SERVER['DOCUMENT_ROOT'].'/include/dropdown.php')?>

@@ -646,7 +646,7 @@ body
 			margin-top 20px
 			ul
 				padding-left 20px
-				margin-bottom 20px
+				margin-bottom 25px
 			p, li
 				font-size 16px
 			p
@@ -715,6 +715,7 @@ body
 			line-height 38px
 			border-radius 30px
 			padding 0 50px 0 20px
+			line-height normal
 		button[type=submit]
 			background transparent
 			border 0
@@ -722,7 +723,7 @@ body
 			display inline-block
 			svg
 				position relative
-				top 4px
+				top 8px
 				min-height 20px
 				min-width 20px
 
@@ -759,3 +760,90 @@ body
 					@extends .news .news-list .news-list__title
 					font-size 18px
 					background-position 0 18px
+.dropdown
+	padding 0
+	position relative
+	z-index 30
+	ul
+		padding 0
+		position absolute
+		z-index 20
+		li
+			span.sub-collapser
+				display none
+			float left
+			clear both
+			width 100%
+			top 0
+			width 210px
+			border-bottom 1px solid #309cfa
+			background #007bf8
+			t(background)
+			&.opened, &:hover
+				background #001766
+			&:last-of-type
+				border-bottom 0
+			a
+				width 100%
+				font-size 12px
+				color white
+				padding 10px 15px 4px
+				float left
+				line-height 14px
+				
+			ul
+				left 100%
+				margin-left 1px
+	li
+		display inline-block
+		list-style none
+		padding 0
+		&.divider
+			font-size 9px
+			color #c6cdd2
+			border 0
+	> li
+		border-top 1px solid blue2
+		border-bottom 1px solid blue2
+		font-size 12px
+		height 22px
+		line-height 26px
+		margin-right 10px
+		position relative
+		> a
+			color black
+			position relative
+			z-index 2
+		.sub-collapser
+			color blue2
+			margin-left 3px
+			position relative
+			z-index 2
+		&.opened, &:hover
+			color white
+			> a
+				color white
+			.sub-collapser
+				color white
+			&:after
+				content ""
+				position absolute
+				width 100%
+				box-sizing content-box
+				padding 0 10px
+				height 35px
+				margin-top -7px
+				margin-left -10px
+				background #007bf8
+				border-bottom 1px solid #309cfa
+				left 0
+				top 0
+				z-index 0
+		> ul
+			top 29px
+			left -10px
+			display none
+		
+span.sub-collapser
+	i
+		font-style: normal

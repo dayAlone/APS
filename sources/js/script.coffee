@@ -129,6 +129,13 @@ blur = ()->
 
 $(document).ready ->
 
+	$('.dropdown').slimmenu
+		resizeWidth: '800',
+	    collapserTitle: 'Main Menu',
+	    animSpeed:'medium',
+	    indentChildren: true,
+	    childrenIndenter: '&raquo;'
+
 	if $('.side').length > 0
 		$('.border-left').css
 			minHeight : $('.side').height()

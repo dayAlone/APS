@@ -10814,11 +10814,20 @@ function makeArray( obj ) {
             {
                 $menu.find('li').has('ul').on('mouseenter', function()
                 {
-                    $(this).find('>ul').stop().slideDown($options.animSpeed, $options.easingEffect);
+                    $(this).addClass('opened')
+                    $(this).find('>ul')
+                        .stop()
+                        .css({'z-index':30})
+                        .slideDown($options.animSpeed, $options.easingEffect);
                 })
                 .on('mouseleave', function()
                 {
-                    $(this).find('>ul').stop().slideUp($options.animSpeed, $options.easingEffect);
+                    $(this).removeClass('opened')
+                    $(this)
+                        .find('>ul')
+                        .stop()
+                        .css({'z-index':0})
+                        .slideUp($options.animSpeed, $options.easingEffect);
                 });
 
                 $menu.find('li > a > i').remove();

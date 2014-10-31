@@ -1,57 +1,43 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 $this->setFrameMode(true);
-function getDropdown($sections, $depth, $maxDepth)
-{
-    $del = -(1-$depth);
+if(count($arResult['SECTIONS'])>0):
+    $sections = $arResult['SECTIONS'];
+    $del = -(1-$sections[0]['DEPTH_LEVEL']);
     if($del>0)
         foreach ($sections as &$item)
             $item['DEPTH_LEVEL'] -= $del;
-
+    
+    $open = 0;
+    $close = 0;
     foreach ($sections as $key => $item):
         if(!isset($sections[$key-1])):
             echo '<ul>';
+            $open++;
         else:
             if($sections[$key-1]['DEPTH_LEVEL']<$item['DEPTH_LEVEL']):
                 echo '<ul>';
+                $open++;
             elseif($sections[$key-1]['DEPTH_LEVEL']>$item['DEPTH_LEVEL']):
-                 for ($i=0; $i < $sections[$key-1]['DEPTH_LEVEL']-$item['DEPTH_LEVEL']+2; $i++)
+                for ($i=0; $i < $sections[$key-1]['DEPTH_LEVEL']-$item['DEPTH_LEVEL']; $i++){
                     echo "</ul>";
+                    $close++;
+                }
+                echo '</li>';
             endif;
         endif;
 
-        echo "<li><a href='#'>".$item['NAME']."</a></li>";
+        echo "<li><a href='/catalog/".$item['CODE']."/'>".$item['NAME']."</a>";
+
+        if(isset($sections[$key+1]))
+            if($sections[$key+1]['DEPTH_LEVEL'] == $item['DEPTH_LEVEL'])
+                echo '</li>';
 
         if(!isset($sections[$key+1])):
-            for ($i=0; $i < $item['DEPTH_LEVEL']; $i++)
-                    echo "</ul>";
+            for ($i=0; $i < $item['DEPTH_LEVEL']; $i++) {
+                echo "</ul>";
+                $close++;
+            }
         endif;
-    endforeach;
-}
-
-class filterArray {
-    private $num;
-
-    public static $maxDepth;
-
-    function __construct($num) {
-            $this->num = $num;
-    }
-
-    function isBigger($i) {
-        if(filterArray::$maxDepth < $i['DEPTH_LEVEL'])
-            filterArray::$maxDepth = $i['DEPTH_LEVEL'];
-
-        return $i['DEPTH_LEVEL'] >= $this->num;
-    }
-}
-
-if(count($arResult['SECTIONS'])>0):
-    foreach ($arParams["CACHE_NOTES"] as $elm):
-        $sections =  array_values(array_filter($arResult['SECTIONS'], array(new filterArray($elm['DEPTH_LEVEL']), 'isBigger')));
-        /*
-        if($elm['DEPTH_LEVEL']>1)
-            getDropdown($sections, $elm['DEPTH_LEVEL'], filterArray::$maxDepth);
-        */
     endforeach;
 endif;
 ?>
