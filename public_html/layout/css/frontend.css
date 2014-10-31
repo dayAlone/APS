@@ -4184,7 +4184,7 @@ div.pp_default .pp_loaderIcon {
   position: fixed;
   background: rgba(0,25,100,0.6);
   line-height: 62px;
-  z-index: 3000;
+  z-index: 300;
   white-space: nowrap;
   margin-bottom: 20px;
 /* Выбор сайтов холдинга */
