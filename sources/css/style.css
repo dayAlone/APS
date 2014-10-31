@@ -1614,6 +1614,11 @@ body {
   content: "";
   display: block;
 }
+.catalog .wrap {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
 .about .wrap {
   background: #021b64 url("../images/bg-about.jpg") top center no-repeat;
 }
