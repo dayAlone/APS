@@ -6274,7 +6274,8 @@ body {
   width: 100%;
   margin-top: 20px;
 }
-.career-list__title {
+.career-list__item {
+  width: 100%;
   margin-bottom: 15px;
 }
 .search-page {
