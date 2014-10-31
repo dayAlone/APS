@@ -1059,6 +1059,7 @@ div.pp_default .pp_loaderIcon {
   position: fixed;
   background: rgba(0,25,100,0.6);
   line-height: 62px;
+  z-index: 3000;
   white-space: nowrap;
   margin-bottom: 20px;
 /* Выбор сайтов холдинга */
@@ -1603,12 +1604,12 @@ body {
   min-height: 100%;
   padding-bottom: 65px;
   margin-bottom: -65px;
-  background: #000 url("../images/bg-index.jpg") top center no-repeat;
+  background: #000 url("../images/bg-index.jpg") center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center center;
 }
 .wrap:after {
   content: "";
@@ -1620,19 +1621,19 @@ body {
   background-size: cover !important;
 }
 .about .wrap {
-  background: #021b64 url("../images/bg-about.jpg") top center no-repeat;
+  background: #021b64 url("../images/bg-about.jpg") center center no-repeat;
 }
 .contacts .wrap {
-  background: #021b64 url("../images/bg-contacts.jpg") top center no-repeat;
+  background: #021b64 url("../images/bg-contacts.jpg") center center no-repeat;
 }
 .catalog .wrap {
-  background: #021b64 url("../images/bg-catalog.jpg") top center no-repeat;
+  background: #021b64 url("../images/bg-catalog.jpg") center center no-repeat;
 }
 .catalog-category .wrap {
-  background: #021b64 url("../images/bg-catalog-category.jpg") top center no-repeat;
+  background: #021b64 url("../images/bg-catalog-category.jpg") center center no-repeat;
 }
 .contacts .wrap {
-  background: #021b64 url("../images/bg-contacts.jpg") top center no-repeat;
+  background: #021b64 url("../images/bg-contacts.jpg") center center no-repeat;
 }
 .index .wrap {
   background: #fff;

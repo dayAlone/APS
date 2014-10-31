@@ -16,16 +16,16 @@ body
 	&:after
 		content ""
 		display block
-	b('bg-index.jpg', top center no-repeat, black, cover)
+	b('bg-index.jpg', center center no-repeat, black, cover)
 	
 	background-repeat no-repeat
-	background-position top center
+	background-position center center
 	.catalog &
 		background-size cover !important
 	
 	for x in about contacts catalog catalog-category contacts
 		.{x} &
-			b('bg-'+x+'.jpg', top center no-repeat, #021b64)
+			b('bg-'+x+'.jpg', center center no-repeat, #021b64)
 	.index &
 		background white
 html
