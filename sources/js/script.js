@@ -11,10 +11,10 @@
 
   size = function() {
     var val;
-    $('body:not(.catalog) .page__frame').removeAttr('style');
+    $('body:not(.catalog-category) .page__frame').removeAttr('style');
     val = $('.wrap').height() - $('.page').offset().top - $('.footer').outerHeight() * 2 - 22;
-    if ($('body:not(.catalog) .page__frame').outerHeight() < val) {
-      return $('body:not(.catalog) .page__frame').css({
+    if ($('body:not(.catalog-category) .page__frame').outerHeight() < val) {
+      return $('body:not(.catalog-category) .page__frame').css({
         'minHeight': val
       });
     }

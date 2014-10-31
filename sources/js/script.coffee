@@ -6,10 +6,10 @@ map = undefined
 
 size = ->
 	#autoHeight($('.page .tech'), '.tech__item', '.tech__title', false, true)
-	$('body:not(.catalog) .page__frame').removeAttr 'style'
+	$('body:not(.catalog-category) .page__frame').removeAttr 'style'
 	val = $('.wrap').height() - $('.page').offset().top - $('.footer').outerHeight()*2-22
-	if($('body:not(.catalog) .page__frame').outerHeight()< val)
-		$('body:not(.catalog) .page__frame').css
+	if($('body:not(.catalog-category) .page__frame').outerHeight()< val)
+		$('body:not(.catalog-category) .page__frame').css
 			'minHeight':val
 	###
 	if !newsInit

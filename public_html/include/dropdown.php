@@ -24,7 +24,7 @@ $this->SetViewTarget('page_top');?>
 		<li class="divider">&#9654;</li>
 		<?endif;?>
         <?if(($key+1)<count($arSections)):?>
-        	<li>
+        	<li class="link">
 	            <a href="#"><?=$elm['NAME']?></a>
 	            <?
 					$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "dropdown", array(

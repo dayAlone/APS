@@ -3323,20 +3323,20 @@ body {
 .dropdown > li .sub-collapser svg path {
   fill: #00aafa;
 }
-.dropdown > li.opened:not(.text),
-.dropdown > li:hover:not(.text) {
+.dropdown > li.opened,
+.dropdown > li.link:hover {
   color: #fff;
 }
-.dropdown > li.opened:not(.text) > a,
-.dropdown > li:hover:not(.text) > a {
+.dropdown > li.opened > a,
+.dropdown > li.link:hover > a {
   color: #fff;
 }
-.dropdown > li.opened:not(.text) .sub-collapser svg path,
-.dropdown > li:hover:not(.text) .sub-collapser svg path {
+.dropdown > li.opened .sub-collapser svg path,
+.dropdown > li.link:hover .sub-collapser svg path {
   fill: #fff;
 }
-.dropdown > li.opened:not(.text):after,
-.dropdown > li:hover:not(.text):after {
+.dropdown > li.opened:after,
+.dropdown > li.link:hover:after {
   content: "";
   position: absolute;
   width: 100%;
