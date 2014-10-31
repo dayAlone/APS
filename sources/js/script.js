@@ -10,7 +10,14 @@
   map = void 0;
 
   size = function() {
-    return autoHeight($('.page .tech'), '.tech__item', '.tech__title', false, true);
+    var val;
+    $('.page__frame').removeAttr('style');
+    val = $('.wrap').height() - $('.page').offset().top - $('.footer').outerHeight() * 2 - 22;
+    if ($('.page__frame').outerHeight() < val) {
+      return $('.page__frame').css({
+        'minHeight': val
+      });
+    }
 
     /*
     	if !newsInit
