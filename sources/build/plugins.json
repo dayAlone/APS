@@ -66,6 +66,9 @@
       "js":"/slick/slick/slick.js",
       "css":"/slick/slick/slick.css"
    },
+   "slimmenu":{
+      "js":""
+   }
    "spin":{
       "js":[
          "/spin.js/spin.js",
