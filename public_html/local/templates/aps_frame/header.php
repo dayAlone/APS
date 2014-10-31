@@ -3,3 +3,4 @@
 ?>
 <div class="container">
 	<div class="page__frame">
+		<?$APPLICATION->ShowViewContent('page_top');?>

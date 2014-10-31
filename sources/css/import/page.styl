@@ -644,10 +644,14 @@ body
 		.news-item__text
 			@extends .news .news-list .news-list__text
 			margin-top 20px
+			ul
+				padding-left 20px
 			p, li
 				font-size 16px
 			p
 				margin-bottom 15px
+			li
+				margin-bottom 10px
 		&__back
 			@extends .catalog .product .product__back
 		&__image
@@ -673,6 +677,7 @@ body
 		margin-top 20px
 		&__title
 			@extends .news .news-list .news-list__title
+			margin-bottom 15px
 	&-item
 		&__tooltip
 			@extends .news .news-list .news-list__date
