@@ -4755,6 +4755,9 @@ body {
 .contacts .wrap {
   background: #021b64 url("../images/bg-contacts.jpg") center center no-repeat;
 }
+.catalog .wrap {
+  background-position: top center;
+}
 .index .wrap {
   background: #fff;
 }

@@ -11,10 +11,10 @@
 
   size = function() {
     var val;
-    $('.page__frame').removeAttr('style');
+    $('body:not(.catalog) .page__frame').removeAttr('style');
     val = $('.wrap').height() - $('.page').offset().top - $('.footer').outerHeight() * 2 - 22;
-    if ($('.page__frame').outerHeight() < val) {
-      return $('.page__frame').css({
+    if ($('body:not(.catalog) .page__frame').outerHeight() < val) {
+      return $('body:not(.catalog) .page__frame').css({
         'minHeight': val
       });
     }
