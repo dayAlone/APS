@@ -1,5 +1,7 @@
 <?
-$arSections = array();
+$arSections = array(
+	0 => array('NAME'=>'Каталог')
+);
 foreach($arResult['SECTION']['PATH'] as $section):
 	$arSections[] = array('ID'=>$section['ID'], 'NAME'=>$section['NAME'], 'DEPTH_LEVEL' => $section['DEPTH_LEVEL']);
 endforeach;
