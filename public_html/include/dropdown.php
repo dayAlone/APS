@@ -11,8 +11,8 @@ endforeach;
 $this->SetViewTarget('page_top');?>
 	<?if(strlen($BG)>0):?>
 		<style>
-			.wrap {
-				background-image: url(<?=$BG?>);
+			.catalog .wrap {
+				background-image: url(<?=$BG?>) !important;
 			}
 		</style>
 	<?endif;?>
