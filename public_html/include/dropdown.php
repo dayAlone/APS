@@ -2,10 +2,20 @@
 $arSections = array(
 	0 => array('NAME'=>'Каталог')
 );
+$BG = false;
 foreach($arResult['SECTION']['PATH'] as $section):
 	$arSections[] = array('ID'=>$section['ID'], 'NAME'=>$section['NAME'], 'DEPTH_LEVEL' => $section['DEPTH_LEVEL']);
+	if(intval($section['DETAIL_PICTURE'])>0)
+		$BG = CFile::GetPath($section['DETAIL_PICTURE']);
 endforeach;
 $this->SetViewTarget('page_top');?>
+	<?if(strlen($BG)>0):?>
+		<style>
+			.wrap {
+				background-image: url(<?=$BG?>);
+			}
+		</style>
+	<?endif;?>
 	<ul class="dropdown"><?
     foreach ($arSections as $key => $elm):
     	if($key>0):
