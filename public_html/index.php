@@ -25,7 +25,7 @@ $APPLICATION->IncludeComponent(
     "NEWS_COUNT"  => "1",
     "SORT_BY1"    => "ACTIVE_FROM",
     "SORT_ORDER1" => "DESC",
-    "DETAIL_URL"  => "/news/#ELEMENT_CODE#/",
+    "DETAIL_URL"  => "/press/#ELEMENT_CODE#/",
     "CACHE_TYPE"  => "A",
     "SET_TITLE"   => "N",
   ),
