@@ -1,4 +1,4 @@
-<div class="slider fotorama" data-width="100%" data-height="80%" data-nav="false" data-autoplay="true" data-transition="crossfade">
+<div class="slider fotorama" data-width="100%" data-height="80%" data-minheight="640" data-nav="false" data-autoplay="true" data-transition="crossfade">
 	<?foreach ($arResult['ITEMS'] as $item):?>
 		<div style="background-image: url(<?=$item['PREVIEW_PICTURE']['SRC']?>)" class="slider__item slider__item--<?=$item['PROPERTIES']['POSITION']['VALUE_XML_ID']?>">
 		  <div class="container">
