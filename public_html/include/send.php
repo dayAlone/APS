@@ -32,8 +32,7 @@ if($result['status'] == 'ok') {
 			'resume'  => 'Резюме'
 		);
 
-		$body = "<br />
-		С сайта было отправлено сообщение следующего содержания:<br /><hr><br /><br />";
+		$body = "<small>С сайта было отправлено сообщение следующего содержания:</small><br /><hr><br /><br />";
 
 		foreach ($_REQUEST as $key => $value)
 			if($text[$key]&&strlen($value)>0)
