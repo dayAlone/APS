@@ -19,7 +19,7 @@ if($result['status'] == 'ok') {
 
 		$mail = new PHPMailer;
 		$mail->isSendmail();
-		
+		$mail->CharSet = 'UTF-8';
 		
 		
 		$text = array(
