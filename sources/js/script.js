@@ -179,6 +179,16 @@
 
   $(document).ready(function() {
     var closeDropdown, mapInit, openDropdown, timer, x;
+    $('.slider').on('fotorama:ready', function() {
+      $('.slider .fotorama__arr--prev').load('/layout/images/svg/slider-arrow-left.svg');
+      $('.slider .fotorama__arr--next').load('/layout/images/svg/slider-arrow-right.svg');
+      return BackgroundCheck.init({
+        targets: '.slider',
+        images: '.slider .fotorama__active .slider__item'
+      });
+    }).on('fotorama:show', function() {
+      return BackgroundCheck.refresh();
+    }).fotorama();
     $('.dropdown').slimmenu({
       resizeWidth: '800'
     }, {

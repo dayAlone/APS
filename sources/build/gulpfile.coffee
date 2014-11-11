@@ -19,7 +19,7 @@ sequence     = require 'run-sequence'
 replace      = require 'gulp-replace'
 watch        = require 'gulp-watch'
 
-plugins  = [ 'jquery', 'bootstrap', 'browser', 'fotorama', 'imagesLoaded', 'slimmenu', 'bem', 'hoverIntent', 'spin', 'velocity', 'parsley', 'prettyPhoto' ]
+plugins  = [ 'jquery', 'bootstrap', 'browser', 'fotorama', 'bgcheck', 'imagesLoaded', 'slimmenu', 'bem', 'hoverIntent', 'spin', 'velocity', 'parsley', 'prettyPhoto' ]
 
 layout   = './public_html/layout'
 sources  = './sources/'

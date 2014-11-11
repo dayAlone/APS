@@ -31,7 +31,8 @@
     "html2canvas"        : "~0.4.1",
     "imagesloaded"       : "~3.1.8",
     "tooltip"            : "git@github.com:medelbou/Tooltip-for-Google-Maps.git",
-    "slimmenu"           : "git@github.com:adnantopal/slimmenu.git"
+    "slimmenu"           : "git@github.com:adnantopal/slimmenu.git",
+    "bgcheck"            : "git@github.com:kennethcachia/background-check.git"
   },
   "moduleType": [
     "amd",

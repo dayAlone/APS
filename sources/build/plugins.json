@@ -2,6 +2,9 @@
    "bem":{
       "js":"/jquery.bem/jquery.bem.js"
    },
+   "bgcheck":{
+      "js":"/bgcheck/background-check.js"
+   },
    "blurjs":{
       "js":"/blurjs/blur.js"
    },

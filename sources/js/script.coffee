@@ -134,6 +134,17 @@ blur = ()->
 
 $(document).ready ->
 
+	$('.slider')
+		.on 'fotorama:ready', ()->
+			$('.slider .fotorama__arr--prev').load('/layout/images/svg/slider-arrow-left.svg')
+			$('.slider .fotorama__arr--next').load('/layout/images/svg/slider-arrow-right.svg')
+			BackgroundCheck.init
+				targets: '.slider'
+				images: '.slider .fotorama__active .slider__item'
+		.on 'fotorama:show', ()->
+			BackgroundCheck.refresh()
+		.fotorama()
+
 	$('.dropdown').slimmenu
 		resizeWidth: '800',
 	    collapserTitle: 'Main Menu',

@@ -5211,6 +5211,27 @@ body {
   background: #fff;
   color: #001766;
 }
+.index .slider.background--dark svg path {
+  fill: #fff;
+}
+.index .slider .fotorama__arr {
+  background: transparent;
+  top: 0;
+  width: 50px;
+  height: 100%;
+}
+.index .slider .fotorama__arr svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 55px;
+  max-width: 70%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+}
 .index .sections {
   float: left;
   width: 100%;
