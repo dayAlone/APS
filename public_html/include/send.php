@@ -37,13 +37,14 @@ if($result['status'] == 'ok') {
 		foreach ($_REQUEST as $key => $value)
 			if($text[$key]&&strlen($value)>0)
 				$body .= $text[$key].': '.nl2br($value)."<br /><br />\r\n";
-		
-		var_dump($_FILES);
 
-		foreach ($_FILES as $key => $value)
-			if($text[$key])
-				$body .=$text[$key].': <a href="http://'.$_SERVER['HTTP_HOST'].$value.'">'.CFile::GetPath(CFile::SaveFile($value))."</a><br /><br />\r\n";
-
+		foreach ($_FILES as $key => $value):
+			if($text[$key]):
+				$name = $value['name'];
+				$value = CFile::GetPath(CFile::SaveFile($value))
+				$body .=$text[$key].': <a href="http://'.$_SERVER['HTTP_HOST'].$value.'">'.$name."</a><br /><br />\r\n";
+			endif;
+		endforeach;
 		$body .= "<br /><hr><br />";
 
 		$mail->Subject = "Заявка с сайта: ".$_REQUEST["theme"]; 
