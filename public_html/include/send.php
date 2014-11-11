@@ -47,7 +47,7 @@ if($result['status'] == 'ok') {
 		endforeach;
 		$body .= "<br /><hr><br />";
 
-		$mail->Subject = "Заявка с сайта: ".$_REQUEST["theme"]; 
+		$mail->Subject = "Сообщение с сайта ".$_SERVER['HTTP_HOST']; 
 		$mail->setFrom("mailer@".$_SERVER['HTTP_HOST'], "Сайт ".$_SERVER['HTTP_HOST']);
 
 		if ($result['status'] == 'ok') {
