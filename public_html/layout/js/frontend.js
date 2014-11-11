@@ -19860,7 +19860,7 @@ var pp_alreadyInitialized = false; // Used for the deep linking to make sure not
     });
     $('.form').submit(function(e) {
       var data;
-      data = $(this).serialize();
+      data = new FormData(this);
       $.post('/include/send.php', data, function(data) {
         data = $.parseJSON(data);
         if (data.status === "ok") {

@@ -39,13 +39,11 @@ if($result['status'] == 'ok') {
 			if($text[$key]&&strlen($value)>0)
 				$body .= $text[$key].': '.nl2br($value)."<br /><br />\r\n";
 		
-		foreach ($_FILES as $key => $value){
-			if($text[$key]) {
-				$value = CFile::GetPath(CFile::SaveFile($value));
-				$body .=$text[$key].': <a href="http://'.$_SERVER['HTTP_HOST'].$value.'">'.$value."</a><br /><br />\r\n";
-			}
-		}
+		var_dump($_FILES);
 
+		foreach ($_FILES as $key => $value)
+			if($text[$key])
+				$body .=$text[$key].': <a href="http://'.$_SERVER['HTTP_HOST'].$value.'">'.CFile::GetPath(CFile::SaveFile($value))."</a><br /><br />\r\n";
 
 		$body .= "<br /><hr><br />";
 
