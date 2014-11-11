@@ -239,7 +239,7 @@ $(document).ready ->
 			$('.form .file-trigger').addClass 'error'
 
 	$('.form').submit (e)->
-		data = $(this).serialize()
+		data = new FormData($(this))
 		$.post '/include/send.php', data,
 	        (data) ->
 	        	data = $.parseJSON(data)
