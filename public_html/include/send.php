@@ -41,7 +41,7 @@ if($result['status'] == 'ok') {
 		foreach ($_FILES as $key => $value):
 			if($text[$key]):
 				$name = $value['name'];
-				$value = CFile::GetPath(CFile::SaveFile($value))
+				$value = CFile::GetPath(CFile::SaveFile($value));
 				$body .=$text[$key].': <a href="http://'.$_SERVER['HTTP_HOST'].$value.'">'.$name."</a><br /><br />\r\n";
 			endif;
 		endforeach;
