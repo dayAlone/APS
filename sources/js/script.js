@@ -186,7 +186,7 @@
         targets: '.slider',
         images: '.slider .fotorama__active .slider__item'
       });
-    }).on('fotorama:show', function() {
+    }).on('fotorama:showend', function() {
       return BackgroundCheck.refresh();
     }).fotorama();
     $('.dropdown').slimmenu({

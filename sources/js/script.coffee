@@ -141,7 +141,7 @@ $(document).ready ->
 			BackgroundCheck.init
 				targets: '.slider'
 				images: '.slider .fotorama__active .slider__item'
-		.on 'fotorama:show', ()->
+		.on 'fotorama:showend', ()->
 			BackgroundCheck.refresh()
 		.fotorama()
 
