@@ -233,6 +233,11 @@ $(document).ready ->
 		getCaptcha()
 		e.preventDefault()
 
+	$('.form input[type=submit]').click (e)->
+		
+		if !$('.form input[type=file]').val()
+			$('.form .file-trigger').addClass 'error'
+
 	$('.form').submit (e)->
 		data = $(this).serialize()
 		$.post '/include/send.php', data,
@@ -267,7 +272,7 @@ $(document).ready ->
 			$(this).find('iframe').remove()
 
 	$('.lang-trigger__carriage').click (e)->
-		window.location.href = 'http://argusweld.com'
+		window.location.href = 'http://oooaps.com'
 		el = $(this).parents('.lang-trigger')
 		variants = el.data('variant').split(',')
 		$.each variants, (index, value)->
@@ -276,6 +281,14 @@ $(document).ready ->
 				el.mod('lang', value)
 				return false
 		e.preventDefault()
+
+	$('.file-trigger').click (e)->
+		$(this).parent().find('input[type=file]').trigger 'click'
+		e.preventDefault()
+
+	$('input[type=file]').on 'change', ()->
+		$('.form .file-trigger').removeClass 'error'
+		$('.file-name').text($(this).val().replace(/.+[\\\/]/, ""))
 
 	$('.form-trigger').click (e)->
 		form = $(this).parents('.modal').find('form')

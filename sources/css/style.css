@@ -1915,8 +1915,7 @@ article {
 .modal .form input[type="text"].parsley-error,
 .modal .form input[type="email"].parsley-error,
 .modal .form textarea.parsley-error {
-  -webkit-box-shadow: 0 0 0 2px #f00;
-  box-shadow: 0 0 0 2px #f00;
+  border-color: #f00 !important;
 }
 .modal .form .parsley-errors-list {
   display: none !important;
@@ -3364,6 +3363,129 @@ body {
 }
 span.sub-collapser i {
   font-style: normal;
+}
+#vacancyDetail .modal-dialog {
+  max-width: 830px;
+}
+#vacancyDetail .close svg path {
+  fill: #fff;
+}
+#vacancyDetail .required {
+  color: #717b84;
+  font-size: 13px;
+  float: left;
+  width: 100%;
+  margin-top: 25px;
+  line-height: 15px;
+}
+#vacancyDetail .required span {
+  color: #ff6d70;
+}
+#vacancyDetail .form {
+  display: block;
+  padding: 0;
+}
+#vacancyDetail .form__footer {
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #d5dbdf;
+}
+#vacancyDetail .form .captcha {
+  width: 70%;
+  border: 1px solid #d5dbdf;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#vacancyDetail .form input {
+  line-height: 100%;
+}
+#vacancyDetail .form .file {
+  margin-top: 38px;
+}
+#vacancyDetail .form .file-description {
+  font-size: 12px;
+  color: #233347;
+  margin-top: 20px;
+}
+#vacancyDetail .form .file-name {
+  float: left;
+  width: 100%;
+  font-size: 12px;
+  color: #97a4b2;
+  margin: 10px 0;
+}
+#vacancyDetail .form .file-trigger {
+  float: right;
+  width: 105%;
+  background: #1c75cf;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 30px;
+  line-height: 34px;
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+#vacancyDetail .form .file-trigger.error {
+  background: #f00;
+}
+#vacancyDetail .form .file-trigger:hover {
+  background: #64b1fa;
+}
+#vacancyDetail .form label[for="file"] {
+  margin-top: 3px;
+}
+#vacancyDetail .form input,
+#vacancyDetail .form textarea {
+  border-color: #1c75cf;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#vacancyDetail .form input:focus,
+#vacancyDetail .form textarea:focus {
+  outline: 0;
+}
+#vacancyDetail .form textarea {
+  height: 123px;
+}
+#vacancyDetail .form input[type=submit] {
+  width: 100%;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border-width: 1px;
+  text-align: center !important;
+  margin-top: 39px;
+  background: #1c75cf;
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+#vacancyDetail .form input[type=submit]:hover {
+  background: #64b1fa;
+  border-color: #64b1fa;
+}
+#vacancyDetail .form .captcha_refresh {
+  margin-top: 0;
+  float: right;
+}
+#vacancyDetail .form .captcha_refresh svg path {
+  fill: #1c75cf;
+}
+#vacancyDetail .form label {
+  text-align: left !important;
+}
+#vacancyDetail .form label span {
+  color: #ff6d70;
+}
+#vacancyDetail .vacancy-popup__sub {
+  font-size: 18px;
+  color: #9c9c9c;
+}
+#vacancyDetail .vacancy-popup__title {
+  font-size: 26px;
+  margin-top: 3px;
 }
 .sidebar {
   width: 100%;

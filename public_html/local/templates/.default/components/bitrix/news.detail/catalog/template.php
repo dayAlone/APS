@@ -89,10 +89,26 @@ $props = &$item["PROPS"];
 									<?
 									else:
 										if(strlen($elm['property_name'])>0):
+											$count = 0;
+											foreach ($elm as $v)
+												if(strlen($v)>0)
+													$count++;
 										?>
 										<div class="row no-gutter">
-											<div class="col-md-5 col-xs-5"><?=$elm['property_name']?>:</div>
-											<div class="col-md-7 col-xs-7"><?=html_entity_decode($elm['property_value'])?></div>
+											<?
+											if($count == 2):?>
+											<div class="col-xs-5"><?=$elm['property_name']?>:</div>
+											<div class="col-xs-7"><?=html_entity_decode($elm['property_value'])?></div>
+											<?else:
+												foreach ($elm as $x => $v){
+													if(strlen($v)>0){
+														$s = intval(12/$count);
+														if($count == 5 && $x == 'property_name')
+															$s = 4;
+														?><div class="col-xs-<?=$s?>"><?=$v?>:</div><?
+													}
+												}
+											endif;?>
 										</div>
 										<?
 										endif;

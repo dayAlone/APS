@@ -292,6 +292,11 @@
       getCaptcha();
       return e.preventDefault();
     });
+    $('.form input[type=submit]').click(function(e) {
+      if (!$('.form input[type=file]').val()) {
+        return $('.form .file-trigger').addClass('error');
+      }
+    });
     $('.form').submit(function(e) {
       var data;
       data = $(this).serialize();
@@ -333,7 +338,7 @@
     });
     $('.lang-trigger__carriage').click(function(e) {
       var el, variants;
-      window.location.href = 'http://argusweld.com';
+      window.location.href = 'http://oooaps.com';
       el = $(this).parents('.lang-trigger');
       variants = el.data('variant').split(',');
       $.each(variants, function(index, value) {
@@ -344,6 +349,14 @@
         }
       });
       return e.preventDefault();
+    });
+    $('.file-trigger').click(function(e) {
+      $(this).parent().find('input[type=file]').trigger('click');
+      return e.preventDefault();
+    });
+    $('input[type=file]').on('change', function() {
+      $('.form .file-trigger').removeClass('error');
+      return $('.file-name').text($(this).val().replace(/.+[\\\/]/, ""));
     });
     $('.form-trigger').click(function(e) {
       var form;
