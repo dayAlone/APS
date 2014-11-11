@@ -19861,14 +19861,23 @@ var pp_alreadyInitialized = false; // Used for the deep linking to make sure not
     $('.form').submit(function(e) {
       var data;
       data = new FormData(this);
-      $.post('/include/send.php', data, function(data) {
-        data = $.parseJSON(data);
-        if (data.status === "ok") {
-          $('.form').hide();
-          return $('.form').parents('.modal').find('.success').show();
-        } else if (data.status === "error") {
-          $('input[name=captcha_word]').addClass('parsley-error');
-          return getCaptcha();
+      $.ajax({
+        type: 'POST',
+        url: '/include/send.php',
+        data: data,
+        cache: false,
+        contentType: false,
+        processData: false,
+        mimeType: 'multipart/form-data',
+        success: function(data) {
+          data = $.parseJSON(data);
+          if (data.status === "ok") {
+            $('.form').hide();
+            return $('.form').parents('.modal').find('.success').show();
+          } else if (data.status === "error") {
+            $('input[name=captcha_word]').addClass('parsley-error');
+            return getCaptcha();
+          }
         }
       });
       return e.preventDefault();

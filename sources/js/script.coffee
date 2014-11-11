@@ -240,8 +240,16 @@ $(document).ready ->
 
 	$('.form').submit (e)->
 		data = new FormData(this)
-		$.post '/include/send.php', data,
-	        (data) ->
+		
+		$.ajax 
+			type        : 'POST'
+			url         : '/include/send.php'
+			data        : data
+			cache       : false
+			contentType : false
+			processData : false
+			mimeType    : 'multipart/form-data'
+			success     : (data) ->
 	        	data = $.parseJSON(data)
 	        	if data.status == "ok"
 	        		$('.form').hide()
@@ -249,6 +257,7 @@ $(document).ready ->
 	        	else if data.status == "error"
 	        		$('input[name=captcha_word]').addClass('parsley-error')
 	        		getCaptcha()
+
 		e.preventDefault()
 
 	$('.modal').on 'show.bs.modal', (a,b)->
