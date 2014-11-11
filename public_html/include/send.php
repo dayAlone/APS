@@ -65,7 +65,7 @@ if($result['status'] == 'ok') {
 				$mail->addAddress($ar_user['EMAIL'], $ar_user['LOGIN']);
 			
 			$mail->msgHTML($body);
-
+			$mail->send();
 		}
 }
 print json_encode($result);
