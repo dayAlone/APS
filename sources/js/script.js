@@ -307,6 +307,14 @@
         return $('.form .file-trigger').addClass('error');
       }
     });
+    $('.file-trigger').click(function(e) {
+      $(this).parent().find('input[type=file]').trigger('click');
+      return e.preventDefault();
+    });
+    $('input[type=file]').on('change', function() {
+      $('.form .file-trigger').removeClass('error');
+      return $('.file-name').text($(this).val().replace(/.+[\\\/]/, ""));
+    });
     $('.form').submit(function(e) {
       var data;
       data = new FormData(this);
@@ -368,14 +376,6 @@
         }
       });
       return e.preventDefault();
-    });
-    $('.file-trigger').click(function(e) {
-      $(this).parent().find('input[type=file]').trigger('click');
-      return e.preventDefault();
-    });
-    $('input[type=file]').on('change', function() {
-      $('.form .file-trigger').removeClass('error');
-      return $('.file-name').text($(this).val().replace(/.+[\\\/]/, ""));
     });
     $('.form-trigger').click(function(e) {
       var form;

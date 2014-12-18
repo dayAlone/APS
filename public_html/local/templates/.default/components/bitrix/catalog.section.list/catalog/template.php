@@ -21,9 +21,13 @@ if(count($arResult['SECTIONS'])>0):
         if(isset($arSections[$key-1]['DEPTH_LEVEL'])):
             if($arSections[$key-1]['DEPTH_LEVEL'] < $item['DEPTH_LEVEL'])
                 $firstChild = true;
-            if($arSections[$key-1]['DEPTH_LEVEL'] > $item['DEPTH_LEVEL'])
-                for ($i=0; $i < $arSections[$key-1]['DEPTH_LEVEL']-$item['DEPTH_LEVEL']+2; $i++)
+            if($arSections[$key-1]['DEPTH_LEVEL'] > $item['DEPTH_LEVEL']) {
+                $z = $arSections[$key-1]['DEPTH_LEVEL']-$item['DEPTH_LEVEL']+2;
+                if($z==5)
+                    $z=9;
+                for ($i=0; $i < $z; $i++)
                     echo "</div>";
+            }
         endif;
 
         switch ($item['DEPTH_LEVEL']):

@@ -96,19 +96,13 @@ $props = &$item["PROPS"];
 										?>
 										<div class="row no-gutter">
 											<?
-											if($count == 2):?>
-											<div class="col-xs-5"><?=$elm['property_name']?>:</div>
-											<div class="col-xs-7"><?=html_entity_decode($elm['property_value'])?></div>
-											<?else:
-												foreach ($elm as $x => $v){
-													if(strlen($v)>0){
-														$s = intval(12/$count);
-														if($count == 5 && $x == 'property_name')
-															$s = 4;
-														?><div class="col-xs-<?=$s?>"><?=$v?>:</div><?
-													}
+											foreach ($elm as $x => $v){
+												if(strlen($v)>0){
+													$s = 12/$count;
+													?><div class="col-xs-1" style="width:<?=(100/$count)?>%"><?=html_entity_decode($v)?></div><?
 												}
-											endif;?>
+											}
+											?>
 										</div>
 										<?
 										endif;

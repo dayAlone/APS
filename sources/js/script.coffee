@@ -245,9 +245,16 @@ $(document).ready ->
 		e.preventDefault()
 
 	$('.form input[type=submit]').click (e)->
-		
 		if !$('.form input[type=file]').val()
 			$('.form .file-trigger').addClass 'error'
+
+	$('.file-trigger').click (e)->
+		$(this).parent().find('input[type=file]').trigger 'click'
+		e.preventDefault()
+
+	$('input[type=file]').on 'change', ()->
+		$('.form .file-trigger').removeClass 'error'
+		$('.file-name').text($(this).val().replace(/.+[\\\/]/, ""))
 
 	$('.form').submit (e)->
 		data = new FormData(this)
@@ -301,14 +308,6 @@ $(document).ready ->
 				el.mod('lang', value)
 				return false
 		e.preventDefault()
-
-	$('.file-trigger').click (e)->
-		$(this).parent().find('input[type=file]').trigger 'click'
-		e.preventDefault()
-
-	$('input[type=file]').on 'change', ()->
-		$('.form .file-trigger').removeClass 'error'
-		$('.file-name').text($(this).val().replace(/.+[\\\/]/, ""))
 
 	$('.form-trigger').click (e)->
 		form = $(this).parents('.modal').find('form')

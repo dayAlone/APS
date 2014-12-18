@@ -2502,7 +2502,10 @@ body {
   -webkit-background-size: 12px 1px;
   -moz-background-size: 12px 1px;
   background-size: 12px 1px;
-  background-position: 0 20px;
+  background-position: 0 calc(100% - 2px);
+}
+.catalog-category .sub-sections__item--open .sub-sections__title:hover {
+  text-decoration: none;
 }
 .catalog-category .sub-sections__item--open .sub-sections__title svg {
   -webkit-transform: rotate(90deg);
@@ -2530,9 +2533,12 @@ body {
   -webkit-background-size: 12px 1px;
   -moz-background-size: 12px 1px;
   background-size: 12px 1px;
-  background-position: 0 20px;
+  background-position: 0 calc(100% - 2px);
   font-size: 20px;
   color: #233347;
+}
+.catalog-category .sub-sections__title:hover {
+  text-decoration: none;
 }
 .catalog-category .sub-sections__title:hover {
   color: #007bf8;
@@ -2545,7 +2551,10 @@ body {
   -webkit-background-size: 12px 1px;
   -moz-background-size: 12px 1px;
   background-size: 12px 1px;
-  background-position: 0 20px;
+  background-position: 0 calc(100% - 2px);
+}
+.catalog-category .sub-sections__title:hover:hover {
+  text-decoration: none;
 }
 .catalog-category .sub-sections__title:hover svg path {
   fill: #007bf8;
@@ -2588,7 +2597,10 @@ body {
   -webkit-background-size: 2px 2px;
   -moz-background-size: 2px 2px;
   background-size: 2px 2px;
-  background-position: 0 20px;
+  background-position: 0 calc(100% - 2px);
+}
+.catalog-category .sub-sections__title--link:hover {
+  text-decoration: none;
 }
 .catalog-category .sub-sections__title--link:hover {
   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, #007bf8 50%);
@@ -2600,7 +2612,10 @@ body {
   -webkit-background-size: 2px 2px;
   -moz-background-size: 2px 2px;
   background-size: 2px 2px;
-  background-position: 0 20px;
+  background-position: 0 calc(100% - 2px);
+}
+.catalog-category .sub-sections__title--link:hover:hover {
+  text-decoration: none;
 }
 .catalog-category .sub-sub-sections {
   padding-left: 25px;
@@ -2646,6 +2661,9 @@ body {
   color: #263a5c;
 }
 .catalog-category .sub-sub-sections__title:hover {
+  text-decoration: none;
+}
+.catalog-category .sub-sub-sections__title:hover {
   color: #007bf8;
   background-image: -webkit-linear-gradient(left, #007bf8 70%, transparent 70%);
   background-image: -moz-linear-gradient(left, #007bf8 70%, transparent 70%);
@@ -2657,6 +2675,9 @@ body {
   -moz-background-size: 12px 1px;
   background-size: 12px 1px;
   background-position: 0 15px;
+}
+.catalog-category .sub-sub-sections__title:hover:hover {
+  text-decoration: none;
 }
 .catalog-category .sub-sub-sections__title:after {
   position: absolute;
@@ -2680,6 +2701,9 @@ body {
   background-position: 0 15px;
 }
 .catalog-category .sub-sub-sections__title--link:hover {
+  text-decoration: none;
+}
+.catalog-category .sub-sub-sections__title--link:hover {
   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, #007bf8 50%);
   background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, #007bf8 50%);
   background-image: -o-linear-gradient(top, rgba(0,0,0,0) 50%, #007bf8 50%);
@@ -2690,6 +2714,9 @@ body {
   -moz-background-size: 2px 2px;
   background-size: 2px 2px;
   background-position: 0 15px;
+}
+.catalog-category .sub-sub-sections__title--link:hover:hover {
+  text-decoration: none;
 }
 .catalog-category .sub-sub-sections__content {
   display: none;
@@ -2719,6 +2746,9 @@ body {
   background-position: 0 12px;
 }
 .catalog-category .sub-sub-sub-sections__title:hover {
+  text-decoration: none;
+}
+.catalog-category .sub-sub-sub-sections__title:hover {
   color: #007bf8;
   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, #007bf8 50%);
   background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, #007bf8 50%);
@@ -2730,6 +2760,9 @@ body {
   -moz-background-size: 2px 2px;
   background-size: 2px 2px;
   background-position: 0 12px;
+}
+.catalog-category .sub-sub-sub-sections__title:hover:hover {
+  text-decoration: none;
 }
 .catalog-category .sub-sub-sub-sections__title:after {
   position: absolute;
@@ -2765,6 +2798,9 @@ body {
   background-position: 0 19px;
 }
 .catalog .products__name:hover {
+  text-decoration: none;
+}
+.catalog .products__name:hover {
   color: #00aafa;
   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, #00aafa 50%);
   background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, #00aafa 50%);
@@ -2776,6 +2812,9 @@ body {
   -moz-background-size: 2px 2px;
   background-size: 2px 2px;
   background-position: 0 19px;
+}
+.catalog .products__name:hover:hover {
+  text-decoration: none;
 }
 .catalog .products__text {
   display: block;
@@ -2827,6 +2866,11 @@ body {
   display: inline-block;
   margin-top: 30px;
   margin-left: 13px;
+}
+.catalog .product .product__back:hover,
+.news .news-item__back:hover,
+.career-item__back:hover {
+  text-decoration: none;
 }
 .catalog .product .product__back svg,
 .news .news-item__back svg,
@@ -3021,6 +3065,9 @@ body {
   background-position: 0 18px;
 }
 .years__item:hover {
+  text-decoration: none;
+}
+.years__item:hover {
   color: #00aafa;
   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, #00aafa 50%);
   background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, #00aafa 50%);
@@ -3032,6 +3079,9 @@ body {
   -moz-background-size: 2px 2px;
   background-size: 2px 2px;
   background-position: 0 18px;
+}
+.years__item:hover:hover {
+  text-decoration: none;
 }
 .years__item--active {
   background: transparent;
@@ -3113,6 +3163,15 @@ body {
 .search-page__title:hover,
 .map-columns ul.map-level-0 > li > ul > li a:hover,
 .map-columns ul.map-level-0 > li > a:hover {
+  text-decoration: none;
+}
+.news .news-list .news-list__title:hover,
+.news .news-item .news-item__title:hover,
+.career-list__title:hover,
+.career-item__title:hover,
+.search-page__title:hover,
+.map-columns ul.map-level-0 > li > ul > li a:hover,
+.map-columns ul.map-level-0 > li > a:hover {
   color: #00aafa;
   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, #00aafa 50%);
   background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, #00aafa 50%);
@@ -3124,6 +3183,15 @@ body {
   -moz-background-size: 2px 2px;
   background-size: 2px 2px;
   background-position: 0 22px;
+}
+.news .news-list .news-list__title:hover:hover,
+.news .news-item .news-item__title:hover:hover,
+.career-list__title:hover:hover,
+.career-item__title:hover:hover,
+.search-page__title:hover:hover,
+.map-columns ul.map-level-0 > li > ul > li a:hover:hover,
+.map-columns ul.map-level-0 > li > a:hover:hover {
+  text-decoration: none;
 }
 .news .news-list .news-list__text,
 .news .news-item .news-item__text,
