@@ -4,516 +4,516 @@
 		"selected_items":
 		[
 			[
-				"li",
-				"list-style"
-			],
-			[
-				"op",
-				"opacity"
-			],
-			[
-				"mouse",
-				"mouseout"
-			],
-			[
-				"visi",
-				"visibility"
-			],
-			[
-				"bor",
-				"border-radius"
-			],
-			[
-				"mb",
-				"margin-bottom"
-			],
-			[
-				"ba-",
-				"background-position"
-			],
-			[
-				"vi",
-				"visible-lg"
-			],
-			[
-				"bo",
-				"border-bottom"
-			],
-			[
-				"images",
-				"imagesLoaded"
-			],
-			[
-				"im",
-				"important"
-			],
-			[
-				"po",
-				"position_X  (variable)"
-			],
-			[
-				"temp",
-				"tempImg  (variable)"
-			],
-			[
-				"ba",
-				"background-image"
-			],
-			[
-				"wid",
-				"width:   (property)"
-			],
-			[
-				"open",
-				"openMap"
-			],
-			[
-				"url",
-				"urlInitial"
-			],
-			[
-				"arPa",
-				"arParam  (variable)"
-			],
-			[
-				"SE",
-				"_SESSION  (variable)"
-			],
-			[
-				"var",
-				"var_dump"
-			],
-			[
-				"un",
-				"undefined"
-			],
-			[
-				"max-",
-				"max-height"
-			],
-			[
-				"te-",
-				"text-align"
-			],
-			[
-				"min",
-				"min-height"
-			],
-			[
-				"te",
-				"text-align"
-			],
-			[
-				"pl",
-				"padding-left"
-			],
-			[
-				"tea",
-				"text-align"
-			],
-			[
-				"lan",
-				"lang-trigger"
-			],
-			[
 				"max",
 				"max-width"
-			],
-			[
-				"ma",
-				"margin-left"
-			],
-			[
-				"tt",
-				"tt:u	text-transform:uppercase"
-			],
-			[
-				"p-",
-				"padding-bottom"
-			],
-			[
-				"wi",
-				"width"
-			],
-			[
-				"ma-r",
-				"margin-top"
-			],
-			[
-				"col-",
-				"col-xs-8"
-			],
-			[
-				"fo-",
-				"font-size"
-			],
-			[
-				"t-",
-				"text-decoration"
-			],
-			[
-				"fl",
-				"float"
-			],
-			[
-				"fo",
-				"font-size"
-			],
-			[
-				"va",
-				"variants"
-			],
-			[
-				"st",
-				"stylus"
-			],
-			[
-				"chec",
-				"checkbox"
-			],
-			[
-				"fi",
-				"first-of-type"
-			],
-			[
-				"arFiel",
-				"arFields  (variable)"
-			],
-			[
-				"strip",
-				"strip_tags"
-			],
-			[
-				"fe",
-				"features__item-image"
-			],
-			[
-				"bo-b",
-				"border-bottom-right-radius"
-			],
-			[
-				"no",
-				"no-repeat"
-			],
-			[
-				"con",
-				"content"
-			],
-			[
-				"bo-t",
-				"border-top-right-radius"
-			],
-			[
-				"di",
-				"display"
-			],
-			[
-				"re",
-				"relative"
-			],
-			[
-				"pos",
-				"position"
-			],
-			[
-				"tra",
-				"transparent"
-			],
-			[
-				"sub",
-				"subscribe"
 			],
 			[
 				"prev",
 				"preventDefault"
 			],
 			[
-				"mail",
-				"maillist"
+				"cl",
+				"clear"
 			],
 			[
-				"sli",
-				"slick-prev"
+				"ba",
+				"background-size"
 			],
 			[
-				"his",
-				"history-page"
+				"min",
+				"min-width"
 			],
 			[
-				"eve",
-				"event"
+				"уст",
+				"установок"
 			],
 			[
-				"min-",
-				"min-height"
+				"bor",
+				"border-color"
 			],
 			[
-				"tr",
-				"transition-property"
+				"r",
+				"relative"
 			],
 			[
-				"parent",
-				"parents"
+				"fos",
+				"font-size"
 			],
 			[
-				"te-t",
-				"text-transform"
+				"ba-",
+				"background-position"
 			],
 			[
-				"end",
-				"endforeach"
+				"xl-",
+				"xs--margin-left"
 			],
 			[
-				"rem",
-				"removeClass"
+				"s-m",
+				"s-margin-left"
 			],
 			[
-				"city",
-				"city-list"
+				"m-",
+				"m-margin-top"
 			],
 			[
-				"fun",
-				"function"
+				"col-xs",
+				"col-xs-9"
 			],
 			[
-				"toggl",
-				"toggleClass"
+				"xs-",
+				"xs--margin-left"
 			],
 			[
-				"sc",
-				"scheme"
+				"xs--",
+				"xxs--margin-top"
 			],
 			[
-				"ac",
-				"active"
+				"xs",
+				"xs--margin-bottom"
 			],
 			[
-				"stro",
-				"stroke"
+				"xs--ma",
+				"xxs--margin-top"
 			],
 			[
-				"poin",
-				"pointer-events"
+				"m",
+				"m-margin-top"
+			],
+			[
+				"sm",
+				"s-margin-top"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"par",
+				"● parseInt(str)"
 			],
 			[
 				"has",
-				"hasClass"
+				"hasMod"
 			],
 			[
-				"fir",
-				"first-of-type"
+				"le",
+				"letter-spacing"
 			],
 			[
-				"bot",
-				"bottom"
-			],
-			[
-				"sl",
-				"slick-prev"
-			],
-			[
-				"pa",
-				"parents"
-			],
-			[
-				"_SE",
-				"_SESSION  (variable)"
-			],
-			[
-				"strto",
-				"strtotime"
-			],
-			[
-				"even",
-				"events  (variable)"
-			],
-			[
-				"mo",
-				"monday"
-			],
-			[
-				"arrow-",
-				"arrow-right"
-			],
-			[
-				"of",
-				"offset"
-			],
-			[
-				"pat",
-				"padding-top"
-			],
-			[
-				"cal",
-				"cal-day"
-			],
-			[
-				"las",
-				"last-of-type"
-			],
-			[
-				"pt",
-				"padding-top"
-			],
-			[
-				"em",
-				"embedded-opentype"
-			],
-			[
-				"se",
-				"section"
+				"borde",
+				"border-bottom"
 			],
 			[
 				"pad",
 				"padding"
 			],
 			[
-				"test",
-				"test_result"
+				"tra",
+				"translateX"
 			],
 			[
-				"qu",
-				"questions"
-			],
-			[
-				"json",
-				"json_encode"
-			],
-			[
-				"remo",
+				"remov",
 				"removeClass"
 			],
 			[
-				"repe",
-				"no-repeat"
+				"back",
+				"background"
 			],
 			[
-				"res",
-				"reasons"
-			],
-			[
-				"anim",
-				"animate"
-			],
-			[
-				"pad-",
-				"padding-bottom"
-			],
-			[
-				"li-",
-				"line-height"
-			],
-			[
-				"an",
-				"anchor	 frontend.css"
-			],
-			[
-				"whi",
-				"white-space"
-			],
-			[
-				"ml",
-				"margin-left"
-			],
-			[
-				"bl",
-				"block"
-			],
-			[
-				"Im",
-				"important"
-			],
-			[
-				"u",
-				"uppercase"
-			],
-			[
-				"tex",
-				"text-align"
-			],
-			[
-				"first",
-				"first-of-type"
-			],
-			[
-				"ab",
-				"absolute"
-			],
-			[
-				"hi",
-				"history"
-			],
-			[
-				"pre",
-				"preventDefault"
-			],
-			[
-				"br",
-				"brands"
-			],
-			[
-				"i",
-				"item"
-			],
-			[
-				"if",
-				"iframe"
-			],
-			[
-				"ma-",
-				"margin-bottom"
-			],
-			[
-				"fo-s",
-				"font-size"
-			],
-			[
-				"cur",
-				"cursor"
-			],
-			[
-				"bo-r",
+				"border-",
 				"border-radius"
 			],
 			[
-				"in",
-				"inline-block"
-			],
-			[
-				"mih",
-				"min-height"
-			],
-			[
-				"bor-",
-				"border-right"
-			],
-			[
-				"to",
-				"toggleClass"
-			],
-			[
-				"cl",
-				"clear"
+				"po",
+				"position"
 			],
 			[
 				"trans",
 				"translateY"
 			],
 			[
+				"border",
+				"border-line"
+			],
+			[
+				"tr",
+				"transform"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"remo",
+				"removeAttr"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"bp",
+				"bgp	background-position"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"fir",
+				"first-of-type"
+			],
+			[
+				"transla",
+				"translateX"
+			],
+			[
+				"hove",
+				"hoverIntent"
+			],
+			[
+				"bas",
+				"basketCalc"
+			],
+			[
+				"pro",
+				"product"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"no-",
+				"no-wrap"
+			],
+			[
+				"remove",
+				"removeCookie"
+			],
+			[
+				"compa",
+				"compareFilter"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"transo",
+				"transition-duration"
+			],
+			[
+				"pt",
+				"padding-top"
+			],
+			[
+				"bo",
+				"box-shadow"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"repl",
+				"replace"
+			],
+			[
+				"elemt",
+				"elements"
+			],
+			[
+				"off",
+				"offset"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"prv",
+				"preventDefault"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"drop",
+				"dropdown-icon"
+			],
+			[
+				"loca",
+				"location"
+			],
+			[
+				"pares",
+				"● parseInt(str)"
+			],
+			[
+				"pa",
+				"● parseInt(str)"
+			],
+			[
+				"pointer",
+				"pointer-events"
+			],
+			[
+				"poi",
+				"pointer-events"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"tran",
+				"translateZ"
+			],
+			[
+				"ar",
+				"array	$… = array (…)"
+			],
+			[
+				"whi",
+				"white-space"
+			],
+			[
+				"html",
+				"html_entity_decode"
+			],
+			[
+				"ml",
+				"margin-left"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"backgroundS",
+				"backgroundSize"
+			],
+			[
+				"load",
+				"loader"
+			],
+			[
+				"strto",
+				"strtolower"
+			],
+			[
+				"sp",
+				"split"
+			],
+			[
+				"prin",
+				"printf"
+			],
+			[
+				"fso",
+				"font-size"
+			],
+			[
+				"fw",
+				"fw:n	font-weight:normal"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"loo",
+				"lookbook"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
 				"z",
 				"z-index"
 			],
 			[
-				"onm",
-				"onmouseover	Attr"
+				"pic",
+				"picture-frame"
 			],
 			[
-				"I",
-				"ITEMS"
+				"mih",
+				"min-height"
 			],
 			[
-				"DETAIL",
-				"arDETAIL_PICTURE  (variable)"
+				"wi",
+				"width"
+			],
+			[
+				"fiel",
+				"fields"
+			],
+			[
+				"lower",
+				"strtolower"
+			],
+			[
+				"offe",
+				"offers"
+			],
+			[
+				"forma",
+				"number_format"
+			],
+			[
+				"u",
+				"udiff"
+			],
+			[
+				"fie",
+				"fields"
+			],
+			[
+				"strp",
+				"strpos"
+			],
+			[
+				"strt",
+				"strtoupper"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"poin",
+				"pointer-eventer"
+			],
+			[
+				"fsi",
+				"font-size"
+			],
+			[
+				"che",
+				"checked"
+			],
+			[
+				"pso",
+				"position"
+			],
+			[
+				"l",
+				"lh	line-height"
+			],
+			[
+				"ls",
+				"lts	letter-spacing"
+			],
+			[
+				"rem",
+				"removeClass"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"fu",
+				"full-width"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"fi",
+				"first-of-type"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"ps",
+				"position"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"rgb",
+				"rgba	rgba"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"new",
+				"news-item"
+			],
+			[
+				"tal",
+				"ta:l	text-align:left"
+			],
+			[
+				"bord",
+				"border-line"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"lh",
+				"line-height"
+			],
+			[
+				"bo-t",
+				"border-top-right-radius"
+			],
+			[
+				"my",
+				"myMap2"
+			],
+			[
+				"conta",
+				"__contacts"
+			],
+			[
+				"Sl",
+				"slick"
+			],
+			[
+				"border-l",
+				"border-bottom-left-radius"
+			],
+			[
+				"te-",
+				"text-align"
+			],
+			[
+				"gray",
+				"gray-gradient"
+			],
+			[
+				"ca",
+				"catalog__list"
+			],
+			[
+				"tr-",
+				"transition-duration"
 			]
 		]
 	},
@@ -527,23 +527,11 @@
 		"selected_items":
 		[
 			[
-				"coff",
-				"Coffee: Lint"
-			],
-			[
 				"Package Control: ",
 				"Package Control: Install Package"
 			],
 			[
 				"Package Control: in",
-				"Package Control: Install Package"
-			],
-			[
-				"Package Control: ins",
-				"Package Control: Install Package"
-			],
-			[
-				"Package Control: is",
 				"Package Control: Install Package"
 			]
 		],
@@ -565,176 +553,166 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/menu/sites",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.list",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.list/projects_map",
-		"/Users/slider/Documents/Projects/ACC/HTML",
-		"/Users/slider/Documents/Projects/ACC/HTML/node_modules/grunt-svgmin",
-		"/Users/slider/Documents/Projects/ACC/HTML/node_modules/grunt-svgmin/node_modules",
-		"/Users/slider/Documents/Projects/ACC/HTML/node_modules/grunt-svgmin/node_modules/svgo",
-		"/Users/slider/Documents/Projects/ACC/HTML/node_modules/grunt-svgmin/node_modules/svgo/plugins",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/bitrix/components/bitrix",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/bitrix/components/bitrix/news.list/templates",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/bitrix/components/bitrix/news.list/templates/.default",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/layout",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/layout/images",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/layout/images/svg",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/php_interface",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/projects",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/search",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/services",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/tech",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/css",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/css/import",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/html/includes",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/js"
-	],
 	"file_history":
 	[
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/services/index.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/search/index.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/css/import/toolbar.styl",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/php_interface/init.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/tech/.top.menu.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/services/.top.menu.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/css/import/page.styl",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/contacts/.section.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/about/.section.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/layout/images/svg/google.svg",
-		"/Users/slider/Documents/Projects/ACC/HTML/Gruntfile.coffee",
-		"/Users/slider/Documents/Projects/ACC/HTML/node_modules/grunt-svgmin/node_modules/svgo/plugins/_collections.js",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/footer.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/tech/.section.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/map/index.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/news/.section.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/partners/.section.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/projects/.top.menu.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/projects/.section.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/services/.section.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/news/.top.menu.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/about/index.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/tech/index.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/include/news_list.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/bitrix/components/bitrix/main.map/component.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/.section.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/css/import/global.styl",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/projects/index.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/index.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/css/import/footer.styl",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.list/projects_map/template.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/header.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/js/script.coffee",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/html/includes/toolbar.jade",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/menu/sites/template.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/catalog.section.list/years_list/template.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/leasing/index.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/leasing/.section.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/search/.section.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/urlrewrite.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/ajax/projects/index.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/js/script.js",
-		"/Users/slider/Documents/Projects/ACC/HTML/bower.json",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/layout/js/tooltip.js",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.list/projects_map/result_modifier.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/layout/js/frontend.js",
-		"/Users/slider/Documents/Projects/VW/Response.xml",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.list/services/template.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.list/partners/template.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.list/tech/template.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/css/import/sidebar.styl",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/menu/top/template.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/html/index.jade",
-		"/Users/slider/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/css/style.css",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/html/tech.jade",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/css/import/_system/design.styl",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/include/map.php",
-		"/Users/slider/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/Default (OSX).sublime-keymap",
-		"/Users/slider/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/include/captcha.php",
-		"/Users/slider/coffeelint.json",
-		"/Users/slider/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/menu/left_popup/template.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/news/index.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/bower_components/blurjs/blur.js",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/css/bootstrap/modals.less",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/bitrix/modules/fileman/properties.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.list/news_index/template.php",
-		"/Users/slider/Library/Caches/Cleanup At Startup/Transmit/522C5B84-9E69-43A0-A296-C010D091A5C3/.settings.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/include/send.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/include/form.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/css/import/mobile.styl",
-		"/Users/slider/Library/Caches/Cleanup At Startup/Transmit/1E8FEF53-E73B-48EC-A064-0484D8A5664C/dbconn.php",
-		"/Users/slider/Library/Caches/Cleanup At Startup/Transmit/CF4E7646-912A-4F5A-A90C-D6C57579DC1E/dbconn.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/contacts/index.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.detail/detail_video/template.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.detail/detail_photo/template.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.detail/detail/template.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.detail/detail_photo/result_modifier.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/ajax/tech/index.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.list/tech/result_modifier.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.detail/detail_video/result_modifier.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.detail/detail/result_modifier.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/ajax/tech/result_modifier.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/ajax/news/index.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/ajax/services/index.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.detail/services/template.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.list/services/result_modifier.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.detail/news/template.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.detail/news/result_modifier.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.list/news/template.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/catalog.section.list/years_list/result_modifier.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/catalog.section.list/years/template.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/system.pagenavigation/.default/template.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/include.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.list/news/component_epilog.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news/news/detail.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news/news/news.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news/news/section.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news/news/template.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/news.list/partners/result_modifier.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/partners/index.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/acc.sublime-project",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/menu/left/template.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/bitrix/.settings.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/html/projects.jade",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/.left.menu.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/local/templates/acc/components/bitrix/menu/social/template.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/.sites.menu.php",
-		"/Users/slider/Library/Caches/Cleanup At Startup/Transmit/1CDE0CAD-2656-48B2-BAD6-D5C1D50A630C/config.yml",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/html/services.jade",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/html/partners.jade",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/html/contacts.jade",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/html/includes/footer.jade",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/html/news.jade",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/html/about.jade",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/css/import/_system/plugins.styl",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/css/import/fonts.styl",
-		"/Users/slider/Documents/Projects/K-Marketing/tmp/wp-config.php",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/css/bootstrap/bootstrap.less",
-		"/Users/slider/Downloads/Oval 1.svg",
-		"/Users/slider/Downloads/snazzy-maps-example-shades-of-grey-style.html",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/projects.html",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/html/includes/header.jade",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/js/plugins.js",
-		"/Users/slider/Documents/Projects/ACC/HTML/sources/css/import/projects.styl",
-		"/Users/slider/Documents/Projects/ACC/HTML/public_html/layout/css/frontend.css"
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/works/reference/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/news.list/map/template.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/works/maps/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/works/clients/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/bitrix/modules/london.setofproperties/classes/general/cproptypesetofproperties.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/works/.header.menu.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/ggo/header.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/news.list/clients/result_modifier.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/news.list/clients/template.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/html/clients.html",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/html/project-detail.html",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/html/projects.html",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/works/projects/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/news.detail/projects/template.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/include/footer.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/urlrewrite.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/css/import/footer.styl",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/news.list/projects/template.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/works/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/news.list/projects_big/template.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/menu/menu/template.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/career/.header.menu.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/news.detail/career/template.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/css/import/toolbar.styl",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/css/import/global.styl",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/include/vacancies-form.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/career/form/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/career/vacancies/index.php",
+		"/Users/slider/Documents/Projects/TKS/UIC/HTML/public_html/shedule/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/news.list/news/template.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/html/career-list.html",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/html/career-detail.html",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/news.list/success/result_modifier.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/news.list/news/result_modifier.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/career/success/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/news.list/success/template.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/press/news/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/html/success-story.html",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/career/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/career/evolution/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/company/quality/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/press/gallery/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/news.list/gallery/template.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/js/script.coffee",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/html/gallery.html",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/press/publications/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/news.detail/detail/result_modifier.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/php_interface/init.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/html/publications.html",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/news.detail/detail/template.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/catalog.section.list/years/template.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/catalog.section.list/years/result_modifier.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/html/index-page.html",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/html/press-list.html",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/html/press-detail.html",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/html/contacts.html",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/press/.header.menu.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/press/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/include/section.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/news.list/history/template.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/company/certificates/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/company/patents/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/news.list/certificates/template.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/news.list/certificates/result_modifier.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/contacts/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/html/numbers.html",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/html/history.html",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/html/structure.html",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/html/cerfiticates.html",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/company/history/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/company/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/news.list/structure/template.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/.default/components/bitrix/news.list/structure/result_modifier.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/bitrix/.settings.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/ggo/footer.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/.section.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/company/.header.menu.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/company/numbers/index.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/ggo.sublime-project",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/include/header.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/ggo/components/bitrix/news.list/slider/result_modifier.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/ggo/components/bitrix/news.list/slider/template.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/ggo/components/bitrix/news.list/depth/result_modifier.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/ggo/components/bitrix/news.list/depth/template.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/ggo/components/bitrix/news.list/projects/template.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/ggo/components/bitrix/news.list/news/template.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/ggo/components/bitrix/menu/menu/template.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/templates/ggo/components/bitrix/news.list",
+		"/Users/slider/Documents/Projects/TKS/APS/HTML/public_html/upload/1.xml",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/.main.menu.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/.top.menu.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/local/php_interface",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/press/publications/.section.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/press/gallery/.section.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/company/quality/.section.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/company/patents/.section.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/html/index-page.jade",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/css/import/index.styl",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/company/certificates/.section.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/company/history/.section.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/company/numbers/.section.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/career/vacancies/.section.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/career/success/.section.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/career/evolution/.section.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/company/.section.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/career/.section.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/works/.section.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/press/.section.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/public_html/contacts/.section.php",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/html/industries-detail.jade",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/html/industries.jade",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/html/map.jade",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/html/numbers.jade",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/html/press-detail.jade",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/html/press-list.jade",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/html/project-detail.jade",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/html/career-detail.jade",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/html/history.jade",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/html/career-list.jade",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/html/cerfiticates.jade",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/html/clients.jade",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/html/contacts.jade",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/html/depts-detail.jade",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/html/depts.jade",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/html/gallery.jade",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/html/projects.jade",
+		"/Users/slider/Documents/Projects/GGO/HTML/sources/html/publications.jade"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
 		"height": 93.0,
 		"where_history":
 		[
-			"/Users/slider/Documents/Projects/ACC/HTML/public_html/bitrix/modules",
+			"/Users/slider/Documents/Projects/GGO/HTML/sources/html",
+			"/Users/slider/Documents/Projects/Marconi/HTML/sources/js/",
+			"/Users/slider/Documents/Projects/Marconi/HTML/public_html/bitrix/",
+			"/Users/slider/Documents/Projects/Marconi/HTML/public_html/bitrix/components/",
+			"/Users/slider/Documents/Projects/Marconi/HTML/public_html/bitrix/",
+			"/Users/slider/Documents/Projects/Marconi/HTML/public_html/bitrix/modules/",
+			"/Users/slider/Documents/Projects/Marconi/HTML/public_html/bitrix/",
+			"/Users/slider/Documents/Projects/Marconi/HTML/sources/css/import/",
+			"/Users/slider/Documents/Projects/Marconi/HTML/sourcer/css/import/",
+			"/Users/slider/Documents/Projects/Marconi/HTML/sourcer/",
+			"/Users/slider/Documents/Projects/Marconi/HTML/public_html/local/",
+			"/Users/slider/Documents/Projects/Marconi/HTML/public_html/",
+			"/Users/slider/Documents/Projects/Marconi/HTML/public_html/bitrix/components/",
+			"/Users/slider/Documents/Projects/Marconi/HTML/public_html/bitrix/",
+			"/Users/slider/Documents/Projects/Marconi/HTML/public_html/local/",
+			"/Users/slider/Documents/Projects/Marconi/HTML/public_html/bitrix/",
+			"/Users/slider/Documents/Projects/Asket/HTML/public_html/local/",
+			"/Users/slider/Documents/Projects/Asket/HTML/local/",
+			"/Users/slider/Documents/Projects/Asket/HTML/",
+			"/Users/slider/Documents/Projects/Asket/HTML/local",
 			"/Users/slider/Documents/Projects/Asket/HTML",
 			"/Users/slider/Documents/Projects/Lilly",
 			"/Users/slider/Documents/Projects/Merkado/public_html",
@@ -743,137 +721,137 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
-			"DETAIL_PAGE_URL",
-			"8 800",
-			"shiel",
-			"type",
-			"dropdown",
-			"lang",
-			"services",
-			"openDropdown",
-			"dropdown",
-			".dropdown",
-			"drop",
-			"phone",
-			".tooltip",
-			"tooltip",
-			"ajax",
-			"setMap",
-			".dropdown",
-			"initTy",
-			"initType",
-			"filter",
-			"Связь",
-			".map",
-			"'body",
-			"$body",
-			"меню",
-			"bages",
-			"110%",
-			".logo",
-			"visible-lg",
-			"xs-c",
-			"inline",
-			"isCached",
-			"tech",
-			"position",
-			"source",
-			"offset",
-			"marker",
-			"map",
-			"google.maps.event.addListener",
-			"google",
-			"init",
-			"google.maps.event",
-			"BXWaitForMap",
-			"google.maps.event.addDomListener",
-			"BXMapYandexAfterShow",
-			"bx_map_hint_value",
-			"$cur_index",
-			"updatePointPosition_",
-			"updatePointPosition",
-			"value_map_yandex",
-			"map_yandex",
-			"map_yandex_map",
-			"hidden",
-			"value_map_yandex_map",
-			"onchange=\"setInputPointValue",
-			"input type",
-			"yandex",
-			"$value",
-			"tabArea.id",
-			"$arProperty",
-			"class CIBlockPropertyMapInterface",
-			"google",
-			"youtu",
-			"coff",
-			"modal",
-			"url",
-			"Array(\\n\"#\",",
-			"<svg(.*?)><title>(.*?)<\\/title>(.*?)<\\/svg>",
-			"<svg\n<svg",
-			"<svg width=\"61\" height=\"61\" viewBox=\"0 0 61 61\" xmlns=\"http://www.w3.org/2000/svg\"><title>close</title><desc>Created with Sketch.</desc><g transform=\"translate(-682 -928) translate(682 928)\" fill=\"#0045D2\"><path d=\"M30.44 0C13.656 0 0 13.656 0 30.442c0 16.785 13.655 30.442 30.44 30.442 16.786 0 30.442-13.657 30.442-30.442C60.882 13.656 47.226 0 30.442 0zm0 58.884C14.76 58.884 2 46.124 2 30.442 2 14.76 14.758 2 30.44 2c15.684 0 28.442 12.76 28.442 28.442 0 15.683-12.758 28.442-28.44 28.442zM31.563 29.91L19.653 18l-1.414 1.414 11.91 11.91L18 43.474l1.414 1.414 12.15-12.15L43.71 44.89l1.414-1.415-12.148-12.148 11.91-11.91L43.474 18l-11.91 11.91z\"/></g></svg>",
-			"<svg",
-			"mobile",
+			"TYPE",
+			"<tr",
+			".news",
+			"years",
 			"news",
-			"index-",
-			"servicesDetail",
-			"bg_map",
-			"#bg_map",
-			"xs",
-			".col-xs-6.col-lg-4",
-			".col-xs-7.col-sm-8.col-md-9",
-			".col-xs-5.col-sm-4.col-md-3",
-			".col-xs-4.col-sm-4.col-md-3",
-			".col-xs-8.col-md-9",
-			".col-xs-4.col-md-3",
-			"year",
-			"62px",
-			"wrap",
-			"site-select__link",
-			"nav-left__item",
-			"scr_sm",
-			"fil",
-			".col-xs-6.col-md-7",
-			".col-xs-6.col-md-5",
-			".col-xs-6.col-md-4.col-sm-6",
-			".col-xs-4.col-sm-3.col-md-2",
-			"@import \"",
-			"map",
-			"bootstrap.css.map",
-			"veloci",
-			"servicesDetail",
-			"overflow:hiddenmin",
-			"flase",
-			"namePattern",
-			"margin-left: 10px",
-			"    	var_dump(",
-			"var_dump",
-			"var_dump(",
-			"createFoldersLists",
-			"createFilesLists",
-			"createEmptiesIndex",
-			"createSectionsIndex",
-			"createIndex",
-			"startGenerator",
-			"_root",
-			"PATH",
-			"$_SERVER['DOCUMENT_ROOT']",
-			"ZipArchive",
-			"zip",
-			"product-1",
-			"enter2",
-			".land",
-			".landi",
-			"&.no",
-			"star",
+			"<svg width=\"61\" height=\"61\" viewBox=\"0 0 61 61\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M30.44 0C13.656 0 0 13.656 0 30.442c0 16.785 13.655 30.442 30.44 30.442 16.786 0 30.442-13.657 30.442-30.442C60.882 13.656 47.226 0 30.442 0zm0 58.884C14.76 58.884 2 46.124 2 30.442S14.758 2 30.44 2c15.684 0 28.442 12.76 28.442 28.442 0 15.683-12.758 28.442-28.44 28.442zm1.123-28.974L19.653 18l-1.414 1.414 11.91 11.91L18 43.474l1.414 1.414 12.15-12.15L43.71 44.89l1.414-1.415-12.148-12.148 11.91-11.91L43.474 18l-11.91 11.91z\" id=\"Imported-Layers\" fill=\"#0045D2\" fill-rule=\"evenodd\"/></svg>",
+			"proje",
+			"page",
+			"<body class=\"index\">",
+			"--xs",
+			"h4",
+			"vacancy",
+			"  ",
+			"spin_",
+			"showGeographyDetail",
+			"  ",
+			"slick",
+			"photoswipeParseHash",
+			"initPhotoSwipeFromDOM",
+			"pswp",
+			"pswp__button",
+			".pswp__button",
+			"parseThumbnailElements",
+			"  ",
+			"nav",
+			")\")",
+			" data-toggle=\"modal\" data-target=\"#Gallery\" href=\"#Gallery\"",
+			"Feedback",
+			"a(href=\"#\") ",
+			"a.cert__picture(",
+			".col-xs-6.col-md-3.col-lg-2",
+			".col-xs-2",
+			"t 100%",
+			"  ",
+			"@link-color",
+			"@brand-primary",
+			"full-w",
+			"transform scale",
+			"picture",
+			"brand",
+			"brand-select",
+			".hide()",
+			"self.hide()",
+			"hide()",
+			"swap",
+			"hide",
+			"onHide",
+			"onShow",
+			"artnumber",
+			"scro",
+			"trig",
+			"fonts",
+			"buy",
+			"*/",
+			"USER_PROPERTIES",
+			"UF_",
+			"cabinet",
+			"550",
+			"750",
+			"card",
+			"initProducts",
 			"big",
-			".events",
-			".event",
-			"&.month"
+			"SECTION_CODE",
+			"card",
+			"remByVal",
+			"whenRenderVariant",
+			"displayVariants",
+			"downloadBundle",
+			"onLoad.apply",
+			"processing",
+			"onfailure",
+			"showError",
+			"processing",
+			"'PRODUCT(S)'",
+			"haystack.toLowerCase",
+			"bitrix:sale.location.selector.search",
+			"$APPLICATION->IncludeComponent",
+			"sale.location.selector",
+			"padding-bottom: 100px;",
+			"full-w",
+			"slick",
+			"SALE_SLS_ERROR_OCCURED",
+			"К сожалению, ничего не найдено",
+			"slider-preview",
+			"CUser::",
+			"CUser",
+			"ExecuteModuleEventEx",
+			"PAYER_NAME",
+			"IS_PAYER",
+			"GetModuleEvents",
+			"OnBeforeHTMLEditorScriptRuns",
+			"even",
+			"StyleH1",
+			"Заголовок 1",
+			".styles.php",
+			"bx-composite-banner",
+			"index",
+			"pass",
+			"NEW_PASSWORD",
+			"product",
+			"calc(",
+			"order__item",
+			"orders",
+			"show_all",
+			"$arResult['CHECKED']",
+			"PERSONAL_PHONE",
+			"change_password",
+			"$arResult[\"ERRORS\"][]",
+			"phone",
+			"$arResult[\"USE_CAPTCHA\"]",
+			"EMAIL_REQUIRED",
+			"GROUP_POLICY",
+			"CAPTCHA",
+			"modal",
+			"6214AM",
+			"size",
+			"CT_BCE_CATALOG_ADD_TO_BASKET_OK",
+			"createFrame",
+			"beginStub",
+			"\",\n\"",
+			"\"\n\"",
+			"\n",
+			"цена",
+			"sale",
+			"_COOKIE",
+			"brand-",
+			"$this->setFrameMode",
+			"sale"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -881,27 +859,67 @@
 		"regex": false,
 		"replace_history":
 		[
-			"linetip",
-			"$2",
 			"<?=svg('close')?>",
-			"markerDetail",
-			".col-xs-12.col-sm-6.col-lg-4",
-			".col-xs-6.col-sm-8.col-md-9",
-			".col-xs-6.col-sm-4.col-md-3",
-			".col-xs-5.col-sm-4.col-md-3",
-			".col-xs-7.col-sm-8.col-md-9",
-			".col-xs-8.col-sm-8.col-md-9",
-			".col-xs-4.col-sm-4.col-md-3",
-			"nav-popup__item",
-			".col-xs-6.col-lg-7",
-			".col-xs-6.col-lg-5",
-			".col-xs-6.col-lg-4",
-			".col-xs-4.col-sm-3.col-lg-2",
-			"@import \"@{folder}",
-			"newsDetail",
-			"false",
-			"    var_dump(",
-			"if($this->debug)\n		    	var_dump(",
+			"<body>",
+			"	",
+			")\" href=\"#\")",
+			"",
+			"Gallery",
+			"a(href=\"#\") \n						span ",
+			"a.cert__picture(href=\"#\", ",
+			".col-xs-6.col-sm-4.col-md-3.col-lg-2",
+			".col-xs-6.col-md-3.col-lg-2",
+			"	",
+			"650",
+			"550",
+			"order",
+			"\", \"",
+			"\",\n\"",
+			"\"\n\"",
+			"DETAIL_TEXT",
+			"$props['PICTURES']['VALUE']",
+			"$props['IMAGES']['VALUE']",
+			"side-nav",
+			"$item['OFFERS'][key($item['OFFERS'])]",
+			"description=\"«$1»",
+			"description=\"«($1)»",
+			"description=\"«(.*?)»",
+			"$item['IMAGES']",
+			" ",
+			"",
+			"$1<property id=\"size\" value=\"e99ae835-954c-11e3-bf27-0025901865a3\"/>\n			",
+			"$1<property id=\"size\" value=\"e2e7309b-954c-11e3-bf27-0025901865a3\"/>\n			",
+			"$1<property id=\"size\" value=\"e99ae833-954c-11e3-bf27-0025901865a3\"/>\n			",
+			"$1<property id=\"size\" value=\"e99ae834-954c-11e3-bf27-0025901865a3\"/>\n			",
+			"<property id=\"size\" value=\"e99ae834-954c-11e3-bf27-0025901865a3\"/>\n			",
+			"<properties>",
+			"/>\n		</properties>",
+			"/>\n			<property ",
+			"",
+			"a.catalog__picture-frame(href=\"#\")",
+			"style=\"color:",
+			"",
+			"<input required ",
+			"",
+			"arParams",
+			"",
+			"../",
+			"",
+			"../layout/",
+			"\"./layout/",
+			"(./layout/",
+			"\"./layout/",
+			"(./layout/",
+			"\"./layout/",
+			"(./layout/",
+			"\"./layout/",
+			"(./layout/",
+			"\"./layout/",
+			"(./layout/",
+			"./layout/",
+			".col-md-6.col-xs-6",
+			".col-md-2.col-xs-2",
+			"",
 			">\n<",
 			"$start",
 			"$i",
@@ -951,7 +969,7 @@
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": true,
+		"whole_word": false,
 		"wrap": true
 	},
 	"groups":
@@ -964,7 +982,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 38.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -997,6 +1015,10 @@
 	{
 		"height": 0.0
 	},
+	"output.exec":
+	{
+		"height": 116.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
@@ -1008,7 +1030,7 @@
 	"project": "acc.sublime-project",
 	"replace":
 	{
-		"height": 72.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
