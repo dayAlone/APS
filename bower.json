@@ -32,7 +32,8 @@
     "imagesloaded"       : "~3.1.8",
     "tooltip"            : "git@github.com:medelbou/Tooltip-for-Google-Maps.git",
     "slimmenu"           : "git@github.com:adnantopal/slimmenu.git",
-    "bgcheck"            : "git@github.com:kennethcachia/background-check.git"
+    "bgcheck"            : "git@github.com:kennethcachia/background-check.git",
+    "photoswipe": "~4.0.2"
   },
   "moduleType": [
     "amd",

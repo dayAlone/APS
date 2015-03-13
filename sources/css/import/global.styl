@@ -6,8 +6,7 @@ body
 
 .container
 	max-width 1150px
-	min-width 980px
-
+	
 .wrap 
 	full-width()
 	min-height: 100%
@@ -42,10 +41,17 @@ article
 		svg
 			max-width 53%
 			@media (min-width: scr_sm)
-				max-width 80%
+				max-width 70%
 			@media (min-width: scr_lg)
-				max-width 220px
-		
+				max-width 200px
+	.nav
+		&__item
+			@media (min-width: scr_sm)
+				font-size 16px
+				padding 3px 8.8px 0
+			@media (min-width: scr_lg)
+				font-size 17px
+				padding 3px 17.2px 0		
 
 .modal
 	padding 0
@@ -139,13 +145,3 @@ article
 	display none
 	@media (min-width: scr_sm)
 		display block
-
-.toolbar
-	.nav
-		&__item
-			@media (min-width: scr_sm)
-				font-size 16px
-				padding 3px 17.5px 0
-			@media (min-width: scr_lg)
-				font-size 17px
-				padding 3px 30px 0

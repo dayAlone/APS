@@ -22,6 +22,11 @@
    "chosen":{
       "js":"/chosen/chosen.jquery.js"
    },
+   "photoswipe":{
+      "js": ["/photoswipe/dist/photoswipe.js", "/photoswipe/dist/photoswipe-ui-default.js"],
+      "css": [ "/photoswipe/dist/photoswipe.css", "/photoswipe/dist/default-skin/default-skin.css" ],
+      "files": ["/photoswipe/dist/default-skin/default-skin.svg", "/photoswipe/dist/default-skin/default-skin.png", "/photoswipe/dist/default-skin/preloader.gif"]
+   },
    "cookie":{
       "js":"/jquery.cookie/jquery.cookie.js"
    },

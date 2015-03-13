@@ -2,7 +2,7 @@
 $this->setFrameMode(true);
 if(count($arResult['SECTIONS'])>0):
 ?>
-<div class="sections">
+<div class="sections sections--<?=count($arResult['SECTIONS'])?>">
 	<div class="container">
 		<?foreach ($arResult['SECTIONS'] as $key => &$item):?>
 		<a href="/catalog/<?=$item['CODE']?>/" class="sections__item">
@@ -14,9 +14,4 @@ if(count($arResult['SECTIONS'])>0):
     	<?endforeach;?>
     </div>
 </div>
-<style type="text/css">
-    .index .sections__item {
-        width: <?=100/count($arResult['SECTIONS'])?>%;
-    }
-</style>
 <?endif;?>

@@ -1,1 +1,10 @@
-<svg width="74" height="68" viewBox="0 0 74 68" xmlns="http://www.w3.org/2000/svg"><path d="M74 .03c-7.013 0-17.194 2.048-23.73 11.864C41.673 24.8 22.167 55.632 22.167 55.632s-5.778 12.305-21.07 12.3c-.385 0 0-67.9 0-67.9" id="shield-r" fill="#1F2131" fill-rule="evenodd"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="74px" height="68px" viewBox="0 0 74 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" preserveAspectRatio="xMinYMax meet">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>shield-r</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M1,0.031 C8.013,0.031 18.194,2.078 24.731,11.894 C33.326,24.8 52.832,55.632 52.832,55.632 C52.832,55.632 58.6098561,67.9367975 73.9018555,67.9328631 C74.2873535,67.9327639 73.9018555,0.031 73.9018555,0.031" id="shield-r" fill="#1F2131" sketch:type="MSShapeGroup" transform="translate(37.500000, 34.000000) scale(-1, 1) translate(-37.500000, -34.000000) "></path>
+    </g>
+</svg>

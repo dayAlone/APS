@@ -15,6 +15,13 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
+		"Сервис", 
+		"/service/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
 		"Пресс-центр", 
 		"/press/", 
 		Array(), 
