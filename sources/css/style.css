@@ -4388,6 +4388,8 @@ article {
   border-right: 1px solid #062d77;
   float: left;
   text-align: center;
+  width: 100%;
+  height: 100px;
   -webkit-transition-property: background-color;
   -moz-transition-property: background-color;
   -o-transition-property: background-color;
@@ -4444,10 +4446,20 @@ article {
 .index .partners {
   float: left;
   width: 100%;
-  height: 85px;
+  height: 255px;
   line-height: 85px;
   text-align: center;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  .index .partners {
+    height: 170px;
+  }
+}
+@media (min-width: 992px) {
+  .index .partners {
+    height: 85px;
+  }
 }
 .index .partners__item img {
   vertical-align: center;
