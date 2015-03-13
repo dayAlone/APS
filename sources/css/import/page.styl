@@ -20,15 +20,20 @@
 			color white
 			&--left
 				.slider__title, .slider__content
-					@media (min-width: scr_md)
+					@media (min-width: scr_sm)
 						float left
+						margin-left 70px
 		&__title, &__content
 			width 100%
 			width calc(100% - 100px)
 			margin 0 auto
 			clear both
-			@media (min-width: scr_md)
+			@media (min-width: scr_sm)
+				width 60%
 				float: right
+				margin-right 70px
+			@media (min-width: scr_md)
+				margin 0
 				max-width 495px
 				width 50%
 		&__title
@@ -63,8 +68,10 @@
 		.fotorama__arr
 			background transparent
 			top 0
-			width 50px
+			width 30px
 			height 100%
+			@media (min-width: scr_sm)
+				width 50px
 			svg
 				position absolute
 				top 50%
@@ -152,7 +159,7 @@
 		line-height 85px
 		text-align: center
 		overflow hidden
-		@media (min-width: scr_md)
+		@media (min-width: scr_sm)
 			height 85px
 		&__item
 			img
@@ -168,14 +175,21 @@
 			position relative
 		&__frame
 			position absolute
-			width 50%
 			right 15px
 			bottom 15px
-			max-width 480px
+			width 95%
+			width calc(100% - 30px)
 			color white
 			padding 14px 18px 10px
 			font-size 13px
 			background rgba(0, 25, 102, .75)
+			@media (min-width: scr_sm)
+				width 50%
+				width calc(50% - 15px)
+			@media (min-width: scr_md)
+				max-width 480px
+				width 50%
+			
 		&__date
 			font-size 11px
 			color blue
@@ -659,6 +673,8 @@
 		font-size 18px
 		font-weight bold
 		color black
+		float left
+		clear both
 		margin-bottom 25px
 		border-line(#d4d4d4, 18px)
 		&:hover

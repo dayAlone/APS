@@ -1,13 +1,14 @@
 <!DOCTYPE html><html lang='ru'>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=980"> <?/*device-width, user-scalable=no, initial-scale=1, maximum-scale=1">*/?>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <?
   $APPLICATION->SetAdditionalCSS("/layout/css/frontend.css", true);
   $APPLICATION->AddHeadScript('/layout/js/frontend.js');
+  if($_SERVER['SERVER_NAME'] == 'aps.local') $APPLICATION->AddHeadScript('http://127.0.0.1:35729/livereload.js?ext=Safari&extver=2.0.9');
   $APPLICATION->ShowViewContent('header');?>
   <title><?php 
     $APPLICATION->ShowTitle();

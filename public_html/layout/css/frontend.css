@@ -6752,7 +6752,7 @@ a.toolbar__phone svg path {
   fill: #60affd;
 }
 .site-select__trigger:hover {
-  color: #fff;
+  color: #fff !important;
 }
 .site-select__trigger span {
   display: none;
@@ -7372,10 +7372,11 @@ article {
   padding-top: 160px;
   color: #fff;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .index .slider__item--left .slider__title,
   .index .slider__item--left .slider__content {
     float: left;
+    margin-left: 70px;
   }
 }
 .index .slider__title,
@@ -7385,10 +7386,18 @@ article {
   margin: 0 auto;
   clear: both;
 }
+@media (min-width: 768px) {
+  .index .slider__title,
+  .index .slider__content {
+    width: 60%;
+    float: right;
+    margin-right: 70px;
+  }
+}
 @media (min-width: 992px) {
   .index .slider__title,
   .index .slider__content {
-    float: right;
+    margin: 0;
     max-width: 495px;
     width: 50%;
   }
@@ -7428,8 +7437,13 @@ article {
 .index .slider .fotorama__arr {
   background: transparent;
   top: 0;
-  width: 50px;
+  width: 30px;
   height: 100%;
+}
+@media (min-width: 768px) {
+  .index .slider .fotorama__arr {
+    width: 50px;
+  }
 }
 .index .slider .fotorama__arr svg {
   position: absolute;
@@ -7576,7 +7590,7 @@ article {
   text-align: center;
   overflow: hidden;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .index .partners {
     height: 85px;
   }
@@ -7598,14 +7612,26 @@ article {
 }
 .index .news__frame {
   position: absolute;
-  width: 50%;
   right: 15px;
   bottom: 15px;
-  max-width: 480px;
+  width: 95%;
+  width: calc(100% - 30px);
   color: #fff;
   padding: 14px 18px 10px;
   font-size: 13px;
   background: rgba(0,25,102,0.75);
+}
+@media (min-width: 768px) {
+  .index .news__frame {
+    width: 50%;
+    width: calc(50% - 15px);
+  }
+}
+@media (min-width: 992px) {
+  .index .news__frame {
+    max-width: 480px;
+    width: 50%;
+  }
 }
 .index .news__date {
   font-size: 11px;
@@ -8472,6 +8498,8 @@ article {
   font-size: 18px;
   font-weight: bold;
   color: #000;
+  float: left;
+  clear: both;
   margin-bottom: 25px;
   background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, #d4d4d4 50%);
   background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, #d4d4d4 50%);

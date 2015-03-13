@@ -12,8 +12,12 @@
   size = function() {
     var val;
     $('body:not(.catalog-category) .page__frame').removeAttr('style');
-    val = $('.wrap').height() - $('.page').offset().top - $('.footer').outerHeight() * 2 - 22;
+    val = $(window).height() - $('.page__frame').offset().top - $('.footer').outerHeight();
     if ($('body:not(.catalog-category) .page__frame').outerHeight() < val) {
+      $.cookie('frameHeight', val, {
+        expires: 7,
+        path: '/'
+      });
       return $('body:not(.catalog-category) .page__frame').css({
         'minHeight': val
       });
@@ -179,6 +183,20 @@
 
   $(document).ready(function() {
     var closeDropdown, mapInit, openDropdown, timer, x;
+    $('.news-item').elem('gallery').find('a').on('click', function(e) {
+      var gallery, galleryOptions, items, pswpElement;
+      pswpElement = document.querySelectorAll('.pswp')[0];
+      items = $(this).parent().data('images');
+      galleryOptions = {
+        history: false,
+        focus: false,
+        shareEl: false,
+        index: $(this).index()
+      };
+      gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, galleryOptions);
+      gallery.init();
+      return e.preventDefault();
+    });
     $('.slider').on('fotorama:ready', function() {
       $('.slider .fotorama__arr--prev').load('/layout/images/svg/slider-arrow-left.svg');
       $('.slider .fotorama__arr--next').load('/layout/images/svg/slider-arrow-right.svg');

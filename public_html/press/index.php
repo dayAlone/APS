@@ -6,7 +6,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/include/section.php');
 <h1 class="page__title">Пресс-центр</h1>
 <div class="page__divider page__divider--blue l-margin-top xl-margin-bottom"></div>
 <div class="row">
-  <div class="col-xs-2">
+  <div class="col-sm-3 col-md-2">
     <?
     $APPLICATION->IncludeComponent("bitrix:catalog.section.list", "years_list", array(
         "IBLOCK_TYPE"  => "news",
@@ -18,7 +18,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/include/section.php');
     false
     );?>
   </div>
-  <div class="col-xs-10 border-left border-left--move">
+  <div class="col-sm-9 col-md-10 border-left border-left--move">
   <?
   $APPLICATION->SetPageProperty('body_class', "news");
   if(!isset($_REQUEST['ELEMENT_CODE'])||intval($_GLOBALS['currentCatalogSection'])>0):

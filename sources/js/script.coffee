@@ -6,9 +6,11 @@ map = undefined
 
 size = ->
 	#autoHeight($('.page .tech'), '.tech__item', '.tech__title', false, true)
+	
 	$('body:not(.catalog-category) .page__frame').removeAttr 'style'
-	val = $('.wrap').height() - $('.page').offset().top - $('.footer').outerHeight()*2-22
-	if($('body:not(.catalog-category) .page__frame').outerHeight()< val)
+	val = $(window).height() - $('.page__frame').offset().top - $('.footer').outerHeight()
+	if $('body:not(.catalog-category) .page__frame').outerHeight() < val
+		$.cookie 'frameHeight', val, { expires: 7, path: '/' }
 		$('body:not(.catalog-category) .page__frame').css
 			'minHeight':val
 	###
@@ -133,6 +135,18 @@ blur = ()->
 		overlay: 'rgba(0,0,0,0.1)'
 
 $(document).ready ->
+
+	$('.news-item').elem('gallery').find('a').on 'click', (e)->
+		pswpElement = document.querySelectorAll('.pswp')[0];
+		items = $(this).parent().data('images')
+		galleryOptions = 
+			history : false
+			focus   : false
+			shareEl : false
+			index   : $(this).index()
+		gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, galleryOptions);
+		gallery.init();
+		e.preventDefault()
 
 	$('.slider')
 		.on 'fotorama:ready', ()->
