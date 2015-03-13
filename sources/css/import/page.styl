@@ -83,12 +83,14 @@
 						border-top: 1px solid #062d77
 					&:nth-child(4)
 						border-left: 1px solid #062d77
+					height 110px
 				@media (min-width: scr_md)
 					width (100/6)%
-					border-top 0
-					border-left 0
 		&--7
 			.sections__item
+				@media (min-width: scr_xs)
+					&:nth-child(7)
+						width 100%
 				@media (min-width: scr_sm)
 					width (100/4)%
 					&:nth-child(5), &:nth-child(6), &:nth-child(7)
@@ -104,15 +106,12 @@
 		&--7, &--8
 			.sections__item
 				@media (min-width: scr_sm)
+					height 120px
 					&:nth-child(n + 4)
 						border-top: 1px solid #062d77
 					&:nth-child(5)
 						border-left: 1px solid #062d77
-				@media (min-width: scr_md)
-					border-top 0
-					border-left 0
 		&__item
-			height 120px
 			border-right 1px solid #062d77
 			float left
 			text-align: center
@@ -121,7 +120,17 @@
 				background #003285
 			&:first-of-type
 				border-left 1px solid #062d77
-			
+			@media (min-width: scr_xs)
+				height 100px
+				width 50%
+				&:nth-child(2n + 1)
+					border-left: 1px solid #062d77
+				&:nth-child(n + 2)
+					border-top: 1px solid #062d77
+			@media (min-width: scr_md)
+				border-top 0
+				border-left 0
+				
 		&__image
 			margin-top 17px
 		&__text
