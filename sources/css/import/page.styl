@@ -75,6 +75,18 @@
 	.sections
 		full-width()
 		background #001467
+		&--6
+			.sections__item
+				@media (min-width: scr_sm)
+					width (100/3)%
+					&:nth-child(n + 3)
+						border-top: 1px solid #062d77
+					&:nth-child(4)
+						border-left: 1px solid #062d77
+				@media (min-width: scr_md)
+					width (100/6)%
+					border-top 0
+					border-left 0
 		&--7
 			.sections__item
 				@media (min-width: scr_sm)
@@ -91,10 +103,14 @@
 					width (100/8)%
 		&--7, &--8
 			.sections__item
-				&:nth-child(n + 4)
-					border-top: 1px solid #062d77
-				&:nth-child(5)
-					border-left: 1px solid #062d77
+				@media (min-width: scr_sm)
+					&:nth-child(n + 4)
+						border-top: 1px solid #062d77
+					&:nth-child(5)
+						border-left: 1px solid #062d77
+				@media (min-width: scr_md)
+					border-top 0
+					border-left 0
 		&__item
 			height 120px
 			border-right 1px solid #062d77
