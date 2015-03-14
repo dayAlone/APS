@@ -208,8 +208,7 @@
       return BackgroundCheck.refresh();
     }).fotorama();
     $('.dropdown').slimmenu({
-      resizeWidth: '800'
-    }, {
+      resizeWidth: 0,
       collapserTitle: 'Main Menu',
       animSpeed: 'medium',
       indentChildren: true,

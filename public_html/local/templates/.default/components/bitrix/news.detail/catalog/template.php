@@ -119,7 +119,7 @@ $props = &$item["PROPS"];
 		?>
 	</div>
 	<?$section = end($arResult['SECTION']['PATH']);?>
-	<a href="/catalog/<?=$section['CODE']?>/" class="product__back"><?=svg('back')?> вернуться в раздел «<?=$section['NAME']?>»</a>
+	<a href="/catalog/<?=$section['CODE']?>/" class="product__back"><?=svg('back')?> Вернуться в раздел «<?=$section['NAME']?>»</a>
 
 </div>
 <?require_once($_SERVER['DOCUMENT_ROOT'].'/include/dropdown.php')?>

@@ -160,11 +160,11 @@ $(document).ready ->
 		.fotorama()
 
 	$('.dropdown').slimmenu
-		resizeWidth: '800',
-	    collapserTitle: 'Main Menu',
-	    animSpeed:'medium',
-	    indentChildren: true,
-	    childrenIndenter: '&raquo;'
+		resizeWidth      : 0
+		collapserTitle   : 'Main Menu',
+		animSpeed        : 'medium',
+		indentChildren   : true,
+		childrenIndenter : '&raquo;'
 
 	if $('.side').length > 0
 		$('.border-left').css
