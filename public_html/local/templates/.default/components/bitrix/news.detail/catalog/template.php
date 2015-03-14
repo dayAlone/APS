@@ -49,7 +49,7 @@ $props = &$item["PROPS"];
 				$i=0;
 				$tabs = array('ADDITIONAL'=>array('name'=>'Описание', 'id'=>'description'), 'ABOUT'=>array('name'=>'Характеристики', 'id'=>'tech'));
 				foreach ($tabs as $key => $value):
-					if(count($props[$key]) > 0):
+					if(count($props[$key])>0):
 						$i++;
 					?><li class="<?=($i==1?"active":"")?>"><a class="tabs__link" href="#<?=$value['id']?>" role="tab" data-toggle="tab"><?=$value['name']?></a></li><?
 					endif;
@@ -119,7 +119,7 @@ $props = &$item["PROPS"];
 		?>
 	</div>
 	<?$section = end($arResult['SECTION']['PATH']);?>
-	<a href="/catalog/<?=$section['CODE']?>/" class="product__back"><?=svg('back')?> Вернуться в раздел «<?=$section['NAME']?>»</a>
+	<a href="/catalog/<?=$section['CODE']?>/" class="product__back"><?=svg('back')?> вернуться в раздел «<?=$section['NAME']?>»</a>
 
 </div>
 <?require_once($_SERVER['DOCUMENT_ROOT'].'/include/dropdown.php')?>
