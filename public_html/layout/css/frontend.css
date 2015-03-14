@@ -8415,7 +8415,7 @@ article {
   display: inline-block;
   padding: 0 25px;
   cursor: pointer;
-  font-size: 11px;
+  font-size: 9px;
   line-height: 33px;
   margin: 20px 0;
   letter-spacing: 3px;
@@ -8435,6 +8435,11 @@ article {
   -ms-transition-duration: color;
   transition-duration: color;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .page .button {
+    font-size: 11px;
+  }
 }
 .page .button:hover {
   background: #1273d2;
@@ -9801,8 +9806,10 @@ span.sub-collapser i {
 #vacancyDetail .modal-dialog {
   max-width: 830px;
 }
-#vacancyDetail .close svg path {
-  fill: #fff;
+@media (min-width: 768px) {
+  #vacancyDetail .close svg path {
+    fill: #fff;
+  }
 }
 #vacancyDetail .required {
   color: #717b84;

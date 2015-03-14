@@ -294,7 +294,7 @@
 		display inline-block
 		padding 0 25px
 		cursor pointer
-		font-size 11px
+		font-size 9px
 		line-height 33px
 		margin 20px 0
 		letter-spacing 3px
@@ -305,6 +305,8 @@
 		font-weight bold
 		t(background, color)
 		text-align: center
+		@media (min-width: scr_sm)
+			font-size 11px
 		&:hover
 			background blue3
 			color white
@@ -1098,9 +1100,10 @@ span.sub-collapser
 	.modal-dialog
 		max-width 830px
 	.close
-		svg
-			path
-				fill white
+		@media (min-width: scr_sm)
+			svg
+				path
+					fill white
 	.required
 		color #717b84
 		font-size 13px
