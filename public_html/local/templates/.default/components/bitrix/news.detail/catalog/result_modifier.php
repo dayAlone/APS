@@ -22,7 +22,7 @@ foreach ($arResult["PROPERTIES"] as $key => $prop):
         case "ABOUT":
         case "ADDITIONAL":
             if(count($prop["VALUE"])>0)
-                if(strlen($prop["VALUE"][0]['property_name'])>0)
+                if(strlen($prop["VALUE"][0]['property_name']) > 0)
                     $props[$prop["CODE"]] = $prop["VALUE"];
         break; 
         case "PHOTOS":

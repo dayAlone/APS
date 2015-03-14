@@ -49,7 +49,7 @@ $props = &$item["PROPS"];
 				$i=0;
 				$tabs = array('ADDITIONAL'=>array('name'=>'Описание', 'id'=>'description'), 'ABOUT'=>array('name'=>'Характеристики', 'id'=>'tech'));
 				foreach ($tabs as $key => $value):
-					if(count($props[$key])>0):
+					if(count($props[$key]) > 0):
 						$i++;
 					?><li class="<?=($i==1?"active":"")?>"><a class="tabs__link" href="#<?=$value['id']?>" role="tab" data-toggle="tab"><?=$value['name']?></a></li><?
 					endif;
