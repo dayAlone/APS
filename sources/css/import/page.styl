@@ -878,6 +878,7 @@
 			width 210px
 			border-bottom 1px solid #309cfa
 			background #007bf8
+			position relative
 			t(background)
 			&.opened, &:hover
 				background #001766
@@ -924,8 +925,11 @@
 			svg
 				path
 					fill blue2
+		&.link
+			z-index 30
 		&.opened, &.link:hover
 			color white
+			
 			> a
 				color white
 			.sub-collapser

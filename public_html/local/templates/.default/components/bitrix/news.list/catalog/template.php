@@ -9,10 +9,10 @@
 	?>
 		<div class="products__item">
 			<div class="row">
-				<div class="col-sm-3 col-md-2">
+				<div class="col-xs-4 col-sm-3 col-md-2">
 					<a href="<?=$item['DETAIL_PAGE_URL']?>" class="products__image" style="background-image: url(<?=$item['PREVIEW_PICTURE']['SRC']?>)"></a>
 				</div>
-				<div class="col-sm-8 col-md-9">
+				<div class="col-xs-8 col-sm-8 col-md-9">
 					<a href="<?=$item['DETAIL_PAGE_URL']?>" class="products__name"><?=$item['NAME']?></a>
 					<div class="products__text">
 						<?=$item['PREVIEW_TEXT']?>

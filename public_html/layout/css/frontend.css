@@ -9461,6 +9461,7 @@ article {
   width: 210px;
   border-bottom: 1px solid #309cfa;
   background: #007bf8;
+  position: relative;
   -webkit-transition-property: background;
   -moz-transition-property: background;
   -o-transition-property: background;
@@ -9529,6 +9530,9 @@ article {
 }
 .dropdown > li .sub-collapser svg path {
   fill: #00aafa;
+}
+.dropdown > li.link {
+  z-index: 30;
 }
 .dropdown > li.opened,
 .dropdown > li.link:hover {
