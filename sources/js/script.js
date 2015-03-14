@@ -183,7 +183,7 @@
 
   $(document).ready(function() {
     var closeDropdown, mapInit, openDropdown, timer, x;
-    $('.news-item').elem('gallery').find('a').on('click', function(e) {
+    $('.news-item__gallery a, .product__image-big a').on('click', function(e) {
       var gallery, galleryOptions, items, pswpElement;
       pswpElement = document.querySelectorAll('.pswp')[0];
       items = $(this).parent().data('images');

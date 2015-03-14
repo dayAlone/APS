@@ -136,7 +136,7 @@ blur = ()->
 
 $(document).ready ->
 
-	$('.news-item').elem('gallery').find('a').on 'click', (e)->
+	$('.news-item__gallery a, .product__image-big a').on 'click', (e)->
 		pswpElement = document.querySelectorAll('.pswp')[0];
 		items = $(this).parent().data('images')
 		galleryOptions = 
@@ -183,7 +183,6 @@ $(document).ready ->
 			$(this).addClass 'active'
 			elm.addClass 'active'
 		e.preventDefault()
-
 	$('.product__tabs a').click (e)->
 		e.preventDefault()
 		$(this).tab('show')

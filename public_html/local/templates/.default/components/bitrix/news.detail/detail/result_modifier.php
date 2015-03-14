@@ -24,7 +24,7 @@
             foreach ($item['PROPERTIES'][$prop_name]['VALUE'] as $key => $value):
                   $small = CFile::ResizeImageGet($value, Array("width" => 312, "height" => 312), BX_RESIZE_IMAGE_PROPORTIONAL, true, false, false, 100);
                   $big = CFile::ResizeImageGet($value, Array("width" => 800, "height" => 700), BX_RESIZE_IMAGE_PROPORTIONAL, true, false, false, 100);
-                  $gallery[] = array('sort'=>$description[$key], 'small'=>$small['src'], 'src'=>$big['src'], 'h'=>$big['height'], 'w'=>$big['width']);
+                  $gallery[] = array('sort'=>$description[$key], 'value'=>$value, 'small'=>$small['src'], 'src'=>$big['src'], 'h'=>$big['height'], 'w'=>$big['width']);
             endforeach;
 
             usort($gallery, "detail_images_sort");

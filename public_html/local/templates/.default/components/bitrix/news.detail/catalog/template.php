@@ -9,9 +9,9 @@ $props = &$item["PROPS"];
 	  		<?if(count($props['PHOTOS'])>1):?>
 	  		<div class="row">
 	  			<div class="col-sm-10 col-md-9">
-	  				<div class="product__image-big">
+	  				<div class="product__image-big" data-images='<?=json_encode($props["PHOTOS"])?>'>
 			  			<?foreach ($props['PHOTOS'] as $key => $value):?>
-		                	<a id="big-<?=$key?>" style="background-image: url(<?=$value['small']?>)" rel="prettyPhoto[]" href="<?=$value['value']?>" <?=($key==0?'class="active"':'')?>></a>
+		                	<a id="big-<?=$key?>" style="background-image: url(<?=$value['small']?>)" href="#" <?=($key==0?'class="active"':'')?>></a>
 		                <?endforeach;?>
 			  		</div>
 	            </div>
@@ -69,8 +69,9 @@ $props = &$item["PROPS"];
 	        			switch ($value):
 	        				case 'ADDITIONAL':
 	        					?>
+	        					<div class="params__title"><?=$elm['property_name']?></div>
 								<div class="params">
-									<div class="params__title"><?=$elm['property_name']?></div>
+									
 									<div class="row">
 										<div class="col-xs-12">
 										<?=html_entity_decode($elm['property_value'])?>
@@ -84,8 +85,9 @@ $props = &$item["PROPS"];
 									  if(!$title) $title = true;
 									  if($k!=0) echo "</div>";
 									?>
+										<div class="params__title"><?=$elm['property_name']?></div>
 									  <div class="params">
-									    <div class="params__title"><?=$elm['property_name']?></div>
+									    
 									<?
 									else:
 										if(strlen($elm['property_name'])>0):
@@ -94,12 +96,12 @@ $props = &$item["PROPS"];
 												if(strlen($v)>0)
 													$count++;
 										?>
-										<div class="row no-gutter">
+										<div class="row no-gutter <?=($count==1?"row--title":"")?>">
 											<?
 											foreach ($elm as $x => $v){
-												if(strlen($v)>0){
+												if(strlen($v) > 0){
 													$s = 12/$count;
-													?><div class="col-xs-1" style="width:<?=(100/$count)?>%"><?=html_entity_decode($v)?></div><?
+													?><div class="col-xs-1" style="width: <?=(100/$count)?>%"><?=html_entity_decode($v)?></div><?
 												}
 											}
 											?>

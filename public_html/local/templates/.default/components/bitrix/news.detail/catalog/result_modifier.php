@@ -32,7 +32,7 @@ foreach ($arResult["PROPERTIES"] as $key => $prop):
                 foreach ($prop['VALUE'] as $key => $value):
                       $small = CFile::ResizeImageGet($value, Array("width" => 600, "height" => 600), BX_RESIZE_IMAGE_PROPORTIONAL, false, false, false, 100);
                       $big = CFile::ResizeImageGet($value, Array("width" => 1400, "height" => 1400), BX_RESIZE_IMAGE_PROPORTIONAL, false, false, false, 100);
-                      $gallery[] = array('sort'=>$description[$key], 'value'=> $big['src'], 'small'=> $small['src']);
+                      $gallery[] = array('sort'=>$description[$key], 'value'=>$value, 'small'=>$small['src'], 'src'=>$big['src'], 'h'=>$big['height'], 'w'=>$big['width']);
                 endforeach;
                 usort($gallery, "images_sort");
                 $props[$prop["CODE"]] = $gallery;

@@ -10,8 +10,8 @@ $item = $arResult;
 		<?endif;?>
 		<?=$item["~DETAIL_TEXT"]?>
 	</div>
-	<div class="news-item__gallery" data-images='<?=json_encode($item["PROPS"]["GALLERY"])?>'>
-	<?foreach ($item["PROPS"]["GALLERY"] as $img):?>
+	<div class="news-item__gallery" data-images='<?=json_encode($item["GALLERY"])?>'>
+	<?foreach ($item["GALLERY"] as $img):?>
 		<a href="#" class="news-item__small-image" style="background-image: url(<?=$img['small']?>)"></a>
 	<?endforeach;?>
 	</div>
