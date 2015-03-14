@@ -239,16 +239,19 @@
 		a
 			color blue3
 	.border-left
-		&--move
-			left -40px
-		&:after
-			position absolute
-			content ""
-			background #d5dbdf
-			width 1px
-			top 0
-			left -30px
-			height 100%
+		
+		@media (min-width: scr_sm)
+			
+			&--move
+				left -40px
+			&:after
+				position absolute
+				content ""
+				background #d5dbdf
+				width 1px
+				top 0
+				left -30px
+				height 100%
 	&__divider
 		height 1px 
 		background #c6cdd2
@@ -783,14 +786,24 @@
 			background #0082dc
 
 .years
+	border-bottom 1px solid #d5dbdf
+	margin-bottom 30px
+	margin-top -5px
+	@media (min-width: scr_sm)
+		border-bottom 0
+		margin-bottom 0
+		margin-top 0
 	&__item
 		display inline-block
 		font-size 18px
 		font-weight bold
 		color black
-		float left
-		clear both
-		margin-bottom 25px
+		margin-bottom 15px
+		margin-right 15px
+		@media (min-width: scr_sm)
+			clear both
+			float left
+			margin-bottom 25px
 		border-line(#d4d4d4, 18px)
 		&:hover
 			color blue2
