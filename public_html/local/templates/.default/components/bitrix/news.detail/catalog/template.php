@@ -8,14 +8,14 @@ $props = &$item["PROPS"];
 	  	<div class="product__image">
 	  		<?if(count($props['PHOTOS'])>1):?>
 	  		<div class="row">
-	  			<div class="col-xs-9">
+	  			<div class="col-sm-10 col-md-9">
 	  				<div class="product__image-big">
 			  			<?foreach ($props['PHOTOS'] as $key => $value):?>
 		                	<a id="big-<?=$key?>" style="background-image: url(<?=$value['small']?>)" rel="prettyPhoto[]" href="<?=$value['value']?>" <?=($key==0?'class="active"':'')?>></a>
 		                <?endforeach;?>
 			  		</div>
 	            </div>
-	            <div class="col-xs-3">
+	            <div class="col-sm-2 col-md-3">
 	            	<div class="product__image-small">
 	                    <?foreach ($props['PHOTOS'] as $key => $value):
 	                    	if($key>3) continue;
