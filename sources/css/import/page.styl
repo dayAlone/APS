@@ -71,6 +71,7 @@
 			svg
 				path
 					fill white
+	
 	.fotorama
 		&, &__stage, .slider__item
 			min-height 650px
@@ -554,13 +555,16 @@
 			width 100%
 		&__image
 			display block
-			width 100px
-			height 100px
+			width 200px
+			height 200px
 			background-size contain
 			background-repeat no-repeat
 			background-position center center
+			margin-bottom 20px
 			@media (min-width: scr_md)
+				height 100px
 				width 100%
+				margin-bottom 0
 
 	.product
 		width 100%
