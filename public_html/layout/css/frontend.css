@@ -8563,11 +8563,13 @@ article {
   position: relative;
   z-index: 2;
   padding-top: 12px;
+  max-width: 80%;
 }
 .catalog-category .sections__content {
   display: none;
   width: 100%;
   padding: 50px 120px 30px;
+  line-height: 1.42857143;
 }
 .catalog-category .sub-sections {
   padding-left: 35px;
