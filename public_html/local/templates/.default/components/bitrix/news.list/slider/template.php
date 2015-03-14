@@ -1,4 +1,4 @@
-<div class="slider" data-width="100%" data-height="80%" data-minheight="690" data-nav="false" data-autoplay="true" data-transition="crossfade" data-loop="true" data-click="false">
+<div class="slider" data-width="100%" data-height="80%" data-nav="false" data-autoplay="true" data-transition="crossfade" data-loop="true" data-click="false">
 	<?foreach ($arResult['ITEMS'] as $item):?>
 		<div style="background-image: url(<?=$item['PREVIEW_PICTURE']['SRC']?>)" class="slider__item slider__item--<?=$item['PROPERTIES']['POSITION']['VALUE_XML_ID']?>">
 		  <div class="container">

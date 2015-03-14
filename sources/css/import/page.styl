@@ -71,7 +71,12 @@
 			svg
 				path
 					fill white
-		.fotorama__arr
+	.fotorama
+		&, &__stage, .slider__item
+			min-height 650px
+			@media (min-width: scr_xs)
+				min-height 690px
+		&__arr
 			background transparent
 			top 0
 			width 30px

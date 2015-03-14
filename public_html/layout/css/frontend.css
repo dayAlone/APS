@@ -8094,18 +8094,30 @@ article {
 .index .slider.background--dark svg path {
   fill: #fff;
 }
-.index .slider .fotorama__arr {
+.index .fotorama,
+.index .fotorama__stage,
+.index .fotorama .slider__item {
+  min-height: 650px;
+}
+@media (min-width: 480px) {
+  .index .fotorama,
+  .index .fotorama__stage,
+  .index .fotorama .slider__item {
+    min-height: 690px;
+  }
+}
+.index .fotorama__arr {
   background: transparent;
   top: 0;
   width: 30px;
   height: 100%;
 }
 @media (min-width: 768px) {
-  .index .slider .fotorama__arr {
+  .index .fotorama__arr {
     width: 50px;
   }
 }
-.index .slider .fotorama__arr svg {
+.index .fotorama__arr svg {
   position: absolute;
   top: 50%;
   left: 50%;
