@@ -247,7 +247,6 @@
       block = item.find("." + c + "__content");
       blockHeight = block.outerHeight();
       items = $(this).parents('*[class*="item"]');
-      console.log($(this).block('content'));
       if (!item.hasMod('open')) {
         $.each(items, function(key, el) {
           return $(el).css({

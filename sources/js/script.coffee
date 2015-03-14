@@ -195,14 +195,10 @@ $(document).ready ->
 		blockHeight = block.outerHeight()
 		items       = $(this).parents('*[class*="item"]')
 
-		console.log($(this).block('content'))
-
 		if !item.hasMod('open')
-			
 			$.each items, (key, el)->
 				$(el).css
 					'minHeight': blockHeight + $(el).height()
-
 			block.velocity
 				properties: "transition.slideDownIn"
 				options:
