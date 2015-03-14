@@ -4,7 +4,7 @@ $arSections = array(
 );
 $BG = false;
 foreach($arResult['SECTION']['PATH'] as $section):
-	$arSections[] = array('ID'=>$section['ID'], 'NAME'=>$section['NAME'], 'DEPTH_LEVEL' => $section['DEPTH_LEVEL']);
+	$arSections[] = array('ID'=>$section['ID'], 'CODE'=>$section['CODE'], 'NAME'=>$section['NAME'], 'DEPTH_LEVEL' => $section['DEPTH_LEVEL']);
 	if(intval($section['DETAIL_PICTURE'])>0)
 		$BG = CFile::GetPath($section['DETAIL_PICTURE']);
 endforeach;
@@ -25,7 +25,7 @@ $this->SetViewTarget('page_top');?>
 		<?endif;?>
         <?if(($key+1)<count($arSections)):?>
         	<li class="link">
-	            <a href="#"><?=$elm['NAME']?></a>
+	            <a href="/catalog/<?=$elm['CODE']?>/"><span><?=$elm['NAME']?></span></a>
 	            <?
 					$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "dropdown", array(
 						"IBLOCK_TYPE" => "news",
@@ -39,11 +39,11 @@ $this->SetViewTarget('page_top');?>
 				?>
 		<?else:?>
 			<li class="text">
-			<?=$elm['NAME']?>
+			<span><?=$elm['NAME']?></span>
 		<?endif;?>
 		</li>
 	<?
 	endforeach;?>
 	</ul>
-	<div class="page__divider m-margin-top m-margin-bottom"></div>
+	<div class="page__divider xs-margin-top m-margin-bottom"></div>
 <?$this->EndViewTarget();?>

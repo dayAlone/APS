@@ -26,6 +26,6 @@ if(count($arResult['SECTIONS'])>0):
 				'DEPTH'  => $item['DEPTH_LEVEL'],
 				'PARENT' => intval($item['IBLOCK_SECTION_ID'])
 		);
-	$arResult['SECTIONS'] = buildTree($all);
+	$arResult['TREE'] = buildTree($all);
 endif;
 ?>

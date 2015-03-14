@@ -17,7 +17,7 @@ $item = $arResult;
 	</div>
 	<a data-toggle="modal" data-target="#vacancyDetail" href="#newsDetail" class="button">Откликнуться на вакансию</a>
 	<br>
-	<a href="/career/" class="career-item__back"><?=svg('back')?> вернуться к списку вакансий</a>
+	<a href="/career/" class="career-item__back"><?=svg('back')?> <span>вернуться к списку вакансий</span></a>
 </div>
 <?$this->SetViewTarget('footer');?>
 <div id="vacancyDetail" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">

@@ -6,7 +6,7 @@ if(count($arResult['SECTIONS'])>0):
         $rsPath = GetIBlockSectionPath($arResult['IBLOCK_ID'], $arParams['CACHE_NOTES']);
         $treeSections = array();
         while($arPath = $rsPath->GetNext())
-          $treeSections[] = $arPath['ID'];
+          $treeSections[] = (int)$arPath['ID'];
     }
     function showChild($item, $treeSections) {
         if(count($item['CHILD'])>0):

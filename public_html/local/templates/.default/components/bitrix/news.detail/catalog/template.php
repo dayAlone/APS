@@ -86,7 +86,7 @@ $props = &$item["PROPS"];
 									  if($k!=0) echo "</div>";
 									?>
 										<div class="params__title"><?=$elm['property_name']?></div>
-									  <div class="params">
+									  <div class="params params--table">
 									    
 									<?
 									else:
@@ -101,7 +101,7 @@ $props = &$item["PROPS"];
 											foreach ($elm as $x => $v){
 												if(strlen($v) > 0){
 													$s = 12/$count;
-													?><div class="col-xs-1" style="width: <?=(100/$count)?>%"><?=html_entity_decode($v)?></div><?
+													?><div class="col-xs-1" style="width: <?=(100/$count)?>%"><span><?=html_entity_decode($v)?></span></div><?
 												}
 											}
 											?>
@@ -121,7 +121,7 @@ $props = &$item["PROPS"];
 		?>
 	</div>
 	<?$section = end($arResult['SECTION']['PATH']);?>
-	<a href="/catalog/<?=$section['CODE']?>/" class="product__back"><?=svg('back')?> вернуться в раздел «<?=$section['NAME']?>»</a>
+	<a href="/catalog/<?=$section['CODE']?>/" class="product__back"><?=svg('back')?> <span>вернуться в раздел «<?=$section['NAME']?>»</span></a>
 
 </div>
 <?require_once($_SERVER['DOCUMENT_ROOT'].'/include/dropdown.php')?>

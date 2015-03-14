@@ -207,13 +207,15 @@
     }).on('fotorama:showend', function() {
       return BackgroundCheck.refresh();
     }).fotorama();
-    $('.dropdown').slimmenu({
-      resizeWidth: 0,
-      collapserTitle: 'Main Menu',
-      animSpeed: 'medium',
-      indentChildren: true,
-      childrenIndenter: '&raquo;'
-    });
+    if ($(window).width() >= 480) {
+      $('.dropdown').slimmenu({
+        resizeWidth: 0,
+        collapserTitle: 'Каталог',
+        animSpeed: 'medium',
+        indentChildren: true,
+        childrenIndenter: '&raquo;'
+      });
+    }
     if ($('.side').length > 0) {
       $('.border-left').css({
         minHeight: $('.side').height()
