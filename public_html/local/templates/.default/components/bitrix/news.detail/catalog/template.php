@@ -81,11 +81,11 @@ $props = &$item["PROPS"];
 	        					<?
 	        					break;
 	        				case 'ABOUT':
-	        						if($elm['property_title']=="Y"):
+	        						if($elm['property_title']=="Y" || $k == 0):
 									  if(!$title) $title = true;
 									  if($k!=0) echo "</div>";
 									?>
-										<div class="params__title"><?=$elm['property_name']?></div>
+									<div class="params__title"><?=$elm['property_name']?></div>
 									  <div class="params params--table">
 									    
 									<?
