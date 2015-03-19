@@ -11,6 +11,7 @@
 
   size = function() {
     var val;
+    $('.params__frame').perfectScrollbar('update');
     $('body:not(.catalog-category) .page__frame').removeAttr('style');
     val = $(window).height() - $('.page__frame').offset().top - $('.footer').outerHeight();
     if ($('body:not(.catalog-category) .page__frame').outerHeight() < val) {
@@ -196,6 +197,9 @@
       gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, galleryOptions);
       gallery.init();
       return e.preventDefault();
+    });
+    $('.params__frame').perfectScrollbar({
+      suppressScrollY: true
     });
     $('.slider').on('fotorama:ready', function() {
       $('.slider .fotorama__arr--prev').load('/layout/images/svg/slider-arrow-left.svg');

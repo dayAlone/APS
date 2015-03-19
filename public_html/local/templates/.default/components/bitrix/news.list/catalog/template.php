@@ -9,10 +9,14 @@
 	?>
 		<div class="products__item">
 			<div class="row">
-				<div class="col-sm-3 col-md-2">
+				<?if(strlen($item['PREVIEW_PICTURE']['SRC'])>0):?>
+				<div class="col-xs-12 col-sm-3 col-md-2">
 					<a href="<?=$item['DETAIL_PAGE_URL']?>" class="products__image" style="background-image: url(<?=$item['PREVIEW_PICTURE']['SRC']?>)"></a>
 				</div>
-				<div class="col-sm-8 col-md-9">
+				<div class="col-xs-12 col-sm-8 col-md-9">
+				<?else:?>
+				<div class="col-xs-12 col-sm-8 col-md-9 col-sm-offset-4 col-md-offset-3">
+				<?endif;?>
 					<a href="<?=$item['DETAIL_PAGE_URL']?>" class="products__name"><?=$item['NAME']?></a>
 					<div class="products__text">
 						<?=$item['PREVIEW_TEXT']?>

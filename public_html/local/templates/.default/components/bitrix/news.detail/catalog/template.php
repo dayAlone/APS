@@ -87,7 +87,8 @@ $props = &$item["PROPS"];
 									?>
 									<div class="params__title"><?=$elm['property_name']?></div>
 									  <div class="params params--table">
-									    
+
+									    <div class="params__frame">
 									<?
 									else:
 										if(strlen($elm['property_name'])>0):
@@ -109,7 +110,7 @@ $props = &$item["PROPS"];
 										<?
 										endif;
 									endif;
-									if(!isset($props[$value][$k+1])) echo "</div>";
+									if(!isset($props[$value][$k+1])) echo "</div></div>";
 	        					break;
 	        			endswitch;
 	        		endforeach;

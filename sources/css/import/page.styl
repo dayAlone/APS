@@ -105,6 +105,15 @@
 					height 110px
 				@media (min-width: scr_md)
 					width (100/6)%
+		&--7, &--8
+			.sections__item
+				@media (min-width: scr_sm)
+					height 120px
+					&:nth-child(n + 4)
+						border-top: 1px solid #062d77
+					&:nth-child(5)
+						border-left: 1px solid #062d77
+
 		&--7
 			.sections__item
 				@media (min-width: scr_xs)
@@ -115,21 +124,15 @@
 					&:nth-child(5), &:nth-child(6), &:nth-child(7)
 						width (100/3)%
 				@media (min-width: scr_md)
-					width (100/7)%
+					&, &:nth-child(5), &:nth-child(6), &:nth-child(7)
+						width (100/7)%
 		&--8
 			.sections__item
 				@media (min-width: scr_sm)
 					width (100/4)%
 				@media (min-width: scr_md)
 					width (100/8)%
-		&--7, &--8
-			.sections__item
-				@media (min-width: scr_sm)
-					height 120px
-					&:nth-child(n + 4)
-						border-top: 1px solid #062d77
-					&:nth-child(5)
-						border-left: 1px solid #062d77
+
 		&__item
 			border-right 1px solid #062d77
 			float left
@@ -719,9 +722,23 @@
 			font-size 12px
 			position relative
 			margin-top -12px
-			
+			&__frame
+				width 100%
+				overflow hidden
+				position relative
+				@media (max-width: scr_md)
+					padding-bottom 20px
+					.ps-scrollbar-x-rail
+						display block !important
+						opacity 1 !important
+						background #eef2f5
+						border-radius 0
+						.ps-scrollbar-x
+							border-radius 0
+							background blue
 			&--table
-				overflow scroll
+				overflow hidden
+				position relative
 				.row
 					min-width 700px
 					span
@@ -1032,12 +1049,14 @@
 		border-bottom 1px solid blue2
 		font-size 12px
 		
-		line-height 26px
+		line-height 23px
 		margin-right 10px
 		position relative
-		height 22px
+		padding-top 3px
 		display inline-block
 		margin-bottom 10px
+		@media (min-width: scr_sm)
+			height 22px
 		&.text
 			border-color white
 		&.text, > a
@@ -1102,7 +1121,7 @@ span.sub-collapser
 	.modal-dialog
 		max-width 830px
 	.close
-		@media (min-width: scr_sm)
+		@media (min-width: scr_md)
 			svg
 				path
 					fill white

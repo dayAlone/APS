@@ -6,6 +6,7 @@ map = undefined
 
 size = ->
 	#autoHeight($('.page .tech'), '.tech__item', '.tech__title', false, true)
+	$('.params__frame').perfectScrollbar 'update'
 	
 	$('body:not(.catalog-category) .page__frame').removeAttr 'style'
 	val = $(window).height() - $('.page__frame').offset().top - $('.footer').outerHeight()
@@ -147,6 +148,9 @@ $(document).ready ->
 		gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, galleryOptions);
 		gallery.init();
 		e.preventDefault()
+
+	$('.params__frame').perfectScrollbar
+		suppressScrollY: true
 
 	$('.slider')
 		.on 'fotorama:ready', ()->

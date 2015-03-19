@@ -28,7 +28,7 @@
   <header class="toolbar">
     <div class="container hidden-xs hidden-sm">
       <div class="row no-gutter">
-        <div class="col-md-3 s-padding-left">
+        <div class="col-md-3">
           <a href="/" class="logo"><?=svg('logo')?></a>
           <div class="shield">
             <div class="shield__right"><?=svg('shield-r')?></div>

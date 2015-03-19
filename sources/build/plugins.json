@@ -77,6 +77,10 @@
    "slimmenu":{
       "js":"/slimmenu/jquery.slimmenu.js"
    },
+   "scrollbar":{
+      "js":"/perfect-scrollbar/src/perfect-scrollbar.js",
+      "css":"/perfect-scrollbar/src/perfect-scrollbar.css"
+   },
    "spin":{
       "js":[
          "/spin.js/spin.js",
