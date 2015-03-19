@@ -8203,7 +8203,6 @@ article {
   }
 }
 .index .slider__link {
-  margin-top: 12px;
   display: inline-block;
   color: #fff;
   border: 1px solid #fff;
@@ -8212,8 +8211,16 @@ article {
   letter-spacing: 3px;
   padding: 0 25px;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 9px;
   font-weight: bold;
+  width: 100%;
+  margin-top: 12px;
+}
+@media (min-width: 768px) {
+  .index .slider__link {
+    width: auto;
+    font-size: 11px;
+  }
 }
 .index .slider__link:hover {
   background: #fff;
@@ -8469,6 +8476,14 @@ article {
 #map {
   width: 100%;
   min-height: 570px;
+}
+.page a[href="#Feedback"] {
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .page a[href="#Feedback"] {
+    width: auto;
+  }
 }
 .page big {
   font-size: 20px;
@@ -8732,7 +8747,7 @@ article {
   fill: #fff;
 }
 .catalog-category .sections__name {
-  font-size: 25px;
+  font-size: 21px;
   display: inline-block;
   line-height: 30px;
   vertical-align: middle;
@@ -9892,6 +9907,7 @@ article {
 @media (min-width: 768px) {
   .dropdown > li {
     height: 22px;
+    padding-top: 1px;
   }
 }
 .dropdown > li.text {

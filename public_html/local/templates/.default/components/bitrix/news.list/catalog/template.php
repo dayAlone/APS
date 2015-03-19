@@ -15,7 +15,7 @@
 				</div>
 				<div class="col-xs-12 col-sm-8 col-md-9">
 				<?else:?>
-				<div class="col-xs-12 col-sm-8 col-md-9 col-sm-offset-4 col-md-offset-3">
+				<div class="col-xs-12 col-sm-8 col-md-9 col-sm-offset-3 col-md-offset-2">
 				<?endif;?>
 					<a href="<?=$item['DETAIL_PAGE_URL']?>" class="products__name"><?=$item['NAME']?></a>
 					<div class="products__text">

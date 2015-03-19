@@ -8,8 +8,8 @@ $APPLICATION->SetPageProperty('body_class', "contacts text");?>
   <div class="col-sm-8">
     <big><strong>Адрес: </strong>Россия, Москва, <nobr>ул. Усачева, 35А</nobr> <br><strong>Телефон: </strong><a href="tel:88002005001">8 800 200 500 1<br></a><strong>E-mail: </strong><a href="mailto:info@oooaps.ru">info@oooaps.ru</a></big><br>
   </div>
-  <div class="col-sm-4 right">
-    <div class="xs-center md-right"><a data-toggle="modal" data-target="#Feedback" href="#Feedback" class="no-margin-top button button--big">напишите нам</a></div>
+  <div class="col-sm-4">
+    <div class="xs-center md-right m-margin-top no-margin-top-sm"><a data-toggle="modal" data-target="#Feedback" href="#Feedback" class="no-margin-top button button--big">напишите нам</a></div>
   </div>
 </div>
 <div id="map" data-coords="55.723171,37.559856" class="xl-margin-top l-margin-bottom"></div>

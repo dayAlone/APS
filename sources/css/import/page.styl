@@ -53,7 +53,6 @@
 				font-size 16px
 				line-height 20px
 		&__link
-			margin-top 12px
 			display inline-block
 			color white
 			border 1px solid white
@@ -62,8 +61,13 @@
 			letter-spacing: 3px
 			padding 0 25px
 			text-transform: uppercase
-			font-size 11px
+			font-size 9px
 			font-weight bold
+			width 100%
+			margin-top 12px
+			@media (min-width: scr_sm)
+				width auto
+				font-size 11px
 			&:hover
 				background white
 				color toolbar_top
@@ -235,6 +239,10 @@
 	min-height 570px
 
 .page
+	a[href="#Feedback"]
+		width 100%
+		@media (min-width: scr_xs)
+			width auto
 	big
 		font-size 20px
 		line-height 30px
@@ -408,7 +416,7 @@
 				path
 					fill white
 		&__name
-			font-size 25px
+			font-size 21px
 			display inline-block
 			line-height 30px
 			vertical-align: middle
@@ -1057,6 +1065,7 @@
 		margin-bottom 10px
 		@media (min-width: scr_sm)
 			height 22px
+			padding-top 1px
 		&.text
 			border-color white
 		&.text, > a
