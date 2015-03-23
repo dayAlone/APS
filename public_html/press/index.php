@@ -1,6 +1,6 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-$APPLICATION->SetPageProperty('section', array('IBLOCK'=>2, 'CODE'=>'news'));
+$APPLICATION->SetPageProperty('section', array('IBLOCK'=>2, 'CODE'=>'news', 'SORT'=>array('NAME'=>'DESC')));
 require($_SERVER['DOCUMENT_ROOT'].'/include/section.php');
 ?>
 <h1 class="page__title">Пресс-центр</h1>
