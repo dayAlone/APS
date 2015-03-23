@@ -78,7 +78,7 @@ if($APPLICATION->GetPageProperty('popup')):?>
   <div class="container">
     <div class="row">
       <div class="col-xs-8 col-sm-3 col-sm-4 col-md-3">
-        <div class="copyright">© 2014 ООО «аргус пайплайн сервис» </div>
+        <div class="copyright">© <?=date('Y')?> ООО «аргус пайплайн сервис» </div>
       </div>
       <div class="col-sm-3 col-md-2">
         <div class="contacts"><span><?=COption::GetOptionString("grain.customsettings","footer_address")?> <br></span><a href="mailto:<?=COption::GetOptionString("grain.customsettings","footer_email")?>" class="contacts_link"><?=COption::GetOptionString("grain.customsettings","footer_email")?></a></div>
