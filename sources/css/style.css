@@ -4647,6 +4647,9 @@ article {
     height: 100%;
   }
 }
+.page__description {
+  font-size: 13px;
+}
 .page__divider {
   height: 1px;
   background: #c6cdd2;

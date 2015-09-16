@@ -74,7 +74,17 @@ elseif(intval($_GLOBALS['openCatalogSection']) > 0 || intval($_GLOBALS['currentC
         </div>
     </div>
 
+
+
 <?
+$message = $APPLICATION->GetPageProperty('catalog_description');
+if(strlen($message) > 0):?>
+<div class="page__divider page__divider--blue l-margin-bottom"></div>
+<div class="page__description">
+    <?=$message?>
+</div>
+<?
+endif;
 else:
   $APPLICATION->SetPageProperty('body_class', "catalog");
   $APPLICATION->IncludeComponent("bitrix:news.detail","catalog",Array(
