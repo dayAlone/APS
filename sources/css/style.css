@@ -4872,7 +4872,12 @@ article {
   border-bottom: 1px solid #e3e6e9;
 }
 .catalog .products__item:last-of-type {
-  border-color: #c6cdd2;
+  border-color: transparent;
+}
+@media (min-width: 992px) {
+  .catalog .products__item:last-of-type {
+    border-color: #c6cdd2;
+  }
 }
 .catalog .products__name {
   display: inline;
@@ -4932,6 +4937,7 @@ article {
   -moz-background-size: 2px 2px;
   background-size: 2px 2px;
   background-position: 0 calc(100% - 2px);
+  width: auto !important;
 }
 .catalog .products__order:hover {
   text-decoration: none;
