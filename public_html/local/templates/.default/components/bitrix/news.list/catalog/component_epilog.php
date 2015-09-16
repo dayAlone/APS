@@ -2,5 +2,6 @@
 	global $APPLICATION;
 	$section = end($arResult['SECTION']['PATH']);
 	$APPLICATION->SetTitle($section['NAME']);
-	$APPLICATION->SetPageProperty('catalog_description', end($arResult['SECTION']['PATH'])['~DESCRIPTION']);
+	$last = end($arResult['SECTION']['PATH']);
+	$APPLICATION->SetPageProperty('catalog_description', $last['~DESCRIPTION']);
 ?>
