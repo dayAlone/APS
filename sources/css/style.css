@@ -4872,11 +4872,12 @@ article {
   border-bottom: 1px solid #e3e6e9;
 }
 .catalog .products__item:last-of-type {
-  border-color: transparent;
+  border-color: #c6cdd2;
+  margin-bottom: -21px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .catalog .products__item:last-of-type {
-    border-color: #c6cdd2;
+    margin-bottom: -26px;
   }
 }
 .catalog .products__name {
