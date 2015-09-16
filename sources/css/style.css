@@ -5038,10 +5038,15 @@ article {
   line-height: 53px;
   font-weight: bold;
   color: #f00;
+  margin-bottom: 30px;
   text-transform: uppercase;
   font-size: 16px;
   text-align: center;
   display: inline-block;
+}
+.catalog .product__order:hover {
+  color: #fff;
+  background-color: #f00;
 }
 .catalog .product__text {
   font-size: 14px;
@@ -5068,7 +5073,9 @@ article {
 .catalog .product .tabs > ul {
   list-style: none;
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-bottom: 1px solid #5e7380;
 }
 .catalog .product .tabs > ul > li {
   display: inline-block;
@@ -5092,9 +5099,7 @@ article {
   height: 45px;
   line-height: 49px;
   padding-left: 0px;
-  margin-bottom: 10px;
   font-weight: bold;
-  border-bottom: 1px solid #5e7380;
   -webkit-transition-property: background;
   -moz-transition-property: background;
   -o-transition-property: background;
@@ -5105,10 +5110,12 @@ article {
   -o-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  margin-bottom: 10px;
 }
 @media (min-width: 768px) {
   .catalog .product .tabs__link {
     font-size: 19px;
+    margin-bottom: 0px;
     padding-left: 20px;
   }
 }
@@ -5155,7 +5162,8 @@ article {
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  border: 1px solid #e3e6e9;
+  -webkit-box-shadow: 0 0 0 1px #e3e6e9;
+  box-shadow: 0 0 0 1px #e3e6e9;
 }
 .catalog .product__image-big a.active,
 .catalog .product__image-small a.active {
@@ -5181,7 +5189,7 @@ article {
 @media (min-width: 480px) {
   .catalog .product__image-small a {
     width: 17%;
-    width: calc(25% - 11px);
+    width: calc(25% - 7.5px);
     margin-right: 10px;
   }
   .catalog .product__image-small a:nth-child(4n) {
@@ -5189,9 +5197,8 @@ article {
   }
 }
 .catalog .product__image-small a.active {
-  border-color: #ff282d;
-  -webkit-box-shadow: inset 0 0 0 1px #ff282d;
-  box-shadow: inset 0 0 0 1px #ff282d;
+  -webkit-box-shadow: inset 0 0 0 2px #ff282d;
+  box-shadow: inset 0 0 0 2px #ff282d;
 }
 .catalog .product .params {
   width: 100%;

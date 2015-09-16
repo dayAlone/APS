@@ -12,15 +12,14 @@ include($_SERVER['DOCUMENT_ROOT']."/seo.php");
 	                	<a id="big-<?=$key?>" style="background-image: url(<?=$value['small']?>)" href="#" <?=($key==0?'class="active"':'')?>></a>
 	                <?endforeach;?>
 		  		</div>
-				<?if(count($props['PHOTOS'])>1):?>
-	            	<div class="product__image-small">
-	                    <?foreach ($props['PHOTOS'] as $key => $value):
+				<?if(count($props['PHOTOS'])>1):
+					?><div class="product__image-small"><?
+						foreach ($props['PHOTOS'] as $key => $value):
 	                    	if($key > 3) continue;
-	                    ?>
-		                    <a style="background-image: url(<?=$value['small']?>)" data-id="#big-<?=$key?>" <?=($key==0?'class="active"':'')?> href="#"></a>
-		                <?endforeach;?>
-	                </div>
-				<?endif;?>
+	                    ?><a style="background-image: url(<?=$value['small']?>)" data-id="#big-<?=$key?>" <?=($key==0?'class="active"':'')?> href="#"></a><?
+						endforeach;
+					?></div><?
+				endif;?>
 				<div class="center">
 					<a role="tab" data-toggle="modal" data-product="<?=$item['NAME']?>" data-target="#Feedback" href="#Feedback" class="product__order hidden-xs hidden-sm">Заказать</a>
 				</div>
