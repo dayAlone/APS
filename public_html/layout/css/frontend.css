@@ -8024,8 +8024,8 @@ article {
     height: 100%;
   }
 }
-.page__description {
-  font-size: 13px;
+.page__description p {
+  font-size: 13px !important;
 }
 .page__divider {
   height: 1px;
