@@ -20,7 +20,7 @@ if(count($arResult['SECTIONS'])>0):
             <div class="section" data-id="<?=$item['ID']?>">
                 <a href="<?=$item['URL']?>" class="section">
                     <span class="section__image" style="background-image: url(<?=$item['IMAGE']?>)">
-                        <span class="section__icon <?=(!$item['IMAGE'] ? "section__icon--blue" : "")?>"><?=$item['ICON']?></span>
+                        <?if(!$item['IMAGE']):?><span class="section__icon section__icon--blue"><?=$item['ICON']?></span><?endif;?>
                     </span>
                     <span class="section__name"><?=$item['NAME']?></span>
                 </a>
