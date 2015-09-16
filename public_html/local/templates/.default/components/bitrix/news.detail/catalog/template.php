@@ -4,6 +4,8 @@ $props = &$item["PROPS"];
 include($_SERVER['DOCUMENT_ROOT']."/seo.php");
 ?>
 <div class="product">
+	  <div class="product__name hidden-lg hidden-md"><h1><?if(isset($seoh1) AND $seoh1!=''){echo $seoh1;}
+			else {echo $item['NAME'];} ?></h1></div>
 	<div class="row">
 	  <div class="col-md-6 col-lg-5">
 	  	<div class="product__image">
@@ -21,7 +23,7 @@ include($_SERVER['DOCUMENT_ROOT']."/seo.php");
 					?></div><?
 				endif;?>
 				<div class="center">
-					<a role="tab" data-toggle="modal" data-product="<?=$item['NAME']?>" data-target="#Feedback" href="#Feedback" class="product__order hidden-xs hidden-sm">Заказать</a>
+					<a role="tab" data-toggle="modal" data-product="<?=$item['NAME']?>" data-target="#Feedback" href="#Feedback" class="product__order">Заказать</a>
 				</div>
 
 
@@ -29,7 +31,7 @@ include($_SERVER['DOCUMENT_ROOT']."/seo.php");
 	  	</div>
 	  </div>
 	  <div class="col-md-6 col-lg-7">
-		  <div class="product__name"><h1><?if(isset($seoh1) AND $seoh1!=''){echo $seoh1;}
+		  <div class="product__name hidden-sm hidden-xs"><h1><?if(isset($seoh1) AND $seoh1!=''){echo $seoh1;}
                 else {echo $item['NAME'];} ?></h1></div>
 	  	<div class="product__text">
 	  		<?=$item['~DETAIL_TEXT']?>

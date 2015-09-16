@@ -23,7 +23,7 @@ if(!isset($_REQUEST['ELEMENT_CODE']) && !isset($_GLOBALS['currentCatalogSection'
 <?
 elseif(intval($_GLOBALS['openCatalogSection']) > 0 || intval($_GLOBALS['currentCatalogSection'])>0):?>
     <div class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-4 hidden-xs hidden-sm">
             <?
                 $APPLICATION->IncludeComponent("bitrix:catalog.section.list", "catalog_side", array(
                     "IBLOCK_ID"           => "1",
@@ -36,7 +36,7 @@ elseif(intval($_GLOBALS['openCatalogSection']) > 0 || intval($_GLOBALS['currentC
                 );
              ?>
         </div>
-        <div class="col-lg-9">
+        <div class="col-lg-9 col-md-8">
             <?if(intval($_GLOBALS['openCatalogSection']) > 0):
                 $APPLICATION->SetPageProperty('body_class', "catalog catalog-category");
                 ?>

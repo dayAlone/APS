@@ -8167,6 +8167,9 @@ article {
     margin-top: 0px;
   }
 }
+.catalog-category .sections .section {
+  margin-bottom: 30px;
+}
 .catalog-category .sections .section:hover .section__name {
   color: #00aafa;
 }
