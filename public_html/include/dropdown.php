@@ -45,5 +45,4 @@ $this->SetViewTarget('page_top');?>
 	<?
 	endforeach;?>
 	</ul>
-	<div class="page__divider xs-margin-top m-margin-bottom"></div>
 <?$this->EndViewTarget();?>

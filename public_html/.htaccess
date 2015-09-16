@@ -10,6 +10,32 @@ ErrorDocument 404 /404.php
 <IfModule mod_rewrite.c>
   Options +FollowSymLinks
   RewriteEngine On
+
+#seoedit_Vvv
+#RewriteCond %{HTTP_HOST} ^www\.(.*)$
+#RewriteCond %{REQUEST_URI} !^/robots\.txt$
+#RewriteCond %{REQUEST_METHOD} !POST
+#RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !^(.*)\.(css|zip|doc|htc|xml|xls|js|jpg|gif|png|swf|pdf|rar|wmv|mp3|txt|html|htm|php)$
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_URI} !index.php
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1/ [L,R=301]
+
+RewriteCond %{REQUEST_URI} !/admin/.* [NC]
+RewriteCond %{THE_REQUEST} ^.*index\.php [NC]
+RewriteCond %{REQUEST_URI} !/system/.* [NC]
+RewriteRule (.*?)index\.php/*(.*) /$1$2 [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^(.*)$
+RewriteCond %{QUERY_STRING} ^PAGEN_1=1$
+RewriteRule ^(.*)$ http://oooaps.ru/$1? [R=301,L]
+#seoedit_Vvv_end
+
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-l
   RewriteCond %{REQUEST_FILENAME} !-d

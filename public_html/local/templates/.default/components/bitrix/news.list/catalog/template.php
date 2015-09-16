@@ -1,7 +1,8 @@
-<?
+<? include($_SERVER['DOCUMENT_ROOT']."/seo.php");
 	$section = end($arResult['SECTION']['PATH']);
 ?>
-<h1 class="page__title"><?=$section['NAME']?></h1>
+<div class="page__title"><h1><?if(isset($seoh1) AND $seoh1!=''){echo $seoh1;}
+else {echo $section['NAME'];}?></h1></div>
 <div class="page__divider"></div>
 <div class="products">
 <?
@@ -20,6 +21,8 @@
 					<a href="<?=$item['DETAIL_PAGE_URL']?>" class="products__name"><?=$item['NAME']?></a>
 					<div class="products__text">
 						<?=$item['PREVIEW_TEXT']?>
+						<br>
+						<a href="#Feedback" data-product="<?=$item['NAME']?>" data-toggle="modal" class="products__order">Заказать</a>
 					</div>
 				</div>
 			</div>

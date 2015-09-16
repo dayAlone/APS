@@ -71,7 +71,7 @@
   };
 
   autoHeight = function(el, selector, height_selector, use_padding, debug) {
-    var count, heights, i, item, item_padding, items, loops, padding, step, x, _i, _ref, _results;
+    var count, heights, i, item, item_padding, items, j, loops, padding, ref, results, step, x;
     if (selector == null) {
       selector = '';
     }
@@ -104,10 +104,10 @@
       if (debug) {
         console.log(count, step, item_padding, padding, el.width(), item.width());
       }
-      _results = [];
+      results = [];
       while (i < count) {
         items = {};
-        for (x = _i = 0, _ref = step - 1; 0 <= _ref ? _i <= _ref : _i >= _ref; x = 0 <= _ref ? ++_i : --_i) {
+        for (x = j = 0, ref = step - 1; 0 <= ref ? j <= ref : j >= ref; x = 0 <= ref ? ++j : --j) {
           if (item[i + x]) {
             items[x] = item[i + x];
           }
@@ -130,9 +130,9 @@
             return $(this).height(Math.max.apply(Math, heights));
           }
         });
-        _results.push(i += step);
+        results.push(i += step);
       }
-      return _results;
+      return results;
     }
   };
 
@@ -225,11 +225,13 @@
         minHeight: $('.side').height()
       });
     }
-    $('a[rel^="prettyPhoto"]').prettyPhoto({
-      social_tools: '',
-      overlay_gallery: false,
-      deeplinking: false
-    });
+
+    /*
+    	$('a[rel^="prettyPhoto"]').prettyPhoto
+    		social_tools: ''
+    		overlay_gallery: false
+    		deeplinking: false
+     */
     $('.product__image-small a').click(function(e) {
       var elm;
       elm = $($(this).data('id'));
@@ -362,9 +364,13 @@
       return e.preventDefault();
     });
     $('.modal').on('show.bs.modal', function(a, b) {
-      var id, url;
+      var id, product, url;
       url = $(a.relatedTarget).data('url');
       id = $(a.relatedTarget).attr('href');
+      product = $(a.relatedTarget).data('product');
+      if (product) {
+        $('#Feedback input[name="product"]').val(product);
+      }
       if (url && id) {
         return $.openModal(url, id);
       } else {
@@ -669,7 +675,7 @@
   			google.maps.event.addDomListener window, "resize", ()->
   	     		google.maps.event.trigger(map, "resize")
   	     		map.setCenter mapOptions['center']
-  		
+  
   		google.maps.event.addDomListener(window, 'load', bgMapInit)
    */
 

@@ -1,42 +1,37 @@
 <?$this->setFrameMode(true);
 $item = $arResult;
 $props = &$item["PROPS"];
+include($_SERVER['DOCUMENT_ROOT']."/seo.php");
 ?>
 <div class="product">
 	<div class="row">
-	  <div class="col-md-6 col-md-push-6">
+	  <div class="col-md-6 col-lg-5">
 	  	<div class="product__image">
-	  		<?if(count($props['PHOTOS'])>1):?>
-	  		<div class="row">
-	  			<div class="col-sm-10 col-md-9">
-	  				<div class="product__image-big" data-images='<?=json_encode($props["PHOTOS"])?>'>
-			  			<?foreach ($props['PHOTOS'] as $key => $value):?>
-		                	<a id="big-<?=$key?>" style="background-image: url(<?=$value['small']?>)" href="#" <?=($key==0?'class="active"':'')?>></a>
-		                <?endforeach;?>
-			  		</div>
-	            </div>
-	            <div class="col-sm-2 col-md-3">
+  				<div class="product__image-big" data-images='<?=json_encode($props["PHOTOS"])?>'>
+		  			<?foreach ($props['PHOTOS'] as $key => $value):?>
+	                	<a id="big-<?=$key?>" style="background-image: url(<?=$value['small']?>)" href="#" <?=($key==0?'class="active"':'')?>></a>
+	                <?endforeach;?>
+		  		</div>
+				<?if(count($props['PHOTOS'])>1):?>
 	            	<div class="product__image-small">
 	                    <?foreach ($props['PHOTOS'] as $key => $value):
-	                    	if($key>3) continue;
+	                    	if($key > 3) continue;
 	                    ?>
 		                    <a style="background-image: url(<?=$value['small']?>)" data-id="#big-<?=$key?>" <?=($key==0?'class="active"':'')?> href="#"></a>
 		                <?endforeach;?>
 	                </div>
-	            </div>
-	  		</div>
-	  		<?else:?>
-	  			<div class="product__image-big">
-				<?foreach ($props['PHOTOS'] as $key => $value):?>
-                	<a id="big-<?=$key?>" style="background-image: url(<?=$value['small']?>)" rel="prettyPhoto[]" href="<?=$value['value']?>" <?=($key==0?'class="active"':'')?>></a>
-                <?endforeach;?>
-                </div>
-	  		<?endif;?>
-	  		
+				<?endif;?>
+				<div class="center">
+					<a role="tab" data-toggle="modal" data-product="<?=$item['NAME']?>" data-target="#Feedback" href="#Feedback" class="product__order hidden-xs hidden-sm">Заказать</a>
+				</div>
+
+
+
 	  	</div>
 	  </div>
-	  <div class="col-md-6 col-md-pull-6">
-	  	<h1 class="product__name"><?=$item['NAME']?></h1>
+	  <div class="col-md-6 col-lg-7">
+		  <div class="product__name"><h1><?if(isset($seoh1) AND $seoh1!=''){echo $seoh1;}
+                else {echo $item['NAME'];} ?></h1></div>
 	  	<div class="product__text">
 	  		<?=$item['~DETAIL_TEXT']?>
 	  	</div>
@@ -71,7 +66,7 @@ $props = &$item["PROPS"];
 	        					?>
 	        					<div class="params__title"><?=$elm['property_name']?></div>
 								<div class="params">
-									
+
 									<div class="row">
 										<div class="col-xs-12">
 										<?=html_entity_decode($elm['property_value'])?>
@@ -83,7 +78,7 @@ $props = &$item["PROPS"];
 	        				case 'ABOUT':
 	        						if($elm['property_title']=="Y" || $k == 0):
 									  if(!$title) $title = true;
-									  if($k!=0) echo "</div>";
+									  if($k!=0) echo "</div></div>";
 									?>
 									<div class="params__title"><?=$elm['property_name']?></div>
 									  <div class="params params--table">

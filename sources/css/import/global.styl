@@ -6,8 +6,20 @@ body
 
 .container
 	max-width 1150px
-	
-.wrap 
+
+.toolbar
+	&__time
+		@media (max-width: scr_lg)
+			position absolute
+			opacity 0
+	.hidden-xs
+		@media (min-width: scr_lg)
+			.col-xs-3, .col-xs-4
+				width auto
+			.col-xs-4.right
+				float right
+
+.wrap
 	full-width()
 	min-height: 100%
 	padding-bottom 65px
@@ -16,15 +28,16 @@ body
 		content ""
 		display block
 	b('bg-index.jpg', center center no-repeat, black, cover)
-	
+
 	background-repeat no-repeat
 	background-position center center
-	
+	background-size cover !important
 	for x in about contacts catalog catalog-category contacts
 		.{x} &
 			b('bg-'+x+'.jpg', center center no-repeat, #021b64)
 	.catalog &
 		background-position top center
+		background-size auto !important
 	.index &
 		background white
 html
@@ -39,7 +52,7 @@ article
 		@media (min-width: scr_md)
 			margin-left 0px
 		svg
-			
+
 			@media (min-width: scr_sm)
 				max-width 70%
 			@media (min-width: scr_lg)
@@ -51,7 +64,7 @@ article
 				padding 3px 8.8px 0
 			@media (min-width: scr_lg)
 				font-size 17px
-				padding 3px 17.2px 0		
+				padding 3px 17.2px 0
 
 .modal
 	padding 0

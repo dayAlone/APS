@@ -13,11 +13,18 @@ $arUrlRewrite = array(
 		"PATH" => "/career/index.php",
 	),
 	array(
+		"CONDITION" => "#^/catalog/([\w-_]+)/([\w-_]+)/#",
+		"RULE" => "&ELEMENT_CODE=\$1&\$2",
+		"ID" => "",
+		"PATH" => "/404.php",
+	),
+	array(
 		"CONDITION" => "#^/catalog/([\w-_]+)/.*#",
 		"RULE" => "&ELEMENT_CODE=\$1&\$2",
 		"ID" => "",
 		"PATH" => "/catalog/index.php",
-	)
+	),
+
 );
 
 ?>

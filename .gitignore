@@ -1,6 +1,10 @@
 bower_components
 node_modules
 public_html/bitrix/
+
 config.codekit
 upload/
 *.html
+public_html_old/
+
+public_html/upload/*

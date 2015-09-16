@@ -4,3 +4,74 @@
 @import 'import/mobile.styl'
 @import 'import/page.styl'
 @import 'import/sidebar.styl'
+
+p
+	&.yandexm
+		position absolute
+		padding-left 215px
+
+.without_h1
+	font-size 30px
+	margin-top 10px
+	font-weight 700
+	margin-bottom 25px
+	line-height 1.1
+	text-align center!important
+
+.page__title
+	h1
+		font-weight 700
+
+@-moz-document url-prefix()
+	.page__frame
+		clear both
+		position relative
+		top 30px
+
+
+.page__sub-title
+	h2
+		font-size 22px
+.row
+	.tabs__link
+		&.active
+			&:hover
+				background #0082dc
+
+.catalog
+	.product__name
+		h1
+			font-size 25px
+			font-weight 700
+			line-height 30px
+			margin 0px 0 20px
+			padding 0
+			text-transform uppercase
+			color #000
+			@media (min-width: 768px)
+				font-size 35px
+				line-height 40px
+
+.row
+	.tabs__link
+		&.active
+			a
+				color #fff
+				display inline-block!important
+				width 100%
+				text-align center
+
+div
+	&.tabs__link
+		&.active
+			&.to-buy
+				width 25%
+				margin-left 30%
+			&.to-buy-sec
+				width 25%
+				margin 2% 0 0 37%
+				padding 0 10px
+
+.page
+	float left
+	width 100%

@@ -57,7 +57,7 @@ if($APPLICATION->GetPageProperty('popup')):?>
 <div id="Contacts" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
   <div class="modal-dialog">
     <div class="modal-content"><a data-dismiss="modal" href="#" class="close"><?=svg('close')?></a>
-      <div class="modal-title">связаться с нами</div><a href="tel:+78002005001" class="phone">8 800 200 500 1</a>
+      <div class="modal-title">связаться с нами</div><a href="" class="phone">8 800 200 500 1</a>
       <div class="full-width center"><a href="#" class="form-trigger">напишите нам</a></div>
       <?
         require($_SERVER['DOCUMENT_ROOT'].'/include/form.php');
@@ -77,16 +77,26 @@ if($APPLICATION->GetPageProperty('popup')):?>
 <footer class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-xs-8 col-sm-3 col-sm-4 col-md-3">
-        <div class="copyright">© <?=date('Y')?> ООО «аргус пайплайн сервис» </div>
+      <div class="hidden-xs hidden-sm col-lg-1 col-md-1">
+        <a href="http://tkc-group.ru/" target="_blank" class="footer__logo"><?=svg('logo_left')?></a>
+      </div>
+      <div class="col-xs-7 col-sm-4 col-md-3">
+        <div class="copyright">
+			<p>
+				ООО «Аргус Пайплайн Сервис» - <a href="http://oooaps.ru/">Оборудование для нефте- и газопроводов</a>
+			</p>
+			<p>
+			<a href="tel:88005553136">Тел.: 8 (800) 555-31-36</a>
+			</p>
+			© <?=date('Y')?> ООО «аргус пайплайн сервис» </div>
       </div>
       <div class="col-sm-3 col-md-2">
         <div class="contacts"><span><?=COption::GetOptionString("grain.customsettings","footer_address")?> <br></span><a href="mailto:<?=COption::GetOptionString("grain.customsettings","footer_email")?>" class="contacts_link"><?=COption::GetOptionString("grain.customsettings","footer_email")?></a></div>
       </div>
       <div class="col-sm-2">
-        <div class="map"><a href="/map/">карта сайта</a></div>
+		  <div class="map"><a href="/map/">карта сайта</a></div>
       </div>
-      <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 social">
+      <div class="col-xs-3 col-md-1 social">
         <nobr>
         <?php
             $APPLICATION->IncludeComponent("bitrix:menu", "social", 
@@ -100,8 +110,8 @@ if($APPLICATION->GetPageProperty('popup')):?>
         ?>
         </nobr>
       </div>
-      <div class="col-md-3 col-lg-3 visible-md-block visible-lg-block"><a href="http://radia.ru" target="_blank" class="radia"><?=svg('radia')?>
-          <div class="radia__content">разработка сайта <br>radia interactive</div></a></div>
+      <div class="col-md-3 visible-md-block visible-lg-block"><!--noindex--><a href="http://radia.ru" target="_blank" rel="nofollow" class="radia"><?=svg('radia')?>
+		  <div class="radia__content">разработка сайта <br>radia interactive</div></a><!--/noindex--></div>
     </div>
   </div>
 </footer>

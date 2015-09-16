@@ -3,7 +3,7 @@ $item = $arResult;
 ?>
 <div class="career-item">
 	<div class="career-item__tooltip">вакансия</div>
-	<h1 class="career-item__title"><?=$item['NAME']?></h1>
+	<div class="career-item__title"><?=$item['NAME']?></div>
 	<div class="career-item__text">
 		<?if($item["DETAIL_PICTURE"]):?>
 			<img src="<?=$item["DETAIL_PICTURE"]['SRC']?>" class="pull-right  career-item__image">

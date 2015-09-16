@@ -19,7 +19,7 @@ sequence     = require 'run-sequence'
 replace      = require 'gulp-replace'
 watch        = require 'gulp-watch'
 
-plugins  = [ 'jquery', 'bootstrap', 'browser', 'fotorama', 'bgcheck', 'cookie', 'scrollbar', 'imagesLoaded', 'slimmenu', 'photoswipe', 'bem', 'hoverIntent', 'spin', 'velocity', 'parsley', 'prettyPhoto' ]
+plugins  = [ 'jquery', 'bootstrap', 'browser', 'fotorama', 'bgcheck', 'cookie', 'scrollbar', 'imagesLoaded', 'slimmenu', 'photoswipe', 'bem', 'hoverIntent', 'spin', 'velocity', 'parsley' ]
 
 layout   = './public_html/layout'
 sources  = './sources/'
@@ -87,8 +87,9 @@ gulp.task 'css_bootstrap', ->
 gulp.task 'css_plugins', ->
 	gulp.src loadPlugins plugins, 'css'
 	.pipe concat 'plugins.css'
-	.pipe(replace("background: url(", 'background: url(/layout/images/plugins/'))
-	.pipe(replace("background-image: url(", 'background-image: url(/layout/images/plugins/'))
+	.pipe(replace("background: url(", 'background: url(../images/plugins/'))
+	.pipe(replace("background:url(", 'background: url(../images/plugins/'))
+	.pipe(replace("background-image: url(", 'background-image: url(../images/plugins/'))
 	.pipe gulp.dest path.css.sources
 
 gulp.task 'css_stylus', ->

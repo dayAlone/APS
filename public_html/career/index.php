@@ -1,7 +1,7 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 ?>
-<h1 class="page__title">Карьера</h1>
+<div class="page__title"><h1>Карьера</h1></div>
 <div class="page__divider page__divider--blue l-margin-top xl-margin-bottom"></div>
 <div class="row">
   <div class="col-md-8 col-md-push-4 border-left">

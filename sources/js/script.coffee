@@ -7,7 +7,7 @@ map = undefined
 size = ->
 	#autoHeight($('.page .tech'), '.tech__item', '.tech__title', false, true)
 	$('.params__frame').perfectScrollbar 'update'
-	
+
 	$('body:not(.catalog-category) .page__frame').removeAttr 'style'
 	val = $(window).height() - $('.page__frame').offset().top - $('.footer').outerHeight()
 	if $('body:not(.catalog-category) .page__frame').outerHeight() < val
@@ -41,34 +41,34 @@ $.openModal = (url, id, open)->
 					url : info.cleanUrl
 					title : document.title
 				History.pushState {'url':url}, $(id).find('.text h1').text(), url
-				
+
 				History.Adapter.bind window,'statechange.namespace', ()->
 					$("#{id}").modal 'hide'
 					$(window).unbind 'statechange.namespace'
-				
+
 				window.title = $(id).find('.text h1').text()
 
 autoHeight = (el, selector='', height_selector = false, use_padding=false, debug=false)->
 	if el.length > 0
-		
+
 		item = el.find(selector)
 
 		if height_selector
 			el.find(height_selector).removeAttr 'style'
 		else
 			el.find(selector).removeAttr 'style'
-		
+
 		item_padding = item.css('padding-left').split('px')[0]*2
 		padding      = el.css('padding-left').split('px')[0]*2
 		if debug
 			step = Math.round((el.width()-padding)/(item.width()+item_padding))
 		else
 			step = Math.round(el.width()/item.width())
-		
+
 		count = item.length-1
 		loops = Math.ceil(count/step)
 		i     = 0
-		
+
 		if debug
 			console.log count, step, item_padding, padding, el.width(), item.width()
 
@@ -76,14 +76,14 @@ autoHeight = (el, selector='', height_selector = false, use_padding=false, debug
 			items = {}
 			for x in [0..step-1]
 				items[x] = item[i+x] if item[i+x]
-			
+
 			heights = []
 			$.each items, ()->
 				if height_selector
 					heights.push($(this).find(height_selector).height())
 				else
 					heights.push($(this).height())
-			
+
 			if debug
 				console.log heights
 
@@ -119,14 +119,14 @@ addTrigger = ()->
 	$('a.openMap').off('click').on 'click', (e)->
 		val = $(this).closest('tr').find('input[name*=cords]').val()
 		id = $(this).closest('tr').find('input[name*=cords]').attr 'name'
-		
+
 		console.log id
 
 		$('#mapPopup .adm-btn-save').data 'id':id
-		
+
 		$('#mapPopup .modal-content .map').load "/include/map.php?ajax=1&val=#{val}", ()->
 			$('#mapPopup').modal()
-		
+
 		e.preventDefault()
 
 blur = ()->
@@ -140,7 +140,7 @@ $(document).ready ->
 	$('.news-item__gallery a, .product__image-big a').on 'click', (e)->
 		pswpElement = document.querySelectorAll('.pswp')[0];
 		items = $(this).parent().data('images')
-		galleryOptions = 
+		galleryOptions =
 			history : false
 			focus   : false
 			shareEl : false
@@ -175,10 +175,12 @@ $(document).ready ->
 		$('.border-left').css
 			minHeight : $('.side').height()
 
+	###
 	$('a[rel^="prettyPhoto"]').prettyPhoto
 		social_tools: ''
 		overlay_gallery: false
 		deeplinking: false
+	###
 
 	$('.product__image-small a').click (e)->
 		elm = $($(this).data('id'))
@@ -210,7 +212,7 @@ $(document).ready ->
 					delay: 200
 					begin: ()->
 						item.mod('open', true)
-					
+
 		else
 			$.each items, (key, el)->
 				$(el).css
@@ -221,8 +223,8 @@ $(document).ready ->
 					duration: 200
 					complete: ()->
 						item.mod('open', false)
-						
-						
+
+
 
 		e.preventDefault()
 
@@ -244,7 +246,7 @@ $(document).ready ->
 									properties: "transition.slideUpOut"
 									options:
 										duration: 300
-						
+
 		e.preventDefault()
 
 	###
@@ -253,7 +255,7 @@ $(document).ready ->
 	$('a[onclick*=grain_TableAddRow]').click ()->
 		addTrigger()
 	###
-	
+
 	$('a.captcha_refresh').click (e)->
 		getCaptcha()
 		e.preventDefault()
@@ -272,8 +274,8 @@ $(document).ready ->
 
 	$('.form').submit (e)->
 		data = new FormData(this)
-		
-		$.ajax 
+
+		$.ajax
 			type        : 'POST'
 			url         : '/include/send.php'
 			data        : data
@@ -295,13 +297,16 @@ $(document).ready ->
 	$('.modal').on 'show.bs.modal', (a,b)->
 		url = $(a.relatedTarget).data 'url'
 		id  = $(a.relatedTarget).attr 'href'
+		product  = $(a.relatedTarget).data 'product'
+		if product
+			$('#Feedback input[name="product"]').val product
 		if url && id
 			$.openModal(url, id)
 		else
 			setHash($(this).attr('id'))
-	
+
 	$('.modal').on 'hide.bs.modal', (a,b)->
-		
+
 		$(this).find('input[type="email"], input[type="text"], textarea').removeClass('parsley-error').removeAttr("value").val("")
 		$(this).find('form').trigger('reset').show()
 		$(this).find('.success').hide()
@@ -335,7 +340,7 @@ $(document).ready ->
 				properties: "transition.slideDownIn"
 				options:
 					duration: 300
-	
+
 
 	$('.dropdown').elem('item').click (e)->
 		if $(this).attr('href')[0] == "#"
@@ -415,7 +420,7 @@ $(document).ready ->
 		val = $(this).val()
 		$(this).block().find("a[href='#{val}']").trigger 'click'
 		$(this).mod('open', true)
-	
+
 	$('.dropdown').hoverIntent
 			over : ()->
 				if($(window).width()>970)
@@ -424,7 +429,7 @@ $(document).ready ->
 					$(this).elem('select').focus()
 					$(this).mod('open', true)
 			out : ()->
-				
+
 				if($(window).width()>970)
 					closeDropdown($(this))
 
@@ -494,13 +499,13 @@ $(document).ready ->
 			}
 
 			myMap.geoObjects.add(myPlacemark);
-	
+
 	x = undefined
 	$(window).resize ->
 		clearTimeout(x)
 		x = delay 200, ()->
 			size()
-   
+
 ###
 	if $('#bg_map').length > 0
 		bgMapInit = ()->
@@ -556,6 +561,6 @@ $(document).ready ->
 			google.maps.event.addDomListener window, "resize", ()->
 	     		google.maps.event.trigger(map, "resize")
 	     		map.setCenter mapOptions['center']
-		
+
 		google.maps.event.addDomListener(window, 'load', bgMapInit)
 ###

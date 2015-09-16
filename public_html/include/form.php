@@ -1,9 +1,10 @@
 <div class="success">
-  <h1 class="center">Ваше сообщение успешно отправлено. </h1>
+  <div class="without_h1">Ваше сообщение успешно отправлено. </div>
   <p class="center">В ближайшее время представители нашей компании свяжутся с вами. Благодарим за обращение.</p>
 </div>
 <form class="form visible" data-parsley-validate>
   <input type="hidden" name="group_id" value="5">
+  <input type="hidden" name="product" value="">
   <label>представьтесь, пожалуйста</label>
   <input name="name" type="text" required>
   <label>какую компанию вы представляете</label>
@@ -27,7 +28,7 @@
       <div class="captcha" style="background-image:url(/include/captcha.php?captcha_sid=<?=$code?>)"></div>
     </div>
     <div class="col-xs-2 no-padding">
-      
+
       <input type="hidden" name="captcha_code" value="<?=$code?>">
       <a href="#" class="captcha_refresh">
         <?=svg('refresh')?>

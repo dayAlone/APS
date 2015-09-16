@@ -3,7 +3,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetPageProperty('section', array('IBLOCK'=>2, 'CODE'=>'news', 'SORT'=>array('NAME'=>'DESC')));
 require($_SERVER['DOCUMENT_ROOT'].'/include/section.php');
 ?>
-<h1 class="page__title">Пресс-центр</h1>
+<div class="page__title"><h1>Пресс-центр</h1></div>
 <div class="page__divider page__divider--blue l-margin-top xl-margin-bottom"></div>
 <div class="row">
   <div class="col-xs-12 col-sm-3 col-md-2">

@@ -77,7 +77,7 @@
 			svg
 				path
 					fill white
-	
+
 	.fotorama
 		&, &__stage, .slider__item
 			min-height 650px
@@ -162,9 +162,9 @@
 				&:nth-child(n + 2)
 					border-top: 1px solid #062d77
 			@media (min-width: scr_md)
-				border-top 0
-				border-left 0
-				
+				border-top 0 !important
+				border-left 0 !important
+
 		&__image
 			margin-top 17px
 		&__text
@@ -218,7 +218,7 @@
 			@media (min-width: scr_md)
 				max-width 495px
 				width 50%
-			
+
 		&__date
 			font-size 11px
 			color blue
@@ -256,9 +256,9 @@
 		a
 			color blue3
 	.border-left
-		
+
 		@media (min-width: scr_sm)
-			
+
 			&--move
 				left -40px
 			&:after
@@ -270,7 +270,7 @@
 				left -30px
 				height 100%
 	&__divider
-		height 1px 
+		height 1px
 		background #c6cdd2
 		width 100%
 		margin 10px 0
@@ -280,7 +280,7 @@
 			margin-top -10px
 	&__frame
 		background #ffffff
-		
+
 		padding 25px
 		margin-top 20px
 		margin-right -15px
@@ -288,8 +288,6 @@
 		color #233347
 		@media (min-width: scr_sm)
 			padding 35px 45px
-		.catalog-category &
-			padding 0
 		p
 			font-size 16px
 	&__title
@@ -330,13 +328,13 @@
 			text-decoration: none
 		&--big
 			max-width 110%
-			min-width 216px 
+			min-width 216px
 			@media (min-width: scr_sm)
 				min-width 100px
 				padding 0 15px
 			@media (min-width: scr_md)
 				padding 0 32px
-				min-width 186px 
+				min-width 186px
 
 .about
 	.partners
@@ -364,6 +362,58 @@
 	.page
 		margin-bottom 30px
 	.sections
+		padding-bottom 30px
+		.col-lg-12, .col-md-12, .col-sm-12
+			min-height 30px
+		.col-xs-12
+			margin-top 30px
+			@media (min-width: scr_sm)
+				margin-top 0px
+		.section
+
+
+			&:hover
+				.section
+					&__name
+						color blue2
+					&__image
+						border-color blue
+			&__image
+				display inline-block
+				size 100% 194px
+				background-size cover
+				background-position center center
+				position relative
+				box-shadow inset 0 0 0 10px white
+				border 1px solid #c6cdd2
+				t border
+				margin-bottom 5px
+			&__name
+				text-transform uppercase
+				color black
+				font-weight bold
+				t color
+			&__icon
+
+				position absolute
+				top 50%
+				left 50%
+				margin-top -35px
+				margin-left -35px
+				opacity .5
+
+				svg
+					size 70px
+					path
+						fill white
+				&--blue
+					opacity 1
+					svg
+						path
+							fill blue2
+
+	/*
+	.sections
 		width 100%
 		&__item
 			width 100%
@@ -378,7 +428,7 @@
 				height auto
 				.sections__content
 					display block
-					
+
 				.sections__icon
 					opacity 1
 				.sections__title:after
@@ -391,7 +441,7 @@
 			background-size cover
 			background-repeat no-repeat
 			position relative
-			
+
 			&:after
 				position absolute
 				content ""
@@ -550,7 +600,7 @@
 				background #007bf8
 				top 4px
 				left -15px
-
+	*/
 .catalog
 	.products
 		&__item
@@ -565,7 +615,7 @@
 			font-weight bold
 			color #000000
 			border-line(#d4d4d4, 19px)
-			
+
 			&:hover
 				color blue2
 				border-line(blue2, 19px)
@@ -575,6 +625,16 @@
 			font-size 13px
 			line-height 16px
 			width 100%
+		&__order
+			display inline-block
+			margin-top 15px
+			color #707b84
+			font-weight bold
+			text-transform uppercase
+			border-line alpha(#707b84, .5)
+			&:hover
+				color blue3
+				border-line alpha(@color, .5)
 		&__image
 			display block
 			width 200px
@@ -587,7 +647,7 @@
 				width 100%
 			@media (min-width: scr_md)
 				height 100px
-				
+
 				margin-bottom 0
 
 	.product
@@ -611,7 +671,7 @@
 			text-transform: uppercase
 			font-weight bold
 			color #007bf8
-			
+
 			font-size 12px
 			display inline-block
 			margin-top 30px
@@ -621,6 +681,19 @@
 			svg
 				margin-left -13px
 				margin-right 4px
+		&__order
+			border 1px solid red
+			height 47px
+			width 134px !important
+			margin-top 30px
+			padding 0 20px
+			line-height 53px
+			font-weight bold
+			color red
+			text-transform uppercase
+			font-size 16px
+			text-align center
+			display inline-block
 		&__text
 			font-size 14px
 			color #515050
@@ -689,7 +762,7 @@
 				a
 					display none
 					width 100%
-					height 324px
+					height 344px
 					background-size contain
 					background-position center center
 					background-repeat no-repeat
@@ -697,13 +770,12 @@
 					&.active
 						display block
 			&-big
-				@media (max-width: scr_sm)
-					margin-bottom 20px
+				margin-bottom 15px
 			&-small
 				a
 					height 75px
 					display block
-					background-size contain
+					background-size cover
 					background-position center center
 					background-repeat no-repeat
 					margin-bottom 8px
@@ -711,23 +783,18 @@
 					width calc(33.333333333333336% - 10px)
 					margin-right 10px
 					display inline-block !important
-					
-					&:nth-child(3n)
-						margin-right 0
+
 					@media (min-width: scr_xs)
 						width 17%
-						width calc(20% - 10px)
+						width calc(25% - 11px)
 						margin-right 10px
-						&:nth-child(5n)
+						&:nth-child(4n)
 							margin-right 0
-					@media (min-width: scr_sm)
-						width 100%
-						margin-right 0
 					&.active
 						border-color #ff282d
 						box-shadow inset 0 0 0 1px #ff282d
-					
-				
+
+
 		.params
 			width 100%
 			border 1px solid #697c89
@@ -782,7 +849,7 @@
 					margin-top 10px
 			.row
 				margin 0
-				
+
 				&--title
 					@media (max-width: scr_sm)
 						margin-top 20px
@@ -791,8 +858,102 @@
 				&:last-of-type
 					border-bottom 0
 				padding 7px 0px 3px
-				
-	
+
+	.sections
+		&--side
+			max-width 95%
+		&__item
+			width 100%
+			line-height 1.2
+			border-top 1px solid #d4dbde
+			padding 16px 0 10px
+			&--open
+				.sections__name
+					color #006bd4
+		&__name
+			color black
+			text-transform uppercase
+			font-weight bold
+			t color
+			&:hover
+				color #006bd4
+
+	.sub-sections
+		padding 10px 0 0
+		&__item
+			width 100%
+			line-height 1.1
+			padding 5px 0 5px 13px
+			&--open
+				.sub-sections__title
+					color blue3
+					path
+						fill blue3
+		&__title
+			color black
+			font-size 13px
+			position relative
+			t color
+			&:hover
+				color blue3
+				path
+					fill blue3
+			svg
+				position absolute
+				left -25px
+				top -10px
+				pointer-events none
+
+	.sub-sub-sections
+		padding 10px 0 0
+		&__item
+			width 100%
+			line-height 1.1
+			padding 5px 0 5px 13px
+			&--open
+				.sub-sub-sections__title
+					color blue3
+					path
+						fill blue3
+		&__title
+			color black
+			font-size 13px
+			position relative
+			t color
+			&:hover
+				color blue3
+				path
+					fill blue3
+			svg
+				position absolute
+				left -25px
+				top -10px
+				pointer-events none
+	.sub-sub-sub-sections
+		padding 10px 0 0
+		&__item
+			width 100%
+			line-height 1.1
+			padding 5px 0 5px 13px
+			&--open
+				.sub-sub-sub-sections__title
+					color blue3
+					path
+						fill blue3
+		&__title
+			color black
+			font-size 13px
+			position relative
+			t color
+			&:hover
+				color blue3
+				path
+					fill blue3
+			svg
+				position absolute
+				left -25px
+				top -10px
+				pointer-events none
 .side
 	p
 		font-size 16px
@@ -844,7 +1005,7 @@
 			color blue2
 			border-line(blue2, 18px)
 		&--active
-			background transparent 
+			background transparent
 			color blue3
 
 .gallery
@@ -921,7 +1082,7 @@
 			&:hover
 				color black
 				background transparent
-			
+
 .career
 	&-list
 		width 100%
@@ -931,7 +1092,7 @@
 			margin-bottom 15px
 		&__title
 			@extends .news .news-list .news-list__title
-			
+
 	&-item
 		&__tooltip
 			@extends .news .news-list .news-list__date
@@ -1000,12 +1161,12 @@
 							@extends .news .news-list .news-list__title
 							font-size 12px
 							line-height 25px
-							background-position 0 10px		
+							background-position 0 10px
 						> a
 							font-size 16px
 							font-weight normal
 							background-position 0 16px
-						
+
 				> a
 					@extends .news .news-list .news-list__title
 					font-size 18px
@@ -1046,12 +1207,12 @@
 				padding 10px 15px 4px
 				float left
 				line-height 14px
-				
+
 			ul
 				left 100%
 				margin-left 1px
 	li
-		display 
+		display
 		list-style none
 		padding 0
 		&.divider
@@ -1062,7 +1223,7 @@
 		border-top 1px solid blue2
 		border-bottom 1px solid blue2
 		font-size 12px
-		
+
 		line-height 23px
 		margin-right 10px
 		position relative
@@ -1084,7 +1245,7 @@
 			color black
 			position relative
 			z-index 2
-			
+
 		.sub-collapser
 			color blue2
 			margin-left 3px
@@ -1104,7 +1265,7 @@
 					svg
 						path
 							fill white
-				
+
 				&:after
 					content ""
 					position absolute
@@ -1126,8 +1287,8 @@
 		ul
 			@media (max-width: scr_sm)
 				padding 0 5px
-				full-width()	
-			
+				full-width()
+
 span.sub-collapser
 	i
 		font-style: normal
@@ -1160,6 +1321,7 @@ span.sub-collapser
 			border 1px solid #d5dbdf
 			background-position center center
 			background-repeat no-repeat
+			background-size contain
 		input
 			line-height 100%
 		.file
@@ -1230,4 +1392,3 @@ span.sub-collapser
 		&__title
 			font-size 26px
 			margin-top 3px
-			
