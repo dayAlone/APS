@@ -28,4 +28,5 @@ if(count($arResult['SECTIONS'])>0):
 		);
 	$arResult['SECTIONS'] = buildTree($all);
 endif;
+$APPLICATION->SetPageProperty('showLast', true);
 ?>

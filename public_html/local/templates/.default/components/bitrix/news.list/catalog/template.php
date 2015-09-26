@@ -20,7 +20,7 @@ else {echo $section['NAME'];}?></h1></div>
 				<?endif;?>
 					<a href="<?=$item['DETAIL_PAGE_URL']?>" class="products__name"><?=$item['NAME']?></a>
 					<div class="products__text">
-						<?=$item['PREVIEW_TEXT']?>
+						<noindex><?=$item['PREVIEW_TEXT']?></noindex>
 						<br>
 						<a href="#Feedback" data-product="<?=$item['NAME']?>" data-toggle="modal" class="products__order">Заказать</a>
 					</div>

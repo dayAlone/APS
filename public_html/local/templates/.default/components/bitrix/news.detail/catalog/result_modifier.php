@@ -3,10 +3,10 @@ $arResult["PROPS"] = array();
 $props = &$arResult["PROPS"];
 function images_sort($a, $b)
 {
-    if($a['sort']=='' && $b['sort']>0) 
+    if($a['sort']=='' && $b['sort']>0)
         return 1;
 
-    if($b['sort']=='' && $a['sort']>0) 
+    if($b['sort']=='' && $a['sort']>0)
         return -1;
 
     if($a['sort']=='' && $b['sort']=='')
@@ -24,7 +24,7 @@ foreach ($arResult["PROPERTIES"] as $key => $prop):
             if(count($prop["VALUE"])>0)
                 if(strlen($prop["VALUE"][0]['property_name']) > 0)
                     $props[$prop["CODE"]] = $prop["VALUE"];
-        break; 
+        break;
         case "PHOTOS":
             $gallery     = array();
             $description = $prop['DESCRIPTION'];
@@ -37,7 +37,8 @@ foreach ($arResult["PROPERTIES"] as $key => $prop):
                 usort($gallery, "images_sort");
                 $props[$prop["CODE"]] = $gallery;
             endif;
-        break;  
+        break;
     endswitch;
 endforeach;
+$APPLICATION->SetPageProperty('catalogItemName', $arResult['NAME']);
 ?>

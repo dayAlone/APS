@@ -8,6 +8,8 @@ foreach($arResult['SECTION']['PATH'] as $section):
 	if(intval($section['DETAIL_PICTURE'])>0)
 		$BG = CFile::GetPath($section['DETAIL_PICTURE']);
 endforeach;
+
+$showLast = $APPLICATION->GetPageProperty('showLast');
 $this->SetViewTarget('page_top');?>
 	<?if(strlen($BG)>0):?>
 		<style>
@@ -23,7 +25,7 @@ $this->SetViewTarget('page_top');?>
     	?>
 		<li class="divider">&#9654;</li>
 		<?endif;?>
-        <?if(($key+1)<count($arSections)):?>
+        <?if(($key+1) < count($arSections) || !$showLast):?>
         	<li class="link">
 	            <a href="/catalog/<?=$elm['CODE']?>/"><span><?=$elm['NAME']?></span></a>
 	            <?
@@ -43,6 +45,12 @@ $this->SetViewTarget('page_top');?>
 		<?endif;?>
 		</li>
 	<?
-	endforeach;?>
+	endforeach;
+	if(!$showLast):?>
+		<li class="divider">&#9654;</li>
+		<li class="text">
+			<span><?=$APPLICATION->GetPageProperty('catalogItemName')?></span>
+		</li>
+	<?endif;?>
 	</ul>
 <?$this->EndViewTarget();?>
